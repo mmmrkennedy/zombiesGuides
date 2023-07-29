@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #f2f2f2; /* Default background color */
+      color: #000000; /* Default text color */
+      position: relative;
+    }
+
+    .dark-mode {
+      background-color: #1e1f22; /* Dark background color */
+      color: #bababa; /* Dark text color */
+    }
+
+    .toggle-button {
+      position: fixed;
+      top: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+      background-color: #333;
+      color: #fff;
+      border-radius: 5px;
+    }
+
+    .toggle-button.left {
+      left: 20px; /* Positioned at the top left */
+    }
+
+    .toggle-button.right {
+      right: 20px; /* Positioned at the top right */
+    }
+
+    .toggle-button:hover {
+      background-color: #555;
+    }
+
+    /* Style for links */
+    a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .content-container {
+      text-align: left;
+      margin-top: 100px;
+      margin-left: 20px;
+      margin-right: auto;
+      max-width: auto;
+    }
+
+    .weapons-heading {
+      margin-top: 0;
+    }
+
+    /* Remove default padding and margin for nested lists */
+    ul ul {
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+</head>
+<body>
+<button class="toggle-button left" onclick="toggleDarkMode()">Toggle Dark Mode</button> <!-- Positioned at the top left -->
+
+<h2 class="weapons-heading" style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%);">Die Maschine Guide</h2>
+
+<button class="toggle-button right" onclick="toggleDarkMode()">Toggle Dark Mode</button> <!-- Positioned at the top right -->
+
+<div class="content-container">
+  <h2>Weapons</h2>
+  <ul>
+    <li><a href="#die_shockwave">D.I.E. Shockwave</a></li>
+    <ul>
+      <li><a href="#die_upgrades">Nova-5</a></li>
+      <li><a href="#die_upgrades">Cryo-Emitter</a></li>
+      <li><a href="#die_upgrades">Elecrobolt</a></li>
+      <li><a href="#die_upgrades">Thermophasic</a></li>
+    </ul>
+  </ul>
+
+  <h2>Easter Eggs</h2>
+  <ul>
+    <li>Main Easter Egg (Seal the Deal)</li>
+    <li>'Alone' Song</li>
+    <li>Coffin Dance (Free Jug)</li>
+    <li>Free Legendary Weapon</li>
+    <li>Free Scorestreak</li>
+    <li>Free 1,500 Essence</li>
+    <li>Orda Out of Map</li>
+  </ul>
+</div>
+
+<div class="content-container" id="die_shockwave">
+  <h3>D.I.E. Shockwave</h3>
+  <p>The D.I.E. Shockwave is available through the mystery box, completion of challenges, and via the following quest:</p>
+  <ol>
+    <li>Kill a Megaton and Pick Up the Keycard.</li>
+    <li>Go to the Weapons Lab (Deadshot Room) and interact with the Weapon Locker and Pick Up the D.I.E. Remote Control.</li>
+    <li>Go to the "Living Room" (Ground Floor of Nacht) and interact with this Broken Wall to activate the D.I.E. It will now suck up zombies through the door.</li>
+    <li>Once enough zombies are sucked up, interact with the wall again, and the D.I.E. will shoot the door off.</li>
+    <li>The D.I.E. is available for pickup.</li>
+  </ol>
+
+  <h3 id="die_upgrades">Upgrades</h3>
+  <h4><b>The D.I.E. is REQUIRED for all upgrades</b></h4>
+  <ul>
+    <li>Nova-5</li>
+    <ol>Obtain the D.I.E. </ol>
+    <li>Cryo-Emitter</li>
+    <li>Elecrobolt</li>
+    <li>Thermophasic</li>
+  </ul>
+</div>
+
+<script>
+  function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+  }
+
+  // Automatically run toggleDarkMode() when the site opens
+  // toggleDarkMode();
+</script>
+</body>
+</html>
