@@ -56,7 +56,7 @@ a:hover {
 
 .content-container {
     text-align: left;
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 20px;
     margin-right: auto;
     max-width: fit-content;
@@ -109,7 +109,7 @@ ul ul li {
 }
 
 .bottom-padding {
-    padding-bottom: 2000px; /* Adjust this value as needed */
+    padding-bottom: 500px; /* Adjust this value as needed */
 }
 
 .blue-box {
