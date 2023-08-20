@@ -26,8 +26,9 @@ function scrollToElement(elementId, offset) {
     }
 }
 
-// Event listener for anchor clicks inside .content-container
-document.querySelector('.content-container').addEventListener('click', function (event) {
+
+// Event listener for anchor clicks inside .content-container-top
+document.querySelector('.smooth-scroll').addEventListener('click', function (event) {
     if (event.target.tagName === 'A') {
         const href = event.target.getAttribute('href');
         if (href && href.startsWith('#')) {
@@ -41,4 +42,4 @@ document.querySelector('.content-container').addEventListener('click', function 
 
 
 // Automatically run toggleDarkMode() when the site opens
-// toggleDarkMode();
+toggleDarkMode();

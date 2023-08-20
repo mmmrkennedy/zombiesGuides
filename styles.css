@@ -54,6 +54,16 @@ a:hover {
     text-decoration: underline;
 }
 
+.content-container-top {
+    text-align: left;
+    margin-top: 100px;
+    margin-left: 20px;
+    margin-right: auto;
+    max-width: fit-content;
+    position: relative; /* Add a relative position for content-container */
+    z-index: 0; /* Lower z-index to place the content_container behind the blue box */
+}
+
 .content-container {
     text-align: left;
     margin-top: 50px;
@@ -61,7 +71,22 @@ a:hover {
     margin-right: auto;
     max-width: fit-content;
     position: relative; /* Add a relative position for content-container */
-    z-index: 0; /* Lower z-index to place the content_container behind the blue box */
+    z-index: 0; /* Lower z-index to place the content_container behind the blue box */;
+    inline-size: auto;
+    overflow-wrap: break-word;
+}
+
+.smooth-scroll {
+    ;
+}
+
+.step-content{
+    line-height: 1.35;
+}
+
+.step-set-title {
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .upgrades {
@@ -112,7 +137,7 @@ ul ul li {
     padding-bottom: 500px; /* Adjust this value as needed */
 }
 
-.blue-box {
+.top_buttons_background_box {
     position: fixed;
     top: 0;
     left: 0;
@@ -122,6 +147,6 @@ ul ul li {
     background-color: #f2f2f2; /* White color for the blue box in light mode */
 }
 
-.dark-mode .blue-box {
+.dark-mode .top_buttons_background_box {
     background-color: #1e1f22; /* #1e1f22 color for the blue box in dark mode */
 }
