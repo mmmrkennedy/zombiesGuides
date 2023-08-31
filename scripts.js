@@ -26,6 +26,20 @@ function scrollToElement(elementId, offset) {
     }
 }
 
+// Font Selector
+const fontSelector = document.getElementById('fontSelector');
+const smoothScroll = document.querySelector('.smooth-scroll');
+
+fontSelector.addEventListener('change', () => {
+    const selectedFont = fontSelector.value;
+
+    if (selectedFont === 'OpenDyslexic') {
+        smoothScroll.classList.add('open-dyslexic');
+    } else {
+        smoothScroll.classList.remove('open-dyslexic');
+    }
+});
+
 
 // Event listener for anchor clicks inside .content-container-top
 document.querySelector('.smooth-scroll').addEventListener('click', function (event) {
