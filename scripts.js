@@ -7,6 +7,11 @@ function navigateToIndex() {
     window.location.href = "../../../index.html";
 }
 
+function navigateToIndexToDoList() {
+    window.location.href = "../index.html";
+}
+
+
 function scrollToTop() {
     window.scrollTo({
         top: 0,
