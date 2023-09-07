@@ -1,37 +1,35 @@
 // Function to toggle dark mode by adding/removing the 'dark-mode' class from the <body> element
 function toggleDarkMode() {
     const body = document.body;
-    body.classList.toggle('dark-mode');
+    body.classList.toggle('light-mode');
 }
 
-// Function to navigate to the index.html file in a parent directory
-function navigateToIndex() {
-    window.location.href = "../../../index.html";
-}
+// Function to scroll smoothly to a specific HTML element by its ID with an offset
+function scrollToElement(elementId, offset) {
+    const element = document.getElementById(elementId);
 
-// Function to navigate to the index.html file in a sibling directory
-function navigateToIndexToDoList() {
-    window.location.href = "../index.html";
-}
+    if (element) {
+        const elementPosition = element.getBoundingClientRect().top;
+        const targetY = elementPosition + window.scrollY - offset;
 
-// Function to scroll smoothly to the top of the page
-function scrollToTop() {
-    const targetY = 0; // Scroll to the top of the page
-    const duration = 1000; // 1000 milliseconds (1 second) for the scroll animation
-    const start = window.scrollY;
-    const startTime = performance.now();
-
-    function scrollStep(currentTime) {
-        const currentTimeElapsed = currentTime - startTime;
-        if (currentTimeElapsed < duration) {
-            window.scrollTo(0, easeInOutCubic(currentTimeElapsed, start, targetY - start, duration));
-            requestAnimationFrame(scrollStep);
-        } else {
-            window.scrollTo(0, targetY);
-        }
+        window.scrollTo({
+            top: targetY,
+            behavior: 'smooth'
+        });
     }
+}
 
-    requestAnimationFrame(scrollStep);
+// Function to navigate to a specific URL
+function navigateToIndex() {
+    window.location.href = "/zombiesGuides/index.html";
+}
+
+// Function to scroll to the top of the page smoothly
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }
 
 // Font Selector functionality
@@ -73,41 +71,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-
-// Function to scroll smoothly to a specific HTML element by its ID with an offset
-function scrollToElement(elementId, offset) {
-    const element = document.getElementById(elementId);
-
-    if (element) {
-        const elementPosition = element.getBoundingClientRect().top;
-        const targetY = elementPosition + window.scrollY - offset;
-
-        const duration = 500; // 500 milliseconds (0.5 second) for a faster scroll
-        const start = window.scrollY;
-        const startTime = performance.now();
-
-        function scrollStep(currentTime) {
-            const currentTimeElapsed = currentTime - startTime;
-            if (currentTimeElapsed < duration) {
-                window.scrollTo(0, easeInOutCubic(currentTimeElapsed, start, targetY - start, duration));
-                requestAnimationFrame(scrollStep);
-            } else {
-                window.scrollTo(0, targetY);
-            }
-        }
-
-        requestAnimationFrame(scrollStep);
-    }
-}
-
-// Easing function for faster scrolling (you can adjust this if needed)
-function easeInOutCubic(t, b, c, d) {
-    t /= d / 2;
-    if (t < 1) return c / 2 * t * t * t + b;
-    t -= 2;
-    return c / 2 * (t * t * t + 2) + b;
-}
-
-
-// Automatically enable dark mode when the site opens
-toggleDarkMode();
