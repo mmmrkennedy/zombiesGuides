@@ -94,9 +94,11 @@ a:hover {
     line-height: 1.35;
 }
 
-.step-set-title {
-    margin-top: 15px;
+p.step-set-title {
+    margin-top: 13px;
     margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 105%;
 }
 
 .upgrades {
