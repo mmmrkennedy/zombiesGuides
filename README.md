@@ -9,11 +9,16 @@ Finished:
 - Die Maschine
 - Firebase Z
 
-In Progress:
+In Progress (Pictures Required):
 - Outbreak
 
+In Progress (Text Required):
+- Mauer der Toten
+
 Planned:
-- Mauer Der Toten
 - Forsaken
-- All the other games too :(
+- Der Anfang
+- Terra Maledicta
+- Shi No Numa (VG)
+- The Archon
 
