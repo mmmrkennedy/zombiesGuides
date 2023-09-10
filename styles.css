@@ -16,9 +16,9 @@ body {
     color: #000; /* Light text color */
 }
 
+/* Button in the Corners */
 .toggle-button {
     position: fixed;
-    top: 20px;
     padding: 10px 20px;
     font-size: 18px;
     cursor: pointer;
@@ -31,11 +31,23 @@ body {
     z-index: 2;
 }
 
-.toggle-button.left {
+.toggle-button.top-left {
+    top: 20px;
     left: 20px;
 }
 
-.toggle-button.right {
+.toggle-button.top-right {
+    top: 20px;
+    right: 20px;
+}
+
+.toggle-button.bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.toggle-button.bottom-right {
+    bottom: 20px;
     right: 20px;
 }
 
@@ -51,6 +63,11 @@ body {
 a {
     color: #6185e8;
     text-decoration: none;
+}
+
+a.link-to-page {
+    color: #6185ff;
+    text-decoration: underline;
 }
 
 .in-line-p {

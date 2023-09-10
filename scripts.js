@@ -1,5 +1,5 @@
 // Function to toggle dark mode by adding/removing the 'dark-mode' class from the <body> element
-function toggleDarkMode() {
+function toggleLightMode() {
     const body = document.body;
     body.classList.toggle('light-mode');
 }
