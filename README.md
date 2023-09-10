@@ -6,15 +6,15 @@ The plan is to also include solvers for steps that require them (such as IW's At
 
 Note: I have very limited HTML and CSS knowledge, so the site may look a bit rough around the edges. I'm basically teaching my self as I go along.
 
+
+## Roadmap
 Finished:
-- Die Maschine
-- Firebase Z
+- Die Maschine (Side Quest's pictures needed)
+- Firebase Z (Side Quest's pictures need to be added)
+- Outbreak (All Pictures needed)
+- Mauer der Toten (Few Pictures needed)
 
-In Progress (Pictures Required):
-- Outbreak
-- Mauer der Toten
-
-In Progress (Text Required):
+Next:
 - Forsaken
 
 Planned:
@@ -22,6 +22,7 @@ Planned:
 - Terra Maledicta
 - Shi No Numa (VG)
 - The Archon
+- IX
 
 If you have any suggestions or feedback, or you'd even like to contribute, please let me know!
 
