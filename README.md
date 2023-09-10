@@ -12,12 +12,12 @@ Finished:
 
 In Progress (Pictures Required):
 - Outbreak
-
-In Progress (Text Required):
 - Mauer der Toten
 
-Planned:
+In Progress (Text Required):
 - Forsaken
+
+Planned:
 - Der Anfang
 - Terra Maledicta
 - Shi No Numa (VG)
