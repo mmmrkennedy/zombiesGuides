@@ -12,7 +12,7 @@ Finished:
 - Die Maschine (Side Quest's pictures needed)
 - Firebase Z (Side Quest's pictures needed)
 - Outbreak (All Pictures needed)
-- Mauer der Toten (Few Pictures needed)
+- Mauer der Toten
 
 Next:
 - Forsaken
