@@ -2,7 +2,6 @@
 
 https://mmmrkennedy.github.io/zombiesGuides/
 
-
 The goal of this site is to archive and compile accurate and up-to-date information on all COD: Zombies Easter Egg.
 The guides don't contain video tutorials (as of right now), but rather text and image based guides.
 
@@ -13,7 +12,6 @@ Note: I have very limited HTML and CSS knowledge, so the site may look a bit rou
 
 ## Roadmap
 Text Finished:
-- Firebase Z (Side Quest's pictures needed)
 - Outbreak (All Pictures needed)
 
 Next:
@@ -21,6 +19,7 @@ Next:
 
 Completely Finished:
 - Die Maschine
+- Firebase Z
 - Mauer der Toten
 
 Planned:
