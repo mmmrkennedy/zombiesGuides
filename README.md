@@ -8,11 +8,13 @@ Note: I have very limited HTML and CSS knowledge, so the site may look a bit rou
 
 
 ## Roadmap
-Finished:
+Completely Finished:
+- Mauer der Toten
+
+Text Finished:
 - Die Maschine (Side Quest's pictures needed)
 - Firebase Z (Side Quest's pictures needed)
 - Outbreak (All Pictures needed)
-- Mauer der Toten
 
 Next:
 - Forsaken
