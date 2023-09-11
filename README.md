@@ -15,19 +15,20 @@ Text Finished:
 - Outbreak (All Pictures needed)
 
 Next:
-- Forsaken
+- Der Anfang
 
 Completely Finished:
 - Die Maschine
 - Firebase Z
 - Mauer der Toten
+- Forsaken
 
 Planned:
-- Der Anfang
 - Terra Maledicta
 - Shi No Numa (VG)
 - The Archon
 - IX
+- Voyage of Dispair
 
 If you have any suggestions or feedback, or you'd even like to contribute, please let me know!
 
