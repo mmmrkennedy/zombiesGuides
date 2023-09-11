@@ -22,13 +22,13 @@ body {
 .toggle-button {
     position: fixed;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
     border: none;
     background-color: #333;
     color: #fff;
     border-radius: 5px;
-    opacity: 0.3;
+    opacity: 0.2;
     transition: opacity 0.3s ease;
     z-index: 2;
 }
@@ -50,6 +50,11 @@ body {
 
 .toggle-button.bottom-right {
     bottom: 20px;
+    right: 20px;
+}
+
+.toggle-button.index-bottom-right {
+    bottom: 70px;
     right: 20px;
 }
 
@@ -128,6 +133,14 @@ a.link-to-page {
 
 a:hover {
     text-decoration: underline;
+}
+
+.title_text{
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
 }
 
 .bottom-padding {
