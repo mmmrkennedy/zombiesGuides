@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHANGE ME</title>
+    <!-- Browser Tab Title -->
+    <title>Terra Maledicta</title>
     <link rel="stylesheet" href="../../../styles.css">
+    <base target="_blank">
 </head>
 
 <body>
-<button class="toggle-button left" onclick="navigateToIndex()">Back</button>
-<h2 class="title_text">CHANGE ME</h2>
-<button class="toggle-button right" onclick="toggleLightMode()">Toggle Dark Mode</button>
-<button class="toggle-button bottom-right" onclick="scrollToTop()">Back to Top</button>
+<!-- Your HTML content for mobile devices goes here -->
+<div id="mobileContent">
+    <button class="toggle-button top-left" onclick="navigateToIndex()"><-</button>
+    <button class="toggle-button top-right" onclick="toggleLightMode()">Dark</button>
+    <button class="toggle-button bottom-right" onclick="scrollToTop()">^</button>
+</div>
+
+<!-- Your HTML content for non-mobile devices goes here -->
+<div id="nonMobileContent">
+    <button class="toggle-button top-left" onclick="navigateToIndex()">Back</button>
+    <button class="toggle-button top-right" onclick="toggleLightMode()">Toggle Dark Mode</button>
+    <button class="toggle-button bottom-right" onclick="scrollToTop()">Back to Top</button>
+</div>
+
+<h2 class="title_text">Terra Maledicta Guide</h2>
 <div class="top_buttons_background_box"></div>
 
 <div class="smooth-scroll">
@@ -23,35 +36,146 @@
             <option value="OpenDyslexic">OpenDyslexic</option>
         </select>
 
+        <!-- https://www.reddit.com/r/CODZombies/comments/ssdykh/terra_maledicta_quest_hunt_general_map_discussion/ -->
+
         <h2>Weapons</h2>
         <ul>
-            <li><a href="#wonderweapons">Wonder Weapons</a></li>
+            <li><a href="#decimator_shield">Decimator Shield</a></li>
         </ul>
 
         <h2>Easter Eggs</h2>
         <ul>
-            <li><a href="#CHANGE ME">CHANGE ME</a></li>
+            <li><a href="#main_ee">Main Easter Egg Quest</a></li>
+            <li><a href="#deathmachine">Free Ray Gun and/or Deathmachine Scorestreak</a></li>
+            <li><a href="#antenna">Antenna Quest (Random Weapon)</a></li>
+            <li><a href="#free_heart">Purple Corrupted Heart (Free Heart)</a></li>
+            <li><a href="#free_points">Red Orb (Free Points)</a></li>
+        </ul>
+
+        <h2>Misc.</h2>
+        <ul>
+            <li><a href="#dig_spots">Dig Spots/Shovel Locations</a></li>
         </ul>
     </div>
 
     <!-- Wonder Weapons -->
-    <div class="content-container" id="wonderweapons">
-        <h3>CHANGE ME</h3>
-        <p>CHANGE ME</p>
+    <div class="content-container" id="decimator_shield">
+        <h2>Decimator Shield</h2>
+        <p>The Decimator Shield cannot be Pack-A-Punched and is only available via the following quest:</p>
+        <ol>
+            <li>Open <a href="pictures/decimator_shield/merhcantroad_portal.png">Merchant Road</a> by completing a Portal Objective.</li>
+            <li>Walk up to where the <a href="pictures/decimator_shield/shield.png">Decimator Shield</a> is being held in Merchant Road to start a conversation with the Shield. <b>Note: The player can start a Portal Objective as soon as the conversation starts if they don't care to listen to it.</b></li>
+            <li>Open <a href="pictures/decimator_shield/eastspring_portal.png">East Spring</a> by completing a Portal Objective.</li>
+            <li>Interact with the <a href="pictures/decimator_shield/speedcola_runestone.png">rune stone</a> near Demonic Frenzy (Speed Cola) at the <a href="pictures/decimator_shield/tents.png">Tents</a> in the East Spring Area.</li>
+            <li>Wait for the conversation to finish and enter the <a href="pictures/decimator_shield/speedcola_portal.png">Portal</a> that spawns behind the rune stone. <b>Note: The conversation takes a full two minutes to finish.</b></li>
+            <li>Complete the Augmentor objective.</li>
+            <li>After returning to the Eastern Desert, shoot and destroy four crystals located around the spawn area.</li>
+            <ul>
+                <li><a href="pictures/decimator_shield/eastspring_crystal.png">East Spring</a></li>
+                <li><a href="pictures/decimator_shield/westspring_crystal.png">West Spring</a></li>
+                <li><a href="pictures/decimator_shield/spawn_crystal.png">Temple (Above Spawn)</a></li>
+                <li><a href="pictures/decimator_shield/shield_crystal.png">Temple (Behind the Altar of Covenants, on the other side of the wall)</a></li>
+            </ul>
+            <li>Return to the Shield to start another conversation. <b>Note: The player can start a Portal Objective as soon as the conversation starts if they don't care to listen to it.</b></li>
+            <li>Open <a href="pictures/decimator_shield/westspring_portal.png">West Spring</a> by completing a Portal Objective.</li>
+            <li>Interact with the <a href="pictures/decimator_shield/deadshot_runestone.png">rune stone</a> at Bazaar (Below Diabolical Damage/Deadshot) in the West Spring Area.</li>
+            <li>Wait for the conversation to finish and enter the <a href="pictures/decimator_shield/deadshot_portal.png">Portal</a> that spawns beside the rune stone. <b>Note: This conversation takes about 1 Min and 30 Secs to finish.</b></li>
+            <li>Complete the Sacrifice objective.</li>
+            <li>After returning to the Eastern Desert, go back to the Shield and wait for it to break its way out and fall to the floor, allowing the player to pick it up.</li>
+        </ol>
     </div>
 
     <!-- Main Easter Egg -->
-    <div class="content-container" id="main_quest_ravenov">
-        <h3>CHANGE ME</h3>
-        <p><i><b>Stats (Solo): Difficulty - CHANGE ME, Est Completion Time - CHANGE ME, RNG Rating - CHANGE ME</b></i></p>
+    <div class="content-container" id="main_ee">
+        <h2>Main Easter Egg Quest</h2>
+        <p><i><b>Stats (Solo): Difficulty - 2/10, Est Completion Time - 25 to 40 Mins, RNG Rating - 0/5</b></i></p>
         <ol class="step-content">
             <p class="step-group-title">CHANGE ME</p>
-            <li>CHANGE ME</li>
-            <li>CHANGE ME</li>
+            <li><a href="#decimator_shield" class="link-to-page">Obtain the Decimator Shield</a></li>
+            <li>Open <a href="pictures/main_ee/debrisfield_portal.png">Debris Field</a> by completing a Portal Objective.</li>
+            <li>Navigate to the Debris Field area and interact with the <a href="pictures/main_ee/debrisfield_runestone.png">rune stone</a> near Venomous Vigor (Quick Revive). <b>Note: This conversation takes <i>only</i> about one minute to finish.</b></li>
+            <li>Enter the <a href="pictures/main_ee/voidportal.png">Void Portal</a> near the rune stone.</li>
+            <li>While in the Void objective area, using the Decimator Shield's special ability (Slam), destroy four arms attached to various walls. The player can easily locate these arms by following the energy beams going from the <a href="pictures/main_ee/tomepage_inair.png">Tome Page</a> to each of the arms.</li>
             <ul>
-                <li><a href="pictures" target="_blank">CHANGE ME</a> (<a href="pictures/operationee/" target="_blank">Location on Map</a>)</li>
-                <li><a href="pictures" target="_blank">CHANGE ME</a> (<a href="pictures/operationee/" target="_blank">Location on Map</a>)</li>
+                <li><a href="pictures/main_ee/arm_heights.png">Stygian Heights</a></li>
+                <li><a href="pictures/main_ee/arm_homesoil.png">Vercanna's Home Soil</a></li>
+                <li><a href="pictures/main_ee/arm_shatteredland.png">The Shattered Land</a></li>
+                <li><a href="pictures/main_ee/arm_isleofblight.png">Isle of Blight</a></li>
             </ul>
+            <li>Once all four arms are destroyed, pick up the <a href="pictures/main_ee/tomepage_onground.png">Tome Page</a> and interact with the portal to the right of the Tome Page.</li>
+            <li>Upon returning to the Eastern Desert, the player will be given 10,000 points and be presented with various loot items and four loot chests. This will unlock the Void portal for the remainder of the current match.</li>
+        </ol>
+    </div>
+
+    <!-- Dig Spots -->
+    <div class="content-container" id="dig_spots">
+        <h2>Dig Spots</h2>
+        <p>Similar to Origins (BO2 & BO3), there are Dig Spots around the map that contain various items like loot, weapons, etc.</p>
+        <ul>
+            <li>The shovel can be picked up from one of the following locations: </li>
+            <ul>
+                <li><a href="pictures/dig_spots/debrisfield_shovel.png">Debris Field</a></li>
+                <li><n href="pictures/dig_spots/">Market Storage</n></li>
+                <li><n href="pictures/dig_spots/">Outpost Courtyard</n></li>
+                <li><n href="pictures/dig_spots/">Tents</n></li>
+                <li><n href="pictures/dig_spots/">Derailment</n></li>
+            </ul>
+            <li>The dig spots also contain three items required to start the three side quests on the map:</li>
+            <ul>
+                <li><a href="#deathmachine" class="link-to-page">Free Ray Gun and/or Deathmachine Scorestreak</a></li>
+                <li><a href="#antenna" class="link-to-page">Antenna Quest (Random Weapon)</a></li>
+                <li><a href="#free_heart" class="link-to-page">Purple Corrupted Heart (Free Heart)</a></li>
+            </ul>
+        </ul>
+    </div>
+
+    <!-- Free Deathmachine -->
+    <div class="content-container" id="deathmachine">
+        <h2>Free Ray Gun and/or Deathmachine Scorestreak</h2>
+        <ol>
+            <li>Optional: To also get a Free Ray Gun, keep digging until it <a href="pictures/deathmachine/corruptedraygun.png">appears from one of the dig spots</a>.</li>
+            <li>Dig four <a href="pictures/deathmachine/losttomepage_digspot.png">Lost Tome pages</a> from the <a href="#dig_spots" class="link-to-page">Dig Spots</a> throughout the Eastern Desert.</li>
+            <li>Place Lost Tome pages on the <a href="pictures/deathmachine/magicalbarrier.png">Magical Barrier</a> blocking the Deathmachine room in the Outpost Courtyard.</li>
+            <li>The Lost Tome pages must be placed in a specific order between 4 positions (Top, Bottom, Left, Right). If the first page disappeared when placed, it means it wasn't the correct position, and it should be placed elsewhere. Any page placed on the wrong location will reset the entire puzzle.</li>
+            <li>Once all the pages are placed, the spell will fade and the Deathmachine will become available as a reward.</li>
+            <li>If the Ray Gun was dug up prior to opening the room, it will become available as a reward alongside the Deathmachine. </li>
+        </ol>
+    </div>
+
+    <!-- Antenna Quest -->
+    <div class="content-container" id="antenna">
+        <h2>Antenna Quest (Random Weapon)</h2>
+        <ol>
+            <li>Dig up the radio antenna from one of the <a href="#dig_spots" class="link-to-page">Dig Spots</a>.</li>
+            <li>Place the antenna on the <a href="pictures/antenna/armouredcar_radio.png">radio</a> next to the <a href="pictures/antenna/armouredcar.png">armoured car at Merchant Road</a>. This will spawn Boom-Schreiers.</li>
+            <li>Interact with the <a href="pictures/antenna/deadshot_radio.png">radio</a> in the same room as <a href="pictures/antenna/deadshot.png">Diabolical Damage (Deadshot) at Bazaar</a>. This will spawn Boom-Schreiers.</li>
+            <li>Interact with the <a href="pictures/antenna/revive_radio.png">radio</a> next to <a href="pictures/antenna/revive.png">Venomous Vigor (Quick Revive)</a>. This will spawn Boom-Schreiers.</li>
+            <li>Interact with the <a href="pictures/antenna/marketstorage_radio.png">radio</a> inside the <a href="pictures/antenna/marketstorage.png">Market Storage (building near Deadshot)</a>. This will spawn Sturmkriegers.</li>
+            <li>When the last Sturmkrieger is killed, it will drop a chest which contains a random weapon as reward. </li>
+        </ol>
+    </div>
+
+    <!-- Song EE -->
+    <div class="content-container" id="free_heart">
+        <h2>Purple Corrupted Heart (Free Heart)</h2>
+        <ol>
+            <li>Dig up the <a href="pictures/free_heart/corruptedheart.png">corrupted heart (purple orb)</a> from one of the <a href="#dig_spots" class="link-to-page">Dig Spots</a>.</li>
+            <li>While holding the Heart, the player's health will be halved.</li>
+            <li>Place the corrupted heart at one of the <a href="pictures/free_heart/specialdigstop.png">highlighted dig spots</a>.</li>
+            <li>Upon placing the Heart at one of the special dig spots, a Corrupted Heart will be rewarded to be used at the Altar of Covenants or Tome of Rituals.</li>
+            <li>The player can pick up the Heart again from where they placed it, however, there is nothing else to do with the Heart (that we know of).</li>
+        </ol>
+    </div>
+
+    <!-- Free Points -->
+    <div class="content-container" id="free_points">
+        <h2>Free Points</h2>
+        <ol>
+            <li>Dig up the <a href="pictures/free_points/pointsorb.png">Red Orb</a> from one of the <a href="#dig_spots" class="link-to-page">Dig Spots</a>.</li>
+            <li>The Orb will go flying to somewhere random, chase it to where it stops.</li>
+            <li>Shoot the orb until it falls to the ground.</li>
+            <li>Interact with the Orb to be awarded with 5000 Points.</li>
+            <li>This can be repeated by digging up other Orbs.</li>
         </ol>
     </div>
 </div>

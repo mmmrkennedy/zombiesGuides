@@ -3,15 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser Tab Title -->
     <title>CHANGE ME</title>
     <link rel="stylesheet" href="../../../styles.css">
+    <base target="_blank">
 </head>
 
 <body>
-<button class="toggle-button left" onclick="navigateToIndex()">Back</button>
+<!-- Your HTML content for mobile devices goes here -->
+<div id="mobileContent">
+    <button class="toggle-button top-left" onclick="navigateToIndex()"><-</button>
+    <button class="toggle-button top-right" onclick="toggleLightMode()">Dark</button>
+    <button class="toggle-button bottom-right" onclick="scrollToTop()">^</button>
+</div>
+
+<!-- Your HTML content for non-mobile devices goes here -->
+<div id="nonMobileContent">
+    <button class="toggle-button top-left" onclick="navigateToIndex()">Back</button>
+    <button class="toggle-button top-right" onclick="toggleLightMode()">Toggle Dark Mode</button>
+    <button class="toggle-button bottom-right" onclick="scrollToTop()">Back to Top</button>
+</div>
+
 <h2 class="title_text">CHANGE ME</h2>
-<button class="toggle-button right" onclick="toggleLightMode()">Toggle Dark Mode</button>
-<button class="toggle-button bottom-right" onclick="scrollToTop()">Back to Top</button>
 <div class="top_buttons_background_box"></div>
 
 <div class="smooth-scroll">
@@ -22,6 +35,8 @@
             <option value="Arial">Arial (Default)</option>
             <option value="OpenDyslexic">OpenDyslexic</option>
         </select>
+
+        <!-- https://www.reddit.com/r/CODZombies/comments/wwkdcq/the_archon_quest_hunt_general_map_discussion/ -->
 
         <h2>Weapons</h2>
         <ul>
