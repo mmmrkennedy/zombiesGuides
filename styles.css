@@ -121,6 +121,7 @@ li {
     margin-bottom: 5px;
 }
 
+
 a.link-to-page {
     color: #4971ff;
     text-decoration: underline;
@@ -184,3 +185,13 @@ a:hover {
 .smooth-scroll.open-dyslexic {
     font-family: 'OpenDyslexic', sans-serif;
 }
+
+#popup-image {
+    position: absolute;
+    display: none;
+    padding: 5px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
+    z-index: 9999;
+}
+
+
