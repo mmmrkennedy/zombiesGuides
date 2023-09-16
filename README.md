@@ -15,19 +15,18 @@ Text Finished:
 - Outbreak (All Pictures needed)
 
 Next:
-- The Archon
+- IX
 
 Completely Finished:
 - All Of CW (Except Outbreak Pictures)
-- Terra Maledicta
-- Shi No Numa (VG)
+- All Of VG
 
 Planned:
-- IX
 - Voyage of Despair
 - Blood of the Dead
 - Classified
 - Dead of The Night
+- Ancient Evil
 
 If you have any suggestions or feedback, or you'd even like to contribute, please let me know!
 
