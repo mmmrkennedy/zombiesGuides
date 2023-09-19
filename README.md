@@ -15,18 +15,19 @@ Text Finished:
 - Outbreak (All Pictures needed)
 
 Next:
-- IX
+- Voyage of Despair
 
 Completely Finished:
 - All Of CW (Except Outbreak Pictures)
 - All Of VG
+- IX
 
 Planned:
-- Voyage of Despair
 - Blood of the Dead
 - Classified
 - Dead of The Night
 - Ancient Evil
+- Alpha Omega
 
 If you have any suggestions or feedback, or you'd even like to contribute, please let me know!
 

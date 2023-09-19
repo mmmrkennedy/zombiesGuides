@@ -141,8 +141,8 @@ p.li-spacing {
 li {
     margin-top: 2px;
     margin-bottom: 5px;
+    line-height: 1.5;
 }
-
 
 .in-line-p {
     margin-top: 10px;
