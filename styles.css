@@ -15,7 +15,7 @@ body {
 }
 
 .light-mode a.link-to-page {
-    color: #8d229d;
+    color: #9d2268;
     text-decoration: underline;
     font-style: italic;
 }
@@ -32,7 +32,7 @@ a {
 }
 
 a.link-to-page {
-    color: #5effe1;
+    color: #52d7bb;
     text-decoration: underline;
     font-style: italic;
 }
@@ -229,5 +229,13 @@ th, td {
     text-align: left;
     border-bottom: 1px solid #ddd;
     border-left: 1px solid #ddd;
+}
+
+
+.light-mode th, .light-mode td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #000;
+    border-left: 1px solid #000;
 }
 
