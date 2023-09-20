@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <title>Settings</title>
+</head>
+<body>
+
+<h1>Settings</h1>
+
+<br><br>
+
+<label for="colourMode">Default Theme: </label>
+<select id="colourMode">
+    <option value="dark">Dark</option>
+    <option value="light">Light</option>
+</select>
+
+<br><br>
+
+<label for="preload">Preload Images (Instead of loading on request): </label>
+<input type="checkbox" id="preload">
+
+<br><br>
+
+<label for="preloadvideo">Attempt to preload Videos (Doesn't really work): </label>
+<input type="checkbox" id="preloadvideo">
+
+<br><br>
+
+<button>Save</button>
+
+<br><br>
+
+<p id="saveSettingsText"></p>
+
+<script src="settings.js"></script>
+</body>
+</html>

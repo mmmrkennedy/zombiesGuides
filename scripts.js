@@ -1,15 +1,74 @@
-// Function to toggle dark mode by adding/removing the 'dark-mode' class from the <body> element
 function toggleLightMode() {
     const body = document.body;
     body.classList.toggle('light-mode');
 }
 
-// Function to navigate to a specific URL
+document.addEventListener('DOMContentLoaded', function() {
+    if(localStorage.getItem('preload') === 'true') {
+        // Select all anchor tags with href attributes ending with common image types
+        const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
+        const anchors = [];
+
+        imageExtensions.forEach(ext => {
+            const foundAnchors = document.querySelectorAll(`a[href$="${ext}"]`);
+            anchors.push(...foundAnchors);
+        });
+
+        anchors.forEach(anchor => {
+            const image = new Image();
+            image.src = anchor.href;
+        });
+    }
+});
+
+window.addEventListener('storage', function(event) {
+    if (event.key === 'preload' || event.key === 'colorMode' || event.key === 'preloadvideo') {
+        location.reload();  // Reload the current page
+    }
+});
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    if(localStorage.getItem('preloadvideo') === 'true') {
+        // Select all anchor tags with href attributes ending with ".mp4"
+        const videoAnchors = document.querySelectorAll('a[href$=".mp4"]');
+
+        videoAnchors.forEach(anchor => {
+            // Create a video element and source element to trigger the preload
+            const video = document.createElement('video');
+            video.preload = "auto";  // Hint the browser to preload the entire video
+            const source = document.createElement('source');
+
+            source.src = anchor.href;
+            source.type = 'video/mp4';
+
+            video.appendChild(source);
+
+            // Optional: Append the video to the body if you want it to be visible
+            //document.body.appendChild(video);
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const savedColorMode = localStorage.getItem('colorMode');
+    if(savedColorMode === 'light') {
+        document.body.classList.add('light-mode');
+    } else {
+        document.body.classList.remove('light-mode');
+    }
+});
+
 function navigateToIndex() {
     window.location.href = "/zombiesGuides/index.html";
 }
 
-// Function to scroll to the top of the page smoothly
+function navigateToSettings() {
+    window.open("/zombiesGuides/settings/settings.html", "_blank");
+}
+
+
 function scrollToTop() {
     window.scrollTo({
         top: 0,
@@ -134,6 +193,7 @@ window.addEventListener('popstate', function(event) {
         window.location.hash = event.state.hash;
     }
 });
+
 
 
 
