@@ -57,3 +57,10 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.classList.remove('light-mode');
     }
 });
+
+window.addEventListener('storage', function(event) {
+    if (event.key === 'preload' || event.key === 'colorMode' || event.key === 'preloadvideo') {
+        console.log('Storage event detected!')
+        location.reload();  // Reload the current page
+    }
+});

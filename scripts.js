@@ -22,11 +22,42 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 window.addEventListener('storage', function(event) {
-    if (event.key === 'preload' || event.key === 'colorMode' || event.key === 'preloadvideo') {
-        location.reload();  // Reload the current page
+    if (event.key === 'preload') {
+        if(localStorage.getItem("preload") === 'true') {
+            window.location.reload();
+        } else {
+            // pass
+        }
+    } else if (event.key === 'colourMode' ){
+        changeThemeColour();
+    } else if (event.key === 'preloadvideo'){
+        if(localStorage.getItem("preloadvideo") === 'true') {
+            // pass
+        } else {
+            // pass
+        }
+
+    } else {
+        console.log("Unknown Storage Event");
+        console.log(event.key);
+        console.log(event)
     }
+
 });
 
+
+document.addEventListener('DOMContentLoaded', function() {
+    changeThemeColour();
+});
+
+function changeThemeColour(){
+    const savedColorMode = localStorage.getItem('colourMode');
+    if(savedColorMode === 'light') {
+        document.body.classList.add('light-mode');
+    } else {
+        document.body.classList.remove('light-mode');
+    }
+}
 
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -48,15 +79,6 @@ document.addEventListener('DOMContentLoaded', function() {
             // Optional: Append the video to the body if you want it to be visible
             //document.body.appendChild(video);
         });
-    }
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    const savedColorMode = localStorage.getItem('colorMode');
-    if(savedColorMode === 'light') {
-        document.body.classList.add('light-mode');
-    } else {
-        document.body.classList.remove('light-mode');
     }
 });
 
