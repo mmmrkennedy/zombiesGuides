@@ -88,7 +88,6 @@ a.link-to-page {
 }
 
 
-
 /* Overall Content Formating */
 .content-container-top,
 .content-container {
@@ -112,16 +111,26 @@ a.link-to-page {
     line-height: 1.35;
 }
 
-p.step-group-title, p.upgrade-title {
+p.step-group-title, p.upgrade-title, p.warning, p.archon-special {
     margin-top: 13px;
     margin-bottom: 10px;
     margin-right: 0;
     font-weight: bold;
-    font-size: 105%;
+    font-size: 110%;
 }
 
 p.upgrade-title {
     font-size: 21px;
+}
+
+p.warning {
+    font-size: 100%;
+}
+
+p.archon-special {
+    margin-top: 17px;
+    margin-bottom: 17px;
+    font-size: 115%;
 }
 
 
@@ -130,6 +139,24 @@ p.li-spacing {
     margin-right: 0;
     margin-bottom: 7px;
     margin-left: 0;
+}
+
+p.weapon-desc {
+    margin-top: 7px;
+    margin-right: 0;
+    margin-bottom: 7px;
+    margin-left: 0;
+    font-weight: bold;
+}
+
+p.stats {
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2.sticky-header {
+    position: sticky;
+    top: 0;  /* At the top of the containing element */
 }
 
 
@@ -168,13 +195,12 @@ a:hover {
 }
 
 .bottom-padding {
-    padding-bottom: 600px;
+    padding-bottom: 575px;
 }
 
 h1.centered {
     text-align: center;
 }
-
 
 
 /* Top Buttons Background */

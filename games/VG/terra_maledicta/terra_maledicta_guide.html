@@ -14,7 +14,7 @@
 <!-- Your HTML content for mobile devices goes here -->
 <div id="mobileContent">
     <button class="toggle-button top-left" onclick="navigateToIndex()"><-</button>
-    <button class="toggle-button top-right" onclick="toggleLightMode()">Dark</button>
+    <button class="toggle-button top-right" onclick="navigateToSettings()">⚙️</button>
     <button class="toggle-button bottom-right" onclick="scrollToTop()">^</button>
 </div>
 
@@ -63,7 +63,7 @@ initHoverImage();
     <!-- Wonder Weapons -->
     <div class="content-container" id="decimator_shield">
         <h2>Decimator Shield</h2>
-        <p>The Decimator Shield cannot be Pack-A-Punched and is only available via the following quest:</p>
+        <p class="weapon-desc">The Decimator Shield cannot be Pack-a-Punch'd and is only available via the following quest:</p>
         <ol>
             <li>Open <a href="pictures/decimator_shield/merhcantroad_portal.png">Merchant Road</a> by completing a Portal Objective.</li>
             <li>Walk up to where the <a href="pictures/decimator_shield/shield.png">Decimator Shield</a> is being held in Merchant Road to start a conversation with the Shield. <b>Note: The player can start a Portal Objective as soon as the conversation starts if they don't care to listen to it.</b></li>
@@ -90,7 +90,7 @@ initHoverImage();
     <!-- Main Easter Egg -->
     <div class="content-container" id="main_ee">
         <h2>Main Easter Egg Quest</h2>
-        <p><i><b>Stats (Solo): Difficulty - 2/10, Est Completion Time - 25 to 40 Mins, RNG Rating - 0/5</b></i></p>
+        <p class="stats">Stats (Solo): Difficulty - 2/10, Est Completion Time - 25 to 40 Mins, RNG Rating - 0/5</p>
         <ol class="step-content">
             <li><a href="#decimator_shield" class="link-to-page">Obtain the Decimator Shield</a></li>
             <li>Open <a href="pictures/main_ee/debrisfield_portal.png">Debris Field</a> by completing a Portal Objective.</li>
@@ -120,7 +120,7 @@ initHoverImage();
                 <li><a href="pictures/dig_spots/outpost.png">Outpost Courtyard</a></li>
                 <li><a href="pictures/dig_spots/derailment.png">Derailment</a></li>
             </ul>
-            <li>The dig spots also contain three items required to start the three side quests on the map:</li>
+            <li>The dig spots also contain the items required to start the three side quests on the map:</li>
             <ul>
                 <li><a href="#deathmachine" class="link-to-page">Free Ray Gun and/or Deathmachine Scorestreak</a></li>
                 <li><a href="#antenna" class="link-to-page">Antenna Quest (Random Weapon)</a></li>

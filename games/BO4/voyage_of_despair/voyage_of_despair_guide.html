@@ -6,8 +6,7 @@
     <!-- Browser Tab Title -->
     <title>Voyage of Despair</title>
     <link rel="stylesheet" href="../../../styles.css">
-  <link rel="icon" type="image/x-icon" href="../../../favicon.ico">
-  <link rel="icon" type="image/x-icon" href="../../../favicon.ico">
+    <link rel="icon" type="image/x-icon" href="../../../favicon.ico">
     <base target="_blank">
 </head>
 
@@ -15,7 +14,7 @@
 <!-- Your HTML content for mobile devices goes here -->
 <div id="mobileContent">
     <button class="toggle-button top-left" onclick="navigateToIndex()"><-</button>
-    <button class="toggle-button top-right" onclick="toggleLightMode()">Dark</button>
+    <button class="toggle-button top-right" onclick="navigateToSettings()">⚙️</button>
     <button class="toggle-button bottom-right" onclick="scrollToTop()">^</button>
 </div>
 
@@ -62,6 +61,19 @@
         <h2>Easter Eggs</h2>
         <ul>
             <li><a href="#main_ee">'Abandon Ship' Main Quest</a></li>
+            <div id="substeps1">
+                <ol>
+                    <li><a href="#main_ee_step1">The Sentinel Artifact is yours for the Taking</a></li>
+                    <li><a href="#main_ee_step2">For the Elements are Four and Must be Attuned</a></li>
+                    <li><a href="#main_ee_step3">To Change the Agents of Change is to Change Everything</a></li>
+                    <li><a href="#main_ee_step4">Within the Chain of Phases all is Conceived</a></li>
+                    <li><a href="#main_ee_step5">Before the Flame your Hubris is Devoured</a></li>
+                    <li><a href="#main_ee_step6">When the Planets are Revealed, the Essence is Received</a></li>
+                    <li><a href="#main_ee_step7">Where Light Shines Not the Path Leads Inward</a></li>
+                    <li><a href="#main_ee_step8">Unto the Nest its Malice Unravels</a></li>
+                    <li><a href="#main_ee_step9">Behold the Eye of Malice and Despair (Boss Fight)</a></li>
+                </ol>
+            </div>
             <li><a href="#song_ee">'Drowning' Song</a></li>
             <li><a href="#freekraken_freehomunculus">Free Kraken and Homunculus</a></li>
             <li><a href="#lowgravity_zombies">Low-Gravity Zombies</a></li>
@@ -100,10 +112,10 @@
     <!-- Wonder Weapons -->
     <div class="content-container" id="kraken">
         <h2>Kraken</h2>
-        <p>The Kraken can be Pack-A-Punched and does not require an Easter Egg to do so, and there are also four <a href="#kraken_variant" class="link-to-page">Elemental Variants</a> for the Kraken.</p>
-        <p>The Kraken is available through the mystery box and via the following quest: </p>
+        <p class="weapon-desc">The Kraken can be Pack-a-Punch'd and does not require an Easter Egg to do so, and there are also four <a href="#kraken_variant" class="link-to-page">Elemental Variants</a> for the Kraken.</p>
+        <p class="weapon-desc">The Kraken is available through the mystery box and via the following quest: </p>
         <ol>
-            <li>Wait for a stoker to spawn starting around round 12.</li>
+            <li>Wait for a Stoker to spawn starting around round 12.</li>
             <li>Kill a Stoker by shooting its <a href="pictures/kraken/glowingspot.png">Glowing Spot</a>. The spot can be revealed by shooting off coal shielding on either Shoulder or the top of the Head. The location of the spot on the Stoker changes with each new Stoker.</li>
             <li>If done correctly, the Stoker should drop a key when killed. Pick up the Key.</li>
             <li>In one of the following locations, a <a href="pictures/kraken/chest_open.png">Chest</a> will spawn that can be opened with the key. The player must open then fill the chest by killing zombies near it. Once enough zombies have been killed, the chest will move to one of the other locations. The Chest needs to be filled three times.</li>
@@ -232,11 +244,138 @@
     <!-- Main Easter Egg -->
     <div class="content-container" id="main_ee">
         <h2>'Abandon Ship' Main Quest</h2>
-        <p><i><b>Stats (Solo): Difficulty - CHANGE ME, Est Completion Time - CHANGE ME, RNG Rating - CHANGE ME</b></i></p>
+        <p class="stats">Stats (Solo): Difficulty - CHANGE ME, Est Completion Time - CHANGE ME, RNG Rating - CHANGE ME</p>
         <ol class="step-content">
-            <p class="step-group-title">CHANGE ME</p>
-            <li>CHANGE ME</li>
-            <li>CHANGE ME</li>
+            <p class="step-group-title" id="main_ee_step1">The Sentinel Artifact is yours for the Taking</p>
+            <li>Activate the <a href="pictures/main_ee/sentinel_artifact.png">Sentinel Artifact</a></li>
+
+            <p class="step-group-title" id="main_ee_step2">For the Elements are Four and Must be Attuned</p>
+            <li>Activate <a href="#pap" class="link-to-page">Pack-a-Punch</a></li>
+
+            <p class="step-group-title" id="main_ee_step3">To Change the Agents of Change is to Change Everything</p>
+            <li>There are six clocks around the map, four of which will have a symbol nearby. Write down/remember the symbol and the time on the corresponding clock. <i>Example: Upward Triangle = 9:30</i>. Clock and Symbol locations: </li>
+            <ul>
+                <li>Mail Rooms</li>
+                <ul>
+                    <li>Clock: <a href="pictures/main_ee/clock_mailrooms.png">On the wall on the right side of the doorway leading down to the Cargo Hold</a></li>
+                    <li>Symbol: <a href="pictures/main_ee/symbol_mailrooms.png">Underneath the stairs leading up to the room with the Vapr-XKG wallbuy</a></li>
+                </ul>
+                <li>Bridge</li>
+                <ul>
+                    <li>Clock: <a href="pictures/main_ee/clock_bridge.png">Above the main steering wheel, opposite the Escargot Wallbuy</a></li>
+                    <li>Symbol: <a href="pictures/main_ee/symbol_bridge.png">On the inside wall of a desk in the same room as the clock</a></li>
+                </ul>
+                <li>Upper Grand Staircase</li>
+                <ul>
+                    <li>Clock: <a href="pictures/main_ee/clock_uppergrandstaircase.png">At the top of the Staircase</a></li>
+                    <li>Symbol: <a href="pictures/main_ee/symbol_uppergrandstaircase.png">Above the closed door to the left of the Spitfire Wallbuy</a></li>
+                </ul>
+                <li>1st Class Lounge</li>
+                <ul>
+                    <li>Clock: <a href="pictures/main_ee/clock_1stclasslounge.png">Above the fireplace, opposite the Zeus Statue</a></li>
+                    <li>Symbol: <a href="pictures/main_ee/symbol_1stclasslounge.png">To the left of the Mystery Box, Near the Plant</a></li>
+                </ul>
+                <li>Galley</li>
+                <ul>
+                    <li>Clock: <a href="pictures/main_ee/clock_1stclasslounge.png">On the Bowie Knife side, near the open window</a></li>
+                    <li>Symbol: <a href="pictures/main_ee/symbol_1stclasslounge.png">On a cabinet near the body hanging on the wall</a></li>
+                </ul>
+                <li>3rd Class Berths</li>
+                <ul>
+                    <li>Clock: <a href="pictures/main_ee/clock_3rdclassberths.png">To the right of the broken wall near the staircase</a></li>
+                    <li>Symbol: <a href="pictures/main_ee/symbol_3rdclassberths.png">Under the lowest flight of stairs, behind some luggage</a></li>
+                </ul>
+            </ul>
+            <li>Once all four symbols and times have been found, go to the 'Bridge' and find the four <a href="pictures/main_ee/dials.png">Dials</a>, each with one of the four <a href="pictures/main_ee/dials_clocksymbols.png">clock symbols</a> on it. Adjust the handle on the dials to match the minute hand of the respective clocks. The Dials move in 5-minute intervals.</li>
+            <li>On the upper walkway on the 'Poop Deck', where the Sentinel Artifact was, there will be <a href="pictures/main_ee/dials_poopdeck.png">two more dials</a>. These dials don't have the symbols drawn on them; instead, they always correspond to the same symbols. The one on the <a href="pictures/main_ee/dials_poopdeck_left.png">left is the upward triangle with the line through it</a>, and the one on the <a href="pictures/main_ee/dials_poopdeck_right.png">right is the downward triangle with the line through it</a>. Set these dial to the corresponding hour hands.</li>
+            <li>There are <a href="pictures/main_ee/dials_engineroom.png">two more dials</a> in the 'Engine Room' that need to be set to the hour hand. The one on the <a href="pictures/main_ee/dials_engineroom_left.png">left is the upward triangle</a>, and the <a href="pictures/main_ee/dials_engineroom_right.png">right is the downward triangle</a>.</li>
+            <li>The small arrow behind the big handles on the dials indicated how the corresponding dial is set. This can be used to easily tell which dial (if any) is set incorrectly.</li>
+            <li>If all dials were set correctly, a sound will play and the dials will no longer be able to be moved.</li>
+
+            <p class="step-group-title" id="main_ee_step4">Within the Chain of Phases all is Conceived</p>
+            <li>Locate the four electrical outlets around the map, each spewing a different element. <b>Write down/remember which outlet has which element, it will be important later.</b> There are six possible outlets but only four will be elemental. Outlet Locations:</li>
+            <ul>
+                <li><a href="pictures/main_ee/outlet_staterooms.png">State Rooms - Room behind Saug 9mm Wallbuy</a></li>
+                <li><a href="pictures/main_ee/outlet_uppergrandstaircase.png">Upper Grand Staircase - Near Spitfire Wallbuy</a></li>
+                <li><a href="pictures/main_ee/outlet_1stclasslounge.png">1st Class Lounge - Right of Mystery Box</a></li>
+                <li><a href="pictures/main_ee/outlet_dininghall.png">Dining Hall - Left of Ra Statue</a></li>
+                <li><a href="pictures/main_ee/outlet_aftdecks.png">Aft Decks - In the Zombie Spawn, Opposite the Mystery Box</a></li>
+                <li><a href="pictures/main_ee/outlet_3rdclassberths.png">3rd Class Berths - Near Maddox Wallbuy</a></li>
+            </ul>
+            <li>Kill an elemental Catalyst matching the outlet's element next to it. If done correctly, an <a href="pictures/main_ee/">orange ritual circle</a> will appear on the ground. Only one outlet can be "activated" per round, the player will need to go to the next round to do another. Killing the wrong Catalyst has no negative consequences.</li>
+            <li>Once all four elements have been "activated", activate the ritual circles in the following order: <b>Poison, Water, Electric, Fire</b>. All players must interact with the ritual circles to start the trial where all players will be teleported to a locked down part of the map where they must defeat all enemies.</li>
+            <li>Once all the enemies have been defeated, the screen will flash grey and the players must pick up the Sentinel Artifact to be teleported back to the normal map.</li>
+            <li>Repeat for the other three trials.</li>
+
+            <p class="step-group-title" id="main_ee_step5">Before the Flame your Hubris is Devoured</p>
+            <li>Obtain a Pack-a-Punch'd <a href="#kraken" class="link-to-page">Kraken</a> with the <a href="#kraken_variant" class="link-to-page">Poison Elemental Upgrade</a></li>
+            <li>Around the 'Turbine Room', nine pipes will be leaking which need to be shot with the Poison Kraken. Locations:</li>
+            <ul>
+                <li><a href="pictures/main_ee/">Location 1</a></li>
+                <li><a href="pictures/main_ee/">Location 2</a></li>
+                <li><a href="pictures/main_ee/">Location 3</a></li>
+                <li><a href="pictures/main_ee/">Location 4</a></li>
+                <li><a href="pictures/main_ee/">Location 5</a></li>
+                <li><a href="pictures/main_ee/">Location 6</a></li>
+                <li><a href="pictures/main_ee/">Location 7</a></li>
+                <li><a href="pictures/main_ee/">Location 8</a></li>
+                <li><a href="pictures/main_ee/">Location 9</a></li>
+            </ul>
+            <li>Once all leaky pipes have been shot, the 'Turbine Room' will flood.</li>
+            <li>Place the Sentinel Artifact in the Pack-a-Punch when it's in the 'Turbine Room'. It will teleport to the 'Turbine Room' the next round if it is not already there.</li>
+
+            <p class="step-group-title" id="main_ee_step6">When the Planets are Revealed, the Essence is Received</p>
+            <li>Interact with the following planetary symbols in any order to activate them. When activated, the symbol will glow. Locations:</li>
+            <ul>
+                <li><a href="pictures/main_ee/">Sun</a> - Forecastle</li>
+                <li><a href="pictures/main_ee/">Mercury</a> - Mail Rooms</li>
+                <li><a href="pictures/main_ee/">Venus</a> - Millionaire Suite</li>
+                <li><a href="pictures/main_ee/">Moon</a> - Lower Grand Staircase</li>
+                <li><a href="pictures/main_ee/">Mars</a> - Boiler Room</li>
+                <li><a href="pictures/main_ee/">Jupiter</a> - Engine Room</li>
+                <li><a href="pictures/main_ee/">Saturn</a> - Bridge</li>
+                <li><a href="pictures/main_ee/">Uranus</a> - State Rooms</li>
+                <li><a href="pictures/main_ee/">Neptune</a> - Aft Decks</li>
+            </ul>
+
+            <p class="step-group-title" id="main_ee_step7">Where Light Shines Not the Path Leads Inward</p>
+            <li>Interact with the <a href="pictures/main_ee/">solar system model</a> in the Cargo Hold. It will start flashing planets in a random order, which the player must remember. Zombies will also not stop spawning until step CHANGE ME is complete.</li>
+            <li>In the sky above the boat, all planets except the Moon (which is stationary) and Neptune (circling the boat in water) are visible orbiting the Sun. Shoot the planets in the order indicated by the model. After shooting a planet, a blue orb will drop from the sky, landing on the planet's symbol location where it must be collected quickly before it despawns.</li>
+            <ul>
+                <li>Sun - <a href="pictures/main_ee/">Sky</a> --- <a href="pictures/main_ee/">Orb Pickup</a></li>
+                <li>Mercury - <a href="pictures/main_ee/">Sky</a> --- <a href="pictures/main_ee/">Orb Pickup</a></li>
+                <li>Venus - <a href="pictures/main_ee/">Sky</a> --- <a href="pictures/main_ee/">Orb Pickup</a></li>
+                <li>Moon - <a href="pictures/main_ee/">Sky</a> --- <a href="pictures/main_ee/">Orb Pickup</a></li>
+                <li>Mars - <a href="pictures/main_ee/">Sky</a> --- <a href="pictures/main_ee/">Orb Pickup</a></li>
+                <li>Jupiter - <a href="pictures/main_ee/">Sky</a> --- <a href="pictures/main_ee/">Orb Pickup</a></li>
+                <li>Saturn - <a href="pictures/main_ee/">Sky</a> --- <a href="pictures/main_ee/">Orb Pickup</a></li>
+                <li>Uranus - <a href="pictures/main_ee/">Sky</a> --- <a href="pictures/main_ee/">Orb Pickup</a></li>
+                <li>Neptune - <a href="pictures/main_ee/">Water</a> --- <a href="pictures/main_ee/">Orb Pickup</a></li>
+            </ul>
+            <li>Note: There is no time limit between shooting the planets, but there is a time limit to pick the orb dropped by the planet. So you can take as long as you want to shoot a planet, but once it's shot, the timer starts. If an orb does despawn or the player shoots the wrong planet, they must go to the next round and interact with the Solar System Model in the 'Cargo Hold' again.</li>
+            <li>DO NOT SHOOT DOWN THE SUN. The Sun is always the last "planet" in the sequence, and picking up its orb will activate a timed challenge. Make sure you have an upgraded Kraken or some other high DPS weapon (Like the Hellion Salvo) and max ammo.</li>
+
+            <p class="step-group-title" id="main_ee_step8">Unto the Nest its Malice Unravels</p>
+            <li>All players must interact with the Sun's orb at the same time. Once the Sun's orb is picked up, the screen will flash grey, <a href="pictures/main_ee/">blocks of ice</a> will spawn blocking various stairs and doorways, and zombies will start spawning infinitely.</li>
+            <li>The players must damage the ice blocks to destroy them with the goal of making their way to the end of the ship as quickly as possible and destroying the <a href="pictures/main_ee/">final ice block</a> on the 'Poop Deck'.</li>
+            <li>Once the <a href="pictures/main_ee/">ice block on the 'Promenade Port Deck'</a> is destroyed (about the halfway point), it will spawn a max ammo.</li>
+            <li>The boat is slowly being engulfed by a freezing effect moving from front to back. If the players take too long to destroy the ice blocks, the screen will start to freeze and staying too long like this will cause the challenge to fail.</li>
+            <li>If the players fail the challenge, they can try again by interacting with the Sun's Orb next round.</li>
+            <li>Note: Once the final ice block is destroyed, the challenge is complete, no matter how many other ice blocks were destroyed. So the players can "skip" all the ice blocks near the back of the ship if they shoot the final ice block from the 'Aft Decks' mystery box location. This is not recommended Solo unless you have the Hellion Salvo and the Homunculus.</li>
+            <li>Once the final ice block is destroyed, the screen will flash grey and a <a href="pictures/main_ee/">ritual circle</a> will spawn where the ice block was.</li>
+
+            <p class="warning">Warning: Point of No Return. Once the ritual circle is interacted with, the Boss Fight will start.</p>
+
+
+            <p class="step-group-title" id="main_ee_step9">Behold the Eye of Malice and Despair</p>
+            <p><b>Recommended Weapons</b>: <a href="#kraken" class="link-to-page">Kraken</a> (<a href="#kraken_variant" class="link-to-page">Water Upgrade</a>) and Hellion Salvo</p>
+            <li>All players will be teleported underwater where they must swim to the <a href="pictures/main_ee/">Sentinel Artifact</a> and interact with it.</li>
+            <li>The players will be teleported back to the 'Poop Deck'. An Iceberg will raise out of the water, and a large eye will spawn and teleport around. Zombies, Catalysts, Stokers, and Blightfathers will spawn which all need to be killed for the players to progress. Once all the enemies are killed, the screen will flash white, and after a few seconds the players will be teleported again. Make sure to pick up the Max Ammo and Carpenter drops at the back of the ship before being teleported.</li>
+            <li>The players will be teleported to the 'Engine Room' where they must kill all the enemies again.</li>
+            <li>The players will then be teleported to the 'State Rooms' where, instead of killing all the enemies again, they must shoot the eye until the screen flashes white. The eye can only be shot while it is doing its laser attack. Stay out of the long hallways to avoid the laser and just peak around the corner when it's time to do damage. Once enough damage has been done, the screen will flash white, and after a few seconds the players will be teleported again.</li>
+            <li>The players will then be teleported to the 'Promenade Starboard Deck' where, similar to the 'State Rooms', the players can only shoot the eye when it is shooting it laser beam. Once enough damage has been done, the screen will flash white, and after a few seconds the players will be teleported again.</li>
+            <li>The players will be teleported back to the 'Poop Deck'. Same as the 'State Rooms' and 'Promenade Starboard Deck' the eye can only be damaged while using the laser, but now there is a new attack. The eye will start shaking and a charging sound will play. The players must quickly do enough damage to stun the eye before it finishes charges or all players will be instantly downed. The level 3 Scepter of Ra or Dying Wish Perk can be used to avoid going down.</li>
+            <li>Once enough damage has been done to the eye, it will explode, the screen will go white, and the final cutscene will begin.</li>
         </ol>
     </div>
 
@@ -258,17 +397,17 @@
     <!-- https://youtu.be/laBLgHGwxTk -->
     <div class="content-container" id="freekraken_freehomunculus">
         <h2>Free Kraken and Homunculus</h2>
-        <p class="step-group-title">Note: This is different to the <a href="#kraken" class="link-to-page">Free Kraken</a> quest.</p>
-        <p class="step-group-title">Recommended If Solo: Equip Winter's Wail Perk (Modifier slot or not)</p>
+        <p class="warning">Note: This is different to the <a href="#kraken" class="link-to-page">Free Kraken</a> quest.</p>
+        <p class="warning">Recommended If Solo: Equip Winter's Wail Perk (Modifier slot or not)</p>
         <ol>
             <li>Activate <a href="#pap" class="link-to-page">Pack-a-Punch</a></li>
             <li>Complete Steps CHANGE ME of the <a href="#main_ee" class="link-to-page">Main Quest</a></li>
             <li>Obtain any second weapon you won't mind losing</li>
-            <p class="step-group-title">The following steps can only be completed on Round 9</p>
+            <p class="warning">The following steps can only be completed on Round 9</p>
             <li>During the following, make sure you are holding the weapon you don't want to lose as later you must switch weapons and the weapon you pull out will be replaced with the Kraken.</li>
             <li>Crouch in <a href="pictures/freekraken_freehomunculus/3rdclasscorner.png">this corner</a> in the '3rd Class Berths'. Hold the interact button (it needs to keep being held for the remainder of this Easter Egg)</li>
             <li>On the ground leading outside to the 'Poop Deck' there will be <a href="pictures/freekraken_freehomunculus/bloodsplatter1.png">blood splatters</a> on the ground leading to a <a href="pictures/freekraken_freehomunculus/bloodywall.png">bloody wall</a> near the edge of the ship in the 'Aft Decks'.</li>
-            <li>While staying crouched and holding interact, the player must walk from <a href="pictures/freekraken_freehomunculus/bloodsplatter1.png">blood splatter</a> to <a href="pictures/freekraken_freehomunculus/bloodsplatter2.png">blood splatter</a> following an <a href="pictures/freekraken_freehomunculus/">invisible path</a> until they reach the <a href="pictures/freekraken_freehomunculus/bloodywall.png">bloody wall</a>.</li>
+            <li>While staying crouched and holding interact, the player must walk from <a href="pictures/freekraken_freehomunculus/bloodsplatter1.png">blood splatter</a> to <a href="pictures/freekraken_freehomunculus/bloodsplatter2.png">blood splatter</a> following an invisible path <a href="pictures/freekraken_freehomunculus/path_part1.png">inside</a> and <a href="pictures/freekraken_freehomunculus/path_part2.png">outside</a> until they reach the <a href="pictures/freekraken_freehomunculus/bloodywall.png">bloody wall</a>.</li>
             <li>Once at the wall, release interact, melee the bloody wall twice, stand up and switch weapons.</li>
             <li>If done correctly, the player will be given the Kraken and Homunculus. Otherwise, the player must try again from step 5.</li>
         </ol>
@@ -277,17 +416,17 @@
     <!-- Low-Gravity Zombies -->
     <div class="content-container" id="lowgravity_zombies">
         <h2>Low-Gravity Zombies</h2>
-        <p class="step-group-title">Note: Acid Bomb/Frag Grenade or Explosive Weapon (Upgraded Hitchcock doesn't work) is required for this Easter Egg</p>
-        <p class="step-group-title">Acid Bomb is Recommended</p>
+        <p class="warning">Note: Acid Bomb/Frag Grenade or Explosive Weapon (Upgraded Hitchcock doesn't work) is required for this Easter Egg</p>
+        <p class="warning">Acid Bomb is Recommended</p>
         <ol>
             <li>Collect the following three items: </li>
             <ol>
-                <li>Mask: On the 'Promenade Starboard Deck', explode <a href="pictures/lowgravity_zombies/">this fan</a>. When exploded, a Mask will drop to the <a href="pictures/lowgravity_zombies/">Floor</a>.</li>
-                <li>Crown: On the 'Bridge', shoot the Crown (with any gun) off the top of the closest Smokestack, <a href="pictures/lowgravity_zombies/crown_zoomedout.png">Zoomed Out</a> --- <a href="pictures/lowgravity_zombies/crown_zoomedin.png">Zoomed In</a>. When shot, the Crown will drop to the <a href="pictures/lowgravity_zombies/">Floor</a>.</li>
-                <li>Trident: In the 'Engine Room', explode <a href="pictures/lowgravity_zombies/">this walkway</a> above the Odin Statue. When exploded, a Trident will drop to the <a href="pictures/lowgravity_zombies/">Floor</a>.</li>
+                <li>Moustache: On the 'Promenade Starboard Deck', explode <a href="pictures/lowgravity_zombies/fan.png">this fan</a>. When exploded, a Moustache will drop to the <a href="pictures/lowgravity_zombies/hair.png">Floor</a>.</li>
+                <li>Crown: On the 'Bridge', shoot the Crown (with any gun) off the top of the closest Smokestack, <a href="pictures/lowgravity_zombies/crown_zoomedout.png">Zoomed Out</a> --- <a href="pictures/lowgravity_zombies/crown_zoomedin.png">Zoomed In</a>. When shot, the Crown will drop to the <a href="pictures/lowgravity_zombies/crown_onledge.png">ledge above a bench</a> where it needs to be shot again. When shot again, the Crown will drop to the <a href="pictures/lowgravity_zombies/crown_onbench.png">bench</a> where it can be picked up.</li>
+                <li>Trident: In the 'Engine Room', explode <a href="pictures/lowgravity_zombies/trident_walkway.png">this walkway</a> above the Odin Statue. When exploded, a Trident will drop to the <a href="pictures/lowgravity_zombies/trident_onfloor.png">Floor</a>.</li>
             </ol>
-            <li>Place the items on the <a href="pictures/lowgravity_zombies/">body</a> hanging on the wall in the 'Galley'.</li>
-            <li>Once all three parts are placed, zombie movement will slow down, and they will act as if they are floating in water.</li>
+            <li>Place the items on the <a href="pictures/lowgravity_zombies/body_onwall.png">body</a> hanging on the wall in the 'Galley'.</li>
+            <li>Once all three parts are placed, at the beginning of the next round, zombie movement will slow down, and they will act as if they are in low-gravity (like outside on the map Moon).</li>
         </ol>
     </div>
 
@@ -338,18 +477,18 @@
     <!-- Free Perk -->
     <div class="content-container" id="free_perk">
         <h2>Free Perk</h2>
-        <p class="step-group-title">Recommended: Obtain a Sniper or a Weapon with a scope. The <a href="pictures/free_perk/">Koshka</a> can be purchased from the wall in the 'Engine Room' for 4500 points.</p>
+        <p class="warning">Recommended: Obtain a Sniper or a Weapon with a scope. The <a href="pictures/free_perk/koshka_wallbuy.png">Koshka</a> can be purchased from the wall in the 'Engine Room' for 4500 points.</p>
         <ol>
             <li>Collect six fish hanging around the ship by shooting them down and picking them up when they land. They spawn one at a time, and the next will spawn once the current one has been picked up: </li>
             <ul>
-                <li>Engine Room (Can be shot from the <a href="pictures/free_perk/">'Galley' Stairs</a>): <a href="pictures/free_perk/">Zoomed Out</a> --- <a href="pictures/free_perk/">Zoomed In</a> --- <a href="pictures/free_perk/">On Floor</a></li>
-                <li>Boiler Room: <a href="pictures/free_perk/">Zoomed Out</a> --- <a href="pictures/free_perk/">Zoomed In</a> --- <a href="pictures/free_perk/">On Floor</a></li>
-                <li>Poop Deck: <a href="pictures/free_perk/">Zoomed Out</a> --- <a href="pictures/free_perk/">Zoomed In</a> --- <a href="pictures/free_perk/">On Floor</a></li>
-                <li>Aft Deck: <a href="pictures/free_perk/">Zoomed Out</a> --- <a href="pictures/free_perk/">Zoomed In</a> --- <a href="pictures/free_perk/">On Floor</a></li>
-                <li>Mid Deck: <a href="pictures/free_perk/">Zoomed Out</a> --- <a href="pictures/free_perk/">Zoomed In</a> --- <a href="pictures/free_perk/">On Floor</a></li>
-                <li>Forecastle: <a href="pictures/free_perk/">Zoomed Out</a> --- <a href="pictures/free_perk/">Zoomed In</a> --- <a href="pictures/free_perk/">On Floor</a></li>
+                <li>Galley/Engine Room: <a href="pictures/free_perk/galley_shootdown.png">Shoot down from 'Galley'</a> --- <a href="pictures/free_perk/engineroom_fishonfloor.png">On floor in 'Engine Room' near Odin Statue</a></li>
+                <li>Boiler Room (Above the fast travel to Grand Staircase): <a href="pictures/free_perk/boilerroom_zoomedout.png">Zoomed Out</a> --- <a href="pictures/free_perk/boilerroom_brightened.png">Brightened</a> --- <a href="pictures/free_perk/boilerroom_zoomedin.png">Zoomed In</a> --- <a href="pictures/free_perk/boilerroom_fishonfloor.png">On Floor</a></li>
+                <li>Poop Deck: <a href="pictures/free_perk/poopdeck_zoomedout.png">Zoomed Out</a> --- <a href="pictures/free_perk/poopdeck_zoomedin.png">Zoomed In</a> --- <a href="pictures/free_perk/poopdeck_fishonfloor.png">On Floor</a></li>
+                <li>Aft Deck: <a href="pictures/free_perk/aftdeck_zoomedout.png">Zoomed Out</a> --- <a href="pictures/free_perk/aftdeck_zoomedin.png">Zoomed In</a> --- <a href="pictures/free_perk/aftdeck_fishonfloor.png">On Floor</a></li>
+                <li>Mid Deck/Sun Deck: <a href="pictures/free_perk/sundeck_zoomedout.png">Zoomed Out</a> --- <a href="pictures/free_perk/sundeck_zoomedin.png">Zoomed In</a> --- <a href="pictures/free_perk/sundeck_fishonfloor.png">On Floor</a></li>
+                <li>Forecastle: <a href="pictures/free_perk/forecastle_zoomedout.png">Zoomed Out</a> --- <a href="pictures/free_perk/forecastle_zoomedin.png">Zoomed In</a> --- <a href="pictures/free_perk/forecastle_fishonfloor.png">On Floor</a></li>
             </ul>
-            <li>Place the six fish on the <a href="pictures/free_perk/">Box with fish on it</a> on the 'Sun Deck'. A perk drop will spawn that when picked up will award the player with a fifth perk.</li>
+            <li>Place the six fish on the <a href="pictures/free_perk/boxwithfish.png">Box with fish on it</a> on the 'Sun Deck'. A perk drop will spawn that when picked up will award the player with a fifth perk.</li>
         </ol>
     </div>
 
@@ -368,7 +507,7 @@
     <!-- https://youtu.be/dZaal9itjC0 -->
     <div class="content-container" id="hourglass">
         <h2>Hourglass (Free Fast Travel)</h2>
-        <p class="step-group-title">The weapons that work for this Easter Egg have not been extensively tested, so I'm going to note ones I've seen work and ones I've only heard work.</p>
+        <p class="warning">The weapons that work for this Easter Egg have not been extensively tested, so I'm going to note ones I've seen work and ones I've only heard work.</p>
         <ol>
             <li>Obtain one of the following weapons and <a href="#pap" class="link-to-page">Pack-a-Punch</a> it at least twice. The trick might be that the weapon needs to fire explosive bullets, but this is not confirmed and some guns work that do not fire explosives: </li>
             <ul>
@@ -397,11 +536,11 @@
         <ol>
             <li>Complete Steps 1-4 of the <a href="#svalinn_guard" class="link-to-page">Svalinn Guard</a> Shield Upgrade Quest</li>
             <p><b>Note: The Car only flies around for the first three minutes of the round, and after five rounds it will return to the 'Cargo Hold' where it can be interacted with again to make it fly around for another five rounds.</b></p>
-            <li>Crouch in <a href="pictures/freekraken_freehomunculus/">this corner</a> in the '3rd Class Berths'. Hold the interact button (it needs to keep being held for the remainder of this Easter Egg)</li>
-            <li>On the ground leading outside to the 'Poop Deck' there will be <a href="pictures/freekraken_freehomunculus/">blood splatters</a> on the ground leading to a <a href="pictures/freekraken_freehomunculus/">bloody wall</a> near the edge of the ship in the 'Aft Decks'.</li>
-            <li>While staying crouched and holding interact, the player must walk from blood splatter to blood splatter following an <a href="pictures/freekraken_freehomunculus/">invisible path</a> until they reach the <a href="pictures/freekraken_freehomunculus/">bloody wall</a>.</li>
+            <li>Crouch in <a href="pictures/freekraken_freehomunculus/3rdclasscorner.png">this corner</a> in the '3rd Class Berths'. Hold the interact button (it needs to keep being held for the remainder of this Easter Egg)</li>
+            <li>On the ground leading outside to the 'Poop Deck' there will be <a href="pictures/freekraken_freehomunculus/bloodsplatter1.png">blood splatters</a> on the ground leading to a <a href="pictures/freekraken_freehomunculus/bloodywall.png">bloody wall</a> near the edge of the ship in the 'Aft Decks'.</li>
+            <li>While staying crouched and holding interact, the player must walk from <a href="pictures/freekraken_freehomunculus/bloodsplatter1.png">blood splatter</a> to <a href="pictures/freekraken_freehomunculus/bloodsplatter2.png">blood splatter</a> following an invisible path <a href="pictures/freekraken_freehomunculus/path_part1.png">inside</a> and <a href="pictures/freekraken_freehomunculus/path_part2.png">outside</a> until they reach the <a href="pictures/freekraken_freehomunculus/bloodywall.png">bloody wall</a>.</li>
             <li>Once at the wall, release interact, melee the bloody wall twice, stand up and switch weapons.</li>
-            <li>If done correctly, the player will be teleported to the Flying Car and will be flown around the map. Otherwise, the player must try again from step 5.</li>
+            <li>If done correctly, the player will be given the Kraken and Homunculus. Otherwise, the player must try again from step 5.</li>
         </ol>
     </div>
 

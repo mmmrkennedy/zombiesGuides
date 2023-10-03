@@ -1,11 +1,36 @@
+/*
+=======================================
+LIGHT AND DARK MODE FUNCTIONALITIES
+=======================================
+*/
+
 function toggleLightMode() {
     const body = document.body;
     body.classList.toggle('light-mode');
 }
 
 document.addEventListener('DOMContentLoaded', function() {
+    changeThemeColour();
+});
+
+function changeThemeColour(){
+    const savedColorMode = localStorage.getItem('colourMode');
+    if(savedColorMode === 'light') {
+        document.body.classList.add('light-mode');
+    } else {
+        document.body.classList.remove('light-mode');
+    }
+}
+
+/*
+=======================================
+PRELOAD IMAGES AND VIDEOS
+=======================================
+*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Preload Images
     if(localStorage.getItem('preload') === 'true') {
-        // Select all anchor tags with href attributes ending with common image types
         const imageExtensions = ['.jpg', '.jpeg', '.png', '.gif', '.webp'];
         const anchors = [];
 
@@ -21,66 +46,40 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+/*
+=======================================
+STORAGE EVENT LISTENERS
+=======================================
+*/
+
 window.addEventListener('storage', function(event) {
-    if (event.key === 'preload') {
-        if(localStorage.getItem("preload") === 'true') {
-            window.location.reload();
-        } else {
-            // pass
-        }
-    } else if (event.key === 'colourMode' ){
-        changeThemeColour();
-    } else if (event.key === 'preloadvideo'){
-        if(localStorage.getItem("preloadvideo") === 'true') {
-            // pass
-        } else {
-            // pass
-        }
-
-    } else {
-        console.log("Unknown Storage Event");
-        console.log(event.key);
-        console.log(event)
-    }
-
-});
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    changeThemeColour();
-});
-
-function changeThemeColour(){
-    const savedColorMode = localStorage.getItem('colourMode');
-    if(savedColorMode === 'light') {
-        document.body.classList.add('light-mode');
-    } else {
-        document.body.classList.remove('light-mode');
-    }
-}
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    if(localStorage.getItem('preloadvideo') === 'true') {
-        // Select all anchor tags with href attributes ending with ".mp4"
-        const videoAnchors = document.querySelectorAll('a[href$=".mp4"]');
-
-        videoAnchors.forEach(anchor => {
-            // Create a video element and source element to trigger the preload
-            const video = document.createElement('video');
-            video.preload = "auto";  // Hint the browser to preload the entire video
-            const source = document.createElement('source');
-
-            source.src = anchor.href;
-            source.type = 'video/mp4';
-
-            video.appendChild(source);
-
-            // Optional: Append the video to the body if you want it to be visible
-            //document.body.appendChild(video);
-        });
+    switch(event.key) {
+        case 'preload':
+            if(localStorage.getItem("preload") === 'true') {
+                window.location.reload();
+            }
+            break;
+        case 'colourMode':
+            changeThemeColour();
+            break;
+        case 'substeps':
+            substeps((localStorage.getItem("substeps") === 'true'), 1);
+            if(localStorage.getItem("substeps") === 'true') {
+                window.location.reload();
+            }
+            break;
+        case 'close_setting_auto':
+            break;
+        default:
+            console.log("Unknown Storage Event", event);
     }
 });
+
+/*
+=======================================
+NAVIGATION UTILITIES
+=======================================
+*/
 
 function navigateToIndex() {
     window.location.href = "/zombiesGuides/index.html";
@@ -90,6 +89,11 @@ function navigateToSettings() {
     window.open("/zombiesGuides/settings/settings.html", "_blank");
 }
 
+/*
+=======================================
+SCROLL FUNCTIONS
+=======================================
+*/
 
 function scrollToTop() {
     window.scrollTo({
@@ -98,19 +102,45 @@ function scrollToTop() {
     });
 }
 
-// Font Selector functionality
+document.addEventListener('DOMContentLoaded', function () {
+    document.addEventListener('click', function (event) {
+        if (event.target.tagName === 'A') {
+            const href = event.target.getAttribute('href');
+            if (href && href.startsWith('#')) {
+                event.preventDefault();
+                const elementId = href.substring(1);
+                scrollToElement(elementId, 100);
+            }
+        }
+    });
+});
+
+function scrollToElement(elementId, offset) {
+    const element = document.getElementById(elementId);
+    if (element) {
+        const elementPosition = element.getBoundingClientRect().top;
+        const targetY = elementPosition + window.scrollY - offset;
+        window.scrollTo({
+            top: targetY,
+            behavior: 'smooth'
+        });
+    }
+}
+
+/*
+=======================================
+FONT SELECTOR FUNCTIONALITIES
+=======================================
+*/
+
 const fontSelector = document.getElementById('fontSelector');
 const smoothScroll = document.querySelector('.smooth-scroll');
-
-// Event listener for font selector changes
 let path = window.location.pathname;
 let page = path.split("/").pop();
 
 if(page !== "index.html") {
     fontSelector.addEventListener('change', () => {
         const selectedFont = fontSelector.value;
-
-        // If 'OpenDyslexic' font is selected, add 'open-dyslexic' class to enable it; otherwise, remove the class
         if (selectedFont === 'OpenDyslexic') {
             smoothScroll.classList.add('open-dyslexic');
         } else {
@@ -119,46 +149,12 @@ if(page !== "index.html") {
     });
 }
 
-// Event listener for anchor clicks inside the HTML element with the class 'smooth-scroll'
-document.addEventListener('DOMContentLoaded', function () {
-    // Add a click event listener to the document
-    document.addEventListener('click', function (event) {
-        // Check if the clicked element is an anchor (<a> tag)
-        if (event.target.tagName === 'A' || event.target.tagName === 'a') {
-            // Get the value of the 'href' attribute of the clicked anchor element
-            const href = event.target.getAttribute('href');
+/*
+=======================================
+MOBILE DETECTION AND HANDLING
+=======================================
+*/
 
-            // Check if the 'href' value starts with '#' (indicating an internal page link)
-            if (href && href.startsWith('#')) {
-                // Prevent the default behavior of the anchor link (prevents jumping to a new page)
-                event.preventDefault();
-
-                // Extract the element ID from the 'href' by removing the '#' character
-                const elementId = href.substring(1);
-
-                // Scroll to the element on the page with an offset of 100 pixels using window.scrollBy
-                scrollToElement(elementId, 100);
-            }
-        }
-    });
-});
-
-// Function to scroll smoothly to a specific HTML element by its ID with an offset
-function scrollToElement(elementId, offset) {
-    const element = document.getElementById(elementId);
-
-    if (element) {
-        const elementPosition = element.getBoundingClientRect().top;
-        const targetY = elementPosition + window.scrollY - offset;
-
-        window.scrollTo({
-            top: targetY,
-            behavior: 'smooth'
-        });
-    }
-}
-
-/* Mobile Detection */
 function hasTouchScreen() {
     let hasTouchScreen;
 
@@ -186,13 +182,10 @@ function hasTouchScreen() {
 
 function mobileCheck() {
     let check = hasTouchScreen();
-
     if (check) {
-        // Show the mobile content and hide the non-mobile content
         document.getElementById('mobileContent').style.display = 'block';
         document.getElementById('nonMobileContent').style.display = 'none';
     } else {
-        // Hide the mobile content and show the non-mobile content
         document.getElementById('mobileContent').style.display = 'none';
         document.getElementById('nonMobileContent').style.display = 'block';
     }
@@ -202,13 +195,18 @@ document.addEventListener("DOMContentLoaded", function() {
     mobileCheck();
 });
 
+/*
+=======================================
+HISTORY MANAGEMENT FOR ANCHOR LINKS
+=======================================
+*/
+
 document.addEventListener('click', function(event) {
     var target = event.target;
     if (target.tagName.toLowerCase() === 'a' && target.hash) {
         window.history.pushState({hash: target.hash}, '', target.hash);
     }
 });
-
 
 window.addEventListener('popstate', function(event) {
     if (event.state && event.state.hash) {
@@ -217,7 +215,33 @@ window.addEventListener('popstate', function(event) {
 });
 
 
+/*
+=======================================
+SUBSTEP FUNCTIONALITIES
+=======================================
+ */
+function substeps(check, callid) {
+    let displayStyle = 'block';
+    if (check) {
+        displayStyle = 'block';
+    } else {
+        displayStyle = 'none';
+    }
+    
+    let i = 1;
+    while(true) {
+        try{
+            document.getElementById('substeps' + i).style.display = displayStyle;
+        } catch (e) {
+            break;
+        }
+        i++;
+    }
+}
 
+document.addEventListener('DOMContentLoaded', function () {
+    substeps((localStorage.getItem('substeps') === 'true'), 2);
+});
 
 
 

@@ -19,9 +19,10 @@
 
 <!-- Your HTML content for non-mobile devices goes here -->
 <div id="nonMobileContent">
-  <button class="toggle-button top-left" onclick="navigateToIndex()">Back</button>
-  <button class="toggle-button top-right" onclick="toggleLightMode()">Toggle Dark Mode</button>
-  <button class="toggle-button bottom-right" onclick="scrollToTop()">Back to Top</button>
+    <button class="toggle-button top-left" onclick="navigateToIndex()">Back</button>
+    <button class="toggle-button top-right" onclick="toggleLightMode()">Toggle Dark Mode</button>
+    <button class="toggle-button bottom-right" onclick="scrollToTop()">Back to Top</button>
+    <button class="toggle-button top-right-down" onclick="navigateToSettings()">Settings</button>
 </div>
 
 <h2 class="title_text">Forsaken Guide</h2>
@@ -39,11 +40,32 @@
     <h2>Weapons</h2>
     <ul>
       <li><a href="#chrysalax">Chrysalax</a></li>
+      <div id="substeps1">
+        <ol>
+          <li><a href="#main_ee_step1">Prerequisites</a></li>
+          <li><a href="#main_ee_step2">Obtain and Fill the Fuel Tank</a></li>
+          <li><a href="#main_ee_step3">Obtain the Monitoring Device</a></li>
+          <li><a href="#main_ee_step4">Obtain the Housing Unit</a></li>
+          <li><a href="#main_ee_step5">Assemble and Escort the Aetherium Neutralizer</a></li>
+          <li><a href="#main_ee_step6">Forsaken Boss Fight</a></li>
+        </ol>
+      </div>
+
     </ul>
 
     <h2>Easter Eggs</h2>
     <ul>
       <li><a href="#main_ee">'Pyrrhic Victory' Main Easter Egg Quest</a></li>
+      <div id="substeps2">
+        <ol>
+          <li><a href="#main_ee_step1">Prerequisites</a></li>
+          <li><a href="#main_ee_step2">Obtain and Fill the Fuel Tank</a></li>
+          <li><a href="#main_ee_step3">Obtain the Monitoring Device</a></li>
+          <li><a href="#main_ee_step4">Obtain the Housing Unit</a></li>
+          <li><a href="#main_ee_step5">Assemble and Escort the Aetherium Neutralizer</a></li>
+          <li><a href="#main_ee_step6">Forsaken Boss Fight</a></li>
+        </ol>
+      </div>
       <li><a href="#song_ee">'Samantha's Ballad' Song</a></li>
       <li><a href="#free_ray_gun">Pizza Delivery (Potential Free Ray Gun)</a></li>
       <li><a href="#perkaholic">Free Perkaholic (All perks for Free)</a></li>
@@ -58,7 +80,8 @@
   <!-- Wonder Weapons -->
   <div class="content-container" id="chrysalax">
     <h2>Chrysalax Savager</h2>
-    <p>The Chrysalax is available through the mystery box, completion of challenges, and via the following quest: <br>The Chrysalax can be Pack-A-Punched and does not require an Easter Egg to do so.</p>
+    <p class="weapon-desc">The Chrysalax can be Pack-a-Punch'd and does not require an Easter Egg to do so.</p>
+    <p class="weapon-desc">The Chrysalax is available through the mystery box, completion of challenges, and via the following quest: </p>
     <ol>
       <li>Unlock Pack-a-Punch.</li>
       <li>Interact with the <a href="pictures/main_ee/button.png">Button on the Observation Tower</a>.</li>
@@ -90,15 +113,15 @@
   <!-- Main Easter Egg -->
   <div class="content-container" id="main_ee">
     <h2>'Pyrrhic Victory' Main Easter Egg Quest</h2>
-    <p><i><b>Stats (Solo): Difficulty - 5/10, Est Completion Time - 20 to 40 Mins, RNG Rating - 0/5</b></i></p>
+    <p class="stats">Stats (Solo): Difficulty - 5/10, Est Completion Time - 20 to 40 Mins, RNG Rating - 0/5</p>
     <ol class="step-content">
-      <p class="step-group-title">Prerequisites</p>
+      <p class="step-group-title" id="main_ee_step1">Prerequisites</p>
       <li>Unlock Pack-a-Punch.</li>
       <li>Interact with <a href="pictures/main_ee/button.png" >the Button on the Observation Tower</a>.</li>
-      <li><a href="#chrysalax" class="link-to-page">Obtain the Chrysalax</a>. <b>Note: The Chrysalax is required to fill the Fuel Tank. Since steps groups can be completed at anytime in any order, it's recommended to complete the other steps (Obtain the Monitoring Device or Obtain the Housing Unit) while crafting the Chrysalax.</b></li>
+      <li><a href="#chrysalax" class="link-to-page">Obtain the Chrysalax</a>. <b>Note: The Chrysalax is required to fill the Fuel Tank. Since sub-steps can be completed at anytime in any order, it's recommended to complete the other steps (Obtain the Monitoring Device or Obtain the Housing Unit) while crafting the Chrysalax.</b></li>
       <li>Similar to the Chrysalax, the player needs to collect three items to start the boss fight. The steps can be completed at anytime in any order.</li>
 
-      <p class="step-group-title">Obtain and Fill the Fuel Tank</p>
+      <p class="step-group-title" id="main_ee_step2">Obtain and Fill the Fuel Tank</p>
       <li>Navigate to Fuel Processing, each player must simultaneously interact with the <a href="pictures/main_ee/processingtanks.png">Processing Tanks</a> to activate them. The number of Processing Tanks that need to be activated depends on the number of players in the game.</li>
       <li>Once the Tanks have been activated, the area will be locked down and enemies will start to spawn. The player(s) must survive until the lockdown ends and the <a href="pictures/main_ee/fueltank.png">Fuel Tank</a> falls to the floor.</li>
       <li>Pickup the Fuel Tank.</li>
@@ -113,30 +136,30 @@
       </ul>
       <li><i>Repeat Steps 9-11 for the other two large Crystals.</i></li>
 
-      <p class="step-group-title">Obtain the Monitoring Device</p>
-      <li>Obtain a Pack-a-Punched Weapon with Dead Wire</li>
+      <p class="step-group-title" id="main_ee_step3">Obtain the Monitoring Device</p>
+      <li>Obtain a Pack-a-Punch'd Weapon with Dead Wire</li>
       <li>Obtain from Zombie Drops or <a href="pictures/main_ee/arcadetoken_buy.png">Buy</a> an Arcade Token</li>
       <li>Navigate to the <a href="pictures/main_ee/arcade.png">Arcade</a> and electrocute a Zombie near the <a href="pictures/main_ee/grandprixmachine.png">Grand Prix Arcade Machine</a>.</li>
       <li>Interact with the Arcade Machine to spawn an ARC-XD. Drive the ARC-XD to the <a href="pictures/main_ee/tvstore.png">TV Store</a> and locate the <a href="pictures/main_ee/vent.png">Loosened Vent</a> behind the counter.</li>
       <li>Destroy the vent cover with the passive pulses from the ARC-XD and drive through the vent. Position the ARC-XD between the <a href="pictures/main_ee/shelfandwall.png">shelf and wall</a> and detonate the ARC-XD.</li>
       <li>Go to the TV Store and pick up the <a href="pictures/main_ee/monitoringdevice.png">Monitoring Device</a> from the shelf.</li>
 
-      <p class="step-group-title">Obtain the Housing Unit</p>
+      <p class="step-group-title" id="main_ee_step4">Obtain the Housing Unit</p>
       <li>Wait for an Abomination to spawn.</li>
       <li>Navigate to the Board Room (Wunderfizz Room) and locate the <a href="pictures/main_ee/housingunitoncelling.png">Housing Unit</a>.</li>
       <li>Stand below the Housing Unit by the wall and bait the Abomination into charging <a href="pictures/main_ee/thiswall.png">this wall</a>. Make sure to move out of the way of the Abomination, so it hits the wall.</li>
       <li>If the Abomination successfully hits the wall, the Housing Unit will <a href="pictures/main_ee/housingunitonground.png">fall to the floor</a> and be available for pickup.</li>
 
-      <p class="step-group-title">Assemble and Escort the Aetherium Neutralizer</p>
+      <p class="step-group-title" id="main_ee_step5">Assemble and Escort the Aetherium Neutralizer</p>
       <li>Navigate to the Main Street and craft the Aetherium Neutralizer at the <a href="pictures/main_ee/workbench.png">workbench</a> by Tombstone.</li>
-      <p class="step-group-title">Warning: Point of No Return. Once you activate the Neutralizer, you will be put into the Boss Fight. There will be an opportunity to Buy Perks, Armour, Scorestreaks and Use PAP, but you can no longer explore the map or gain points.</p>
+      <p class="warning">Warning: Point of No Return. Once you activate the Neutralizer, you will be put into the Boss Fight. There will be an opportunity to Buy Perks, Armour, Scorestreaks and Use PAP, but you can no longer explore the map or gain points.</p>
       <li>Interact with the Neutralizer to begin escorting it. The Neutralizer requires <a href="pictures/main_ee/orangeshard_escort_alt.png">Catalyzed Crystal Shards</a> for fuel. The Shards can be collected by destroying <a href="pictures/main_ee/orangedarkaethercrystal.png">Orange Dark Aether Crystals</a>.</li>
       <li>Escort the Neutralizer, refuelling when requested, till you reach the Containment Door.</li>
-      <p class="step-group-title">Warning: This is your last opportunity to Buy Perks, Armour, Scorestreaks and Use PAP. You cannot come back here during the boss fight.</p>
+      <p class="warning">Warning: This is your last opportunity to Buy Perks, Armour, Scorestreaks and Use PAP. You cannot come back here during the boss fight.</p>
     </ol>
 
     <ul>
-      <p class="step-group-title">Forsaken Boss Fight: </p>
+      <p class="step-group-title" id="main_ee_step6">Forsaken Boss Fight</p>
       <li>To simplify the explanation of this boss fight, I'm going to split this into two parts: How to Attack and How The Forsaken Attacks.</li>
       <li>How to Attack:</li>
       <ol>
@@ -147,15 +170,15 @@
         <li><i>Repeat Steps 1-4 for each of the four armoured/weak spots.</i></li>
       </ol>
       <li> How The Forsaken Attacks: </li>
-      <ol>
+      <ul>
         <li>The Forsaken has four attacks: Lightning Slam, Blizzard, Energy Ball and Laser Eyes</li>
         <li>Lightning Slam: While he still has arms, The Forsaken can raise one of his arms and slam it on the ground which will produce electric shockwaves. Any players caught under the hand will be instantly downed. The shockwave ripples out from the Hand, doing less and less damage the further from the hand they get.</li>
         <li>Blizzard: If the players destroy the right arm first, the Forsaken will start attacking with the Blizzard attack. The Forsaken will raise his damaged arm and spawn two areas of frost that slow players within it.</li>
         <li>Energy Ball: If the players destroy the left arm first, the Forsaken will start attacking with the Energy Ball attack. The Forsaken will raise his damaged arm and produce tracking energy orbs that will do damage to any player in its radius.</li>
         <li>Once both arms are destroyed, the Forsaken will no longer use his Lightning Slam attack, however, he will still use the Energy Ball and Blizzard Attacks.</li>
         <li>Once both arms are destroyed, the Forsaken will shoot laser out of his eyes that tracks a player, doing damage if they're in the area.</li>
-      </ol>
-      <li>Once the last weak spot has been shot and the health bar hits 0 and disappears, a narrative sequence will begin and the Forsaken will slowly damage all players till they go down. The players can down themselves (via explosives or letting the Zombies down them) before being killed by the Forsaken to skip some voicelines.</li>
+      </ul>
+      <li>Once the last weak spot has been shot, the health bar hits 0 and disappears, a narrative sequence will begin and the Forsaken will slowly damage all players till they go down. The players can down themselves (via explosives or letting the Zombies down them) before being killed by the Forsaken to skip some voicelines.</li>
       <li>Once all players are downed and the voicelines are finished, a cutscene will start. After it is finished, an in-game cutscene will start followed by the final cutscene.</li>
     </ul>
   </div>
@@ -216,6 +239,7 @@
       <li>While in Tombstone Shadow, make your way to the <a href="pictures/chrysalax/particleaccelerator.png">Particle Accelerator</a> and shoot the <a href="pictures/perkaholic/entity.png">entity that is floating above it</a> to split it into multiple copies.</li>
       <li>When the entity splits, shoot the one that has glowing eyes. Repeat until the Entity disappears in a puff of smoke.</li>
       <li>Once the entity is gone, the player can revive themselves and upon being revived they will be awarded with every perk.</li>
+      <li>The perks are not permanent and will be lost like normal when downed.</li>
     </ol>
   </div>
 

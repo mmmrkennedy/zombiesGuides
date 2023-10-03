@@ -17,12 +17,13 @@
 </div>
 
 <div id="nonMobileContent">
-  <button class="toggle-button top-left" onclick="navigateToIndex()">Back</button>
-  <button class="toggle-button top-right" onclick="toggleLightMode()">Toggle Dark Mode</button>
-  <button class="toggle-button bottom-right" onclick="scrollToTop()">Back to Top</button>
+    <button class="toggle-button top-left" onclick="navigateToIndex()">Back</button>
+    <button class="toggle-button top-right" onclick="toggleLightMode()">Toggle Dark Mode</button>
+    <button class="toggle-button bottom-right" onclick="scrollToTop()">Back to Top</button>
+    <button class="toggle-button top-right-down" onclick="navigateToSettings()">Settings</button>
 </div>
 
-<h2 class="title_text" style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%);">Mauer der Toten Guide</h2>
+<h2 class="title_text">Mauer der Toten Guide</h2>
 <div class="top_buttons_background_box"></div>
 
 <div class="smooth-scroll">
@@ -44,15 +45,26 @@
         <li><a href="#cbrss_upgrades">Blazer</a></li>
         <li><a href="#cbrss_upgrades">Diffuser</a></li>
       </ul>
+      <li><a href="#klaus_base">Klaus</a></li>
+      <ul>
+        <li><a href="#klaus_upgrade">Upgrade Klaus</a></li>
+      </ul>
     </ul>
 
     <h2>Easter Eggs</h2>
     <ul>
-      <li><a href="#main_ee">'Tin Man Heart' Easter Egg Quest</a></li>
-      <li><a href="#klaus_ee">Assemble Klaus</a></li>
+      <li><a href="#main_ee">'Tin Man Heart' Main Quest</a></li>
+      <ol>
+        <li><a href="#main_ee_step1">Prerequisites</a></li>
+        <li><a href="#main_ee_step2">Find the Secret Lab</a></li>
+        <li><a href="#main_ee_step3">Charge the Conversion Unit</a></li>
+        <li><a href="#main_ee_step4">Stop the Train</a></li>
+        <li><a href="#main_ee_step5">Obtain the Uranium</a></li>
+        <li><a href="#main_ee_step6">Valentina Boss Fight</a></li>
+      </ol>
+      <li><a href="#song_ee">'Amoeba' Song</a></li>
       <li><a href="#aether_tool_ee">Free Aether Tool</a></li>
       <li><a href="#nightclub_ee">Mister Peeks' Nightclub (Free loot)</a></li>
-      <li><a href="#song_ee">'Amoeba' Song</a></li>
       <li><a href="#gersh_device_ee">Free Loot</a></li>
     </ul>
   </div>
@@ -60,10 +72,11 @@
   <!-- Wonder Weapons -->
   <div class="content-container" id="cbrss">
     <h2>CBRS-S</h2>
-    <p>The CBRS-S is available through the mystery box, completion of challenges, and via the following quest: <br>The CBRS-S can be Pack-A-Punched and does not require an Easter Egg to do so.</p>
+    <p class="weapon-desc">The CBRS-S can be Pack-a-Punch'd and does not require an Easter Egg to do so.</p>
+    <p class="weapon-desc">The CBRS-S is available through the mystery box, completion of challenges, and via the following quest: </p>
     <ol>
-      <li>Assemble the base version of <a href="#klaus_ee" class="link-to-page">Klaus</a>.</li>
-      <li>Have Klaus open <a href="pictures/klaus_ee/locker.png">the Locker</a> located in the Switch Control Room by using the Tactical Equipment to move him in front of it.</li>
+      <li>Assemble the base version of <a href="#klaus_base" class="link-to-page">Klaus</a>.</li>
+      <li>Have Klaus open the <a href="pictures/klaus_ee/locker.png">Locker</a> located in the Switch Control Room by using the Tactical Equipment to move him in front of it.</li>
       <li>Pick up the Blacklight from the Locker.</li>
       <li>In the following three locations, there will be a number on a wall only visible with the blacklight (coloured blue):</li>
       <ul>
@@ -86,92 +99,19 @@
           <li><a href="pictures/cbrss/store_watermelon.png">Watermelon Poster</a></li>
         </ul>
       </ul>
-      <li>After finding all three numbers, go to Hotel Room 305 and interact with <a href="pictures/cbrss/closedsafe.png">the safe</a>. The blue number is the number the dial needs to be set to.<br>The first dial is the number from the Garment Factory, the Second Dial is from Service Passage and the Third Dial is from the Grocery Store.</li>
+      <li>After finding all three numbers, go to Hotel Room 305 and interact with the <a href="pictures/cbrss/closedsafe.png">Safe</a>. The blue number is the number the dial needs to be set to.<br>The first dial is the number from the Garment Factory, the Second Dial is from Service Passage and the Third Dial is from the Grocery Store.</li>
       <li>Once the player enters the right combination, the safe will open revealing the CBRS-S ready for pickup.</li>
     </ol>
 
     <h3 id="cbrss_upgrades">Variants</h3>
     <ul>
       <p class="step-group-title">Swarm, Blazer or Diffuser</p>
-      <p>All the variants can be obtained from killing Zombies. There is no way to get a specific variant to drop, just wait for one to drop.</p>
+      <p>All the variants can be obtained from killing Zombies. There is no way to get a specific variant to drop other than just waiting for one to drop.</p>
     </ul>
   </div>
 
-  <!-- Main Easter Egg -->
-  <div class="content-container" id="main_ee">
-    <h2>'Tin Man Heart' Easter Egg Quest</h2>
-    <p><i><b>Stats (Solo): Difficulty - 5/10, Est Completion Time - 40 Mins to 1 Hr, RNG Rating - 0/5</b></i></p>
-    <ol class="step-content">
-      <p class="step-group-title">Prerequisites</p>
-      <li>Turn on Power and Open Pack-a-Punch</li>
-      <li><a href="#klaus_ee" class="link-to-page">Assemble and Fully Upgrade Klaus</a> <b>Note: <a href="#klaus_upgrade" class="link-to-page">Upgraded Klaus</a> is required for Step 15, Un-upgraded Klaus is Required for Step 5</b></li>
-      <li><a href="#cbrss" class="link-to-page">Obtain the CBRS-S</a></li>
-
-      <p class="step-group-title">Find the Secret Lab</p>
-      <li>The player must craft the Hacking Helm. There are three items, two of which are only on one spot. The object must be shot with the <a href="#cbrss" class="link-to-page">CBRS-S</a> to make them drop the parts. Locations are: </li>
-      <ul>
-        <li><a href="pictures/main_ee/helm_rooftop.png">Apartment Rooftop</a></li>
-        <li><a href="pictures/main_ee/helm_station.png">Ghost Station</a></li>
-        <li>Electronics Store: <a href="pictures/main_ee/helm_store_loc1.png">Location 1</a>, <a href="pictures/main_ee/helm_store_loc2.png">Location 2</a>, <a href="pictures/main_ee/helm_store_loc3.png">Location 3</a></li>
-      </ul>
-      <li>Once all three items have been collected, navigate to the <a href="pictures/klaus_ee/safehouse.png">Safe House</a> and interact with Klaus to craft the Hacking Helm.</li>
-      <li>Navigate to <a href="pictures/main_ee/vaguepicofseweraccess.png">Sewer Access</a> and use the Klaus Remote Control to Command Klaus to break <a href="pictures/main_ee/brickwall.png">this brick wall</a> to reveal the metal wall.</li>
-      <li>Obtain the Blazer Mod Kit (Laser Beam Variant) and shoot the Metal Wall till it melts.</li>
-
-      <p class="step-group-title">Charge the Conversion Unit</p>
-      <li>Once the player enters the lab, the current round will end and a Tormentor round will begin.</li>
-      <li>Once the Tormentor round is over, collect the three empty canisters from the <a href="pictures/main_ee/conversionunit.png">Conversion Unit</a>.</li>
-      <li>Shoot <a href="pictures/main_ee/luremachine.png">this machine</a> with the CBRS-S to open it. Once open, the player is able to pick up an Endstation Lure.</li>
-      <li>Find three harvesters in the locations below. Only three of the seven harvesters spawn each game, so some spots will be empty.</li>
-      <ul>
-        <li><a href="pictures/main_ee/harvesters_westberlin.png">West Berlin Street</a></li>
-        <li><a href="pictures/main_ee/harvesters_penthouse.png">Destroyed Penthouse (Below Quick Revive)</a></li>
-        <li><a href="pictures/main_ee/harvesters_eastberlin.png">East Berlin Street</a></li>
-        <li><a href="pictures/main_ee/harvesters_korber.png">Korber Rooftop</a></li>
-        <li><a href="pictures/main_ee/harvesters_alley.png">Alley</a></li>
-        <li><a href="pictures/main_ee/harvesters_sewer.png">Sewer Access</a></li>
-        <li><a href="pictures/main_ee/harvesters_ghost.png">Ghost Station</a></li>
-      </ul>
-      <li>The player must insert the canister into the harvester, and once the canister is fully in, throw the Lure on top/near the Essence Harvesters. This will spawn Tempests, kill them and pick up the canister. If the canister can't be picked up, try again with another trap.</li>
-      <li>Bring the filled canister to <a href="pictures/main_ee/conversionunit.png">Conversion Unit</a> and deposit it.</li>
-      <li><i>Repeat Step 11-14 for the other two Canisters.</i></li>
-
-      <p class="step-group-title">Stop the Train</p>
-      <li>Navigate to the Switch Control Room and interact with the <a href="pictures/main_ee/railwayswitch.png">Railway Switch</a>.</li>
-      <li>Fully upgrade <a href="#klaus_ee" class="link-to-page">Klaus</a>.</li>
-      <li>Command Klaus to <a href="pictures/main_ee/klaus_on_tracks.png">stand on the track furthest from Mule Kick near the M16 Wallbuy</a>. If done correctly, Klaus will stop the train allowing the player to board it. If Klaus fails to stop the train, wait for next round to flip the Railway Switch and try again.</li>
-      <li>On the train, the player must pick up <a href="pictures/main_ee/train_keycard.png">Rico's Keycard</a> and the <a href="pictures/main_ee/train_bomb.png">Bomb</a> before the train leaves.</li>
-      <li>Return to the Secret Lab and interact with the <a href="pictures/main_ee/conversionunit.png">Conversion Unit</a> to place the Bomb.</li>
-
-      <p class="step-group-title">Obtain the Uranium</p>
-      <li>Navigate to the Safe House and interact with <a href="pictures/main_ee/safehouse_computer.png">this computer</a> until the screen shows a satellite. Navigate to the Objective Marker and kill the HVT Megaton.</li>
-      <li>This will drop two Uranium Rocks, bring one of them to the nearest Workbench, the locations below, to craft a Uranium Device.</li>
-      <ul>
-        <li><a href="pictures/main_ee/west_bench.png">West Berlin Street</a></li>
-        <li><a href="pictures/main_ee/east_bench.png">Military Tent</a></li>
-      </ul>
-      <li>Navigate to the <a href="pictures/main_ee/penthouse_zipline.png">Destroyed Penthouse Zipline</a> and attach the Uranium Device.</li>
-      <li>Repeat Step 21 for the other Radioactive Material and then navigate to <a href="pictures/main_ee/korber_zipline.png">Korber Rooftop Zipline</a> and attach the Uranium Device.</li>
-      <li>Both Uranium Devices will shoot across the zipline, collide in the middle and land on the street below. Collect the Cleansed Uranium and return it to the Conversion Unit.</li>
-
-      <p class="step-group-title">Warning: Point of No Return. Once the other Uranium is cleansed, the Boss Fight will start.</p>
-      <li><i>Repeat Steps 20-24 to get another Cleansed Uranium.</i></li>
-
-      <p class="step-group-title">Valentina Boss Fight</p>
-      <li>Valentina has three attacks, two damage dealing and one healing. They are:</li>
-      <ul>
-        <li>Fire (Damage): Three Orange crystals will appear over Valentina's Head and begin shooting at a player. The projectiles can be outrun but cannot be avoided while walking.</li>
-        <li>Wipe (Damage): A blue aura will appear around the player's screen. All players must take cover to avoid being instantly downed.</li>
-        <li>Heal: Valentina will spawn floating zombies surrounding her. Kill the zombies to stop her from healing.</li>
-      </ul>
-      <li>Shoot Valentina till she becomes Immune and moves to a new area. She will move four times ending back at the secret lab.</li>
-      <li>Once Valentina is dead, a cutscene will play then the player must defend Klaus as he walks the Bomb into the Portal.</li>
-      <li>Once he makes it into the portal, the game will end and the cutscene will start.</li>
-    </ol>
-  </div>
-
   <!-- Klaus Easter Egg -->
-  <div class="content-container" id="klaus_ee">
+  <div class="content-container" id="klaus_base">
     <h2>Klaus</h2>
     <ol class="step-content">
       <p class="step-group-title">Assembling Klaus</p>
@@ -203,6 +143,93 @@
       <li>Command Klaus to enter the Upgrade Station and interact with it to insert one of the disks and begin the Upgrade Process. Klaus does not need to be defended during the Floppy Disk upgrades.</li>
       <li>Repeat for the other Floppy Disk.</li>
       <li>Klaus is now fully upgraded.</li>
+    </ol>
+  </div>
+
+  <!-- Main Easter Egg -->
+  <div class="content-container" id="main_ee">
+    <h2>'Tin Man Heart' Main Quest</h2>
+    <p class="stats">Stats (Solo): Difficulty - 5/10, Est Completion Time - 40 Mins to 1 Hr, RNG Rating - 0/5</p>
+    <ol class="step-content">
+      <p class="step-group-title">Prerequisites</p>
+      <li>Turn on Power and Open Pack-a-Punch</li>
+      <li><a href="#klaus_base" class="link-to-page">Assemble and Fully Upgrade Klaus</a> - <b>Note: <a href="#klaus_upgrade" class="link-to-page">Upgraded Klaus</a> is required for Step 15, Un-upgraded Klaus is Required for Step 5</b></li>
+      <li>Obtain the <a href="#cbrss" class="link-to-page">CBRS-S</a></li>
+
+      <p class="step-group-title">Find the Secret Lab</p>
+      <li>The player must craft the Hacking Helm. There are three items, two of which are only on one spot. The objects must be shot with the <a href="#cbrss" class="link-to-page">CBRS-S</a> to make them drop the parts. Locations:  </li>
+      <ul>
+        <li><a href="pictures/main_ee/helm_rooftop.png">Apartment Rooftop</a></li>
+        <li><a href="pictures/main_ee/helm_station.png">Ghost Station</a></li>
+        <li>Electronics Store: <a href="pictures/main_ee/helm_store_loc1.png">Location 1</a>, <a href="pictures/main_ee/helm_store_loc2.png">Location 2</a>, <a href="pictures/main_ee/helm_store_loc3.png">Location 3</a></li>
+      </ul>
+      <li>Once all three items have been collected, navigate to the <a href="pictures/klaus_ee/safehouse.png">Safe House</a> and interact with Klaus to craft the Hacking Helm.</li>
+      <li>Navigate to <a href="pictures/main_ee/vaguepicofseweraccess.png">Sewer Access</a> and use the Klaus Remote Control to Command Klaus to break <a href="pictures/main_ee/brickwall.png">this brick wall</a> to reveal the metal wall.</li>
+      <li>Obtain the Blazer Mod Kit (Laser Beam Variant) and shoot the Metal Wall till it melts.</li>
+
+      <p class="step-group-title">Charge the Conversion Unit</p>
+      <li>Once the player enters the lab, the current round will end and a Tormentor round will begin.</li>
+      <li>Once the Tormentor round is over, collect the three empty canisters from the <a href="pictures/main_ee/conversionunit.png">Conversion Unit</a>.</li>
+      <li>Shoot <a href="pictures/main_ee/luremachine.png">this machine</a> with the CBRS-S to open it. Once open, the player is able to pick up an Endstation Lure.</li>
+      <li>Find three harvesters in the locations below. Only three of the seven harvesters spawn each game, so some spots will be empty. Locations: </li>
+      <ul>
+        <li><a href="pictures/main_ee/harvesters_westberlin.png">West Berlin Street</a></li>
+        <li><a href="pictures/main_ee/harvesters_penthouse.png">Destroyed Penthouse (Below Quick Revive)</a></li>
+        <li><a href="pictures/main_ee/harvesters_eastberlin.png">East Berlin Street</a></li>
+        <li><a href="pictures/main_ee/harvesters_korber.png">Korber Rooftop</a></li>
+        <li><a href="pictures/main_ee/harvesters_alley.png">Alley</a></li>
+        <li><a href="pictures/main_ee/harvesters_sewer.png">Sewer Access</a></li>
+        <li><a href="pictures/main_ee/harvesters_ghost.png">Ghost Station</a></li>
+      </ul>
+      <li>The player must insert the canister into the harvester, and once the canister is fully in, throw the Lure on top/near the Essence Harvesters. This will spawn Tempests, kill them and pick up the canister. If the canister can't be picked up, try again with another trap.</li>
+      <li>Bring the filled canister to <a href="pictures/main_ee/conversionunit.png">Conversion Unit</a> and deposit it.</li>
+      <li><i>Repeat Step 11-14 for the other two Canisters.</i></li>
+
+      <p class="step-group-title">Stop the Train</p>
+      <li>Navigate to the Switch Control Room and interact with the <a href="pictures/main_ee/railwayswitch.png">Railway Switch</a>.</li>
+      <li>Fully upgrade <a href="#klaus_base" class="link-to-page">Klaus</a>.</li>
+      <li>Command Klaus to <a href="pictures/main_ee/klaus_on_tracks.png">stand on the track furthest from Mule Kick near the M16 Wallbuy</a>. If done correctly, Klaus will stop the train allowing the player to board it. If Klaus fails to stop the train, wait for next round to flip the Railway Switch and try again.</li>
+      <li>On the train, the player must pick up <a href="pictures/main_ee/train_keycard.png">Rico's Keycard</a> and the <a href="pictures/main_ee/train_bomb.png">Bomb</a> before the train leaves.</li>
+      <li>Return to the Secret Lab and interact with the <a href="pictures/main_ee/conversionunit.png">Conversion Unit</a> to place the Bomb.</li>
+
+      <p class="step-group-title">Obtain the Uranium</p>
+      <li>Navigate to the Safe House and interact with <a href="pictures/main_ee/safehouse_computer.png">this computer</a> until the screen shows a satellite. Navigate to the Objective Marker and kill the HVT Megaton.</li>
+      <li>Two Uranium Rocks will drop from the Megaton, bring one of them to one of the workbenches to craft a Uranium Device.</li>
+      <ul>
+        <li><a href="pictures/main_ee/west_bench.png">West Berlin Street</a></li>
+        <li><a href="pictures/main_ee/east_bench.png">Military Tent</a></li>
+      </ul>
+      <li>Navigate to the <a href="pictures/main_ee/penthouse_zipline.png">Destroyed Penthouse Zipline</a> and attach the Uranium Device.</li>
+      <li>Repeat Step 21 for the other Radioactive Material and then navigate to <a href="pictures/main_ee/korber_zipline.png">Korber Rooftop Zipline</a> and attach the Uranium Device.</li>
+      <li>Both Uranium Devices will shoot across the zipline, collide in the middle and land on the street below. Collect the Cleansed Uranium and return it to the Conversion Unit.</li>
+
+      <p class="warning">Warning: Point of No Return. Once the other Uranium is cleansed, the Boss Fight will start.</p>
+      <li><i>Repeat Steps 20-24 to get another Cleansed Uranium.</i></li>
+
+      <p class="step-group-title">Valentina Boss Fight</p>
+      <li>Valentina has three attacks, two damage dealing and one healing. They are:</li>
+      <ul>
+        <li>Fire (Damage): Three Orange crystals will appear over Valentina's Head and begin shooting at a player. The projectiles can be outrun but cannot be avoided while walking.</li>
+        <li>Wipe (Damage): A blue aura will appear around the player's screen. All players must take cover to avoid being instantly downed.</li>
+        <li>Heal: Valentina will spawn floating zombies surrounding her. Kill the zombies to stop her from healing.</li>
+      </ul>
+      <li>Shoot Valentina till she becomes Immune and moves to a new area. She will move four times ending back at the secret lab.</li>
+      <li>Once Valentina is dead, a cutscene will play then the player must defend Klaus as he walks the Bomb into the Portal.</li>
+      <li>Once he makes it into the portal, the game will end and the cutscene will start.</li>
+    </ol>
+  </div>
+
+  <!-- Song EE -->
+  <div class="content-container" id="song_ee">
+    <h2>'Amoeba' Song</h2>
+    <ol>
+      <li>There are three tapes required to start the song: </li>
+      <ul>
+        <li><a href="pictures/song_ee/tape1.png">Garment Factory: Top of mannequin</a></li>
+        <li><a href="pictures/song_ee/tape2.png">Electronics Store: Shelf</a></li>
+        <li><a href="pictures/song_ee/tape3.png">Blasted Suite: Flower vase</a></li>
+      </ul>
+      <li>Once all three tapes are collected, the song will start.</li>
     </ol>
   </div>
 
@@ -245,19 +272,6 @@
     </ol>
   </div>
 
-  <!-- Song EE -->
-  <div class="content-container" id="song_ee">
-    <h2>'Amoeba' Song</h2>
-    <ol>
-      <li>There are three tapes required to start the song: </li>
-      <ul>
-        <li><a href="pictures/song_ee/tape1.png">Garment Factory: Top of mannequin</a></li>
-        <li><a href="pictures/song_ee/tape2.png">Electronics Store: Shelf</a></li>
-        <li><a href="pictures/song_ee/tape3.png">Blasted Suite: Flower vase</a></li>
-      </ul>
-      <li>Once all three tapes are collected, the song will start.</li>
-    </ol>
-  </div>
 
   <!-- Free Loot -->
   <div class="content-container" id="gersh_device_ee">
