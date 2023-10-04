@@ -133,6 +133,12 @@ p.archon-special {
     font-size: 115%;
 }
 
+p.version_text {
+    font-size: 60%;
+    position: absolute;
+    top: -20px;
+    right: 13px;
+}
 
 p.li-spacing {
     margin-top: 7px;
