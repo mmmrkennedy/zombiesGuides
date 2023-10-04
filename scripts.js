@@ -65,7 +65,7 @@ window.addEventListener('storage', function(event) {
         case 'substeps':
             substeps((localStorage.getItem("substeps") === 'true'), 1);
             if(localStorage.getItem("substeps") === 'true') {
-                window.location.reload();
+                window.location.href = window.location.href.split("#")[0];
             }
             break;
         case 'close_setting_auto':
@@ -242,6 +242,7 @@ function substeps(check, callid) {
 document.addEventListener('DOMContentLoaded', function () {
     substeps((localStorage.getItem('substeps') === 'true'), 2);
 });
+
 
 
 
