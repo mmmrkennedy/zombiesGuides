@@ -82,11 +82,11 @@ NAVIGATION UTILITIES
 */
 
 function navigateToIndex() {
-    window.location.href = "/zombiesGuides/index.html";
+    window.location.href = "index.html";
 }
 
 function navigateToSettings() {
-    window.open("/zombiesGuides/settings/settings.html", "_blank");
+    window.open("settings/settings.html", "_blank");
 }
 
 /*
