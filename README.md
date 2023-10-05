@@ -1,7 +1,6 @@
 # mmmrkennedy's Zombies Easter Egg Guides
 
-https://zombies-guides.vercel.app/
-(Switched to Vercel from Github Pages because github wouldn't let me upload the full site.)
+### www.mmmrkennedy.net
 
 The goal of this site is to archive and compile accurate and up-to-date information on all COD: Zombies Easter Egg.
 The guides don't contain video tutorials (as of right now), but rather text and images.
