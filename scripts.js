@@ -98,8 +98,9 @@ SCROLL FUNCTIONS
 function scrollToTop() {
     window.scrollTo({
         top: 0,
-        behavior: 'smooth'
+        behavior: 'smooth',
     });
+    window.history.pushState(null, null, '#');
 }
 
 document.addEventListener('DOMContentLoaded', function () {
