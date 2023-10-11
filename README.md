@@ -1,6 +1,6 @@
 # mmmrkennedy's Zombies Easter Egg Guides
 
-### http://mmmrkennedy.net/index.html
+### Due to the limits on GitHub Pages and the cost of hosting and serving the site and its many pictures (with no financial return), there is no live site. However, you can clone the repo and run it locally. 
 
 The goal of this site is to archive and compile accurate and up-to-date information on all COD: Zombies Easter Egg.
 The guides don't contain video tutorials (as of right now), but rather text and images.
@@ -15,20 +15,21 @@ Text Finished:
 - Outbreak (All Pictures needed)
 
 Next:
-- Blood of the Dead
+- Classified
 
 Completely Finished:
 - All Of CW (Except Outbreak Pictures)
 - All Of VG
 - IX
 - Voyage of Despair
+- Blood of the Dead
 
 Planned:
-- Classified
 - Dead of The Night
 - Ancient Evil
 - Alpha Omega
 - Tag Der Toten
+- The Final Reich
 
 If you have any suggestions or feedback, or you'd even like to contribute, please let me know!
 

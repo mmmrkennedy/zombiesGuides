@@ -10,7 +10,7 @@ Update Versioning
 
 When Guide is being added:
 Update Versioning in Index.html
-Update Index.html to make sure guide can be accessed
+Update Index.html to make sure the new guide can be accessed
 Update Readme.md
 Check comments of the new guide for anything undesirable.
 Make sure the new guide's picture directory is segmented by substep
