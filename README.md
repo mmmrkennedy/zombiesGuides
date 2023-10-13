@@ -1,6 +1,6 @@
 # mmmrkennedy's Zombies Easter Egg Guides
 
-### Due to the limits on GitHub Pages and the cost of hosting and serving the site and its many pictures (with no financial return), there is no live site. However, you can clone the repo and run it locally. 
+### https://mmmrkennedy.github.io/zombiesGuides/
 
 The goal of this site is to archive and compile accurate and up-to-date information on all COD: Zombies Easter Egg.
 The guides don't contain video tutorials (as of right now), but rather text and images.
