@@ -63,7 +63,7 @@ window.addEventListener('storage', function(event) {
             changeThemeColour();
             break;
         case 'substeps':
-            substeps((localStorage.getItem("substeps") === 'true'), 1);
+            substeps((localStorage.getItem("substeps") === 'true'));
             if(localStorage.getItem("substeps") === 'true') {
                 window.location.href = window.location.href.split("#")[0];
             }
@@ -221,7 +221,7 @@ window.addEventListener('popstate', function(event) {
 SUBSTEP FUNCTIONALITIES
 =======================================
  */
-function substeps(check, callid) {
+function substeps(check) {
     let displayStyle = 'block';
     if (check) {
         displayStyle = 'block';
@@ -241,7 +241,7 @@ function substeps(check, callid) {
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    substeps((localStorage.getItem('substeps') === 'true'), 2);
+    substeps((localStorage.getItem('substeps') === 'true'));
 });
 
 
