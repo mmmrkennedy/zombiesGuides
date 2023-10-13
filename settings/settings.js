@@ -1,6 +1,7 @@
 // Theme color handling
 document.addEventListener('DOMContentLoaded', function() {
-    const savedColorMode = localStorage.getItem('colourMode');
+    let savedColorMode = localStorage.getItem('colourMode');
+    console.log(savedColorMode);
     if(savedColorMode === 'light') {
         document.body.classList.add('light-mode');
     } else {

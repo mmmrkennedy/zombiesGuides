@@ -16,10 +16,32 @@ body  {
     color: blue;
 }
 
+a.link-to-page {
+    color: #52d7bb;
+    text-decoration: underline;
+    font-style: italic;
+}
+
 .light-mode a.link-to-page {
     color: #9d2268;
     text-decoration: underline;
     font-style: italic;
+}
+
+a.bird-highlight-orange {
+    color: #d4b365;
+}
+
+a.bird-highlight-green {
+    color: #6bc343;
+}
+
+.light-mode a.bird-highlight-orange {
+    color: #a97b00;
+}
+
+.light-mode a.bird-highlight-green {
+    color: #34a400;
 }
 
 .light-mode {
@@ -33,10 +55,8 @@ a {
     text-decoration: none;
 }
 
-a.link-to-page {
-    color: #52d7bb;
-    text-decoration: underline;
-    font-style: italic;
+.incomplete-path {
+    color: red;  /* or any other style you want to apply */
 }
 
 
@@ -170,9 +190,9 @@ p.weapon-desc {
 }
 
 details.spacing {
-    margin-top: 9px;
+    margin-top: 23px;
     margin-right: 0;
-    margin-bottom: 9px;
+    margin-bottom: 23px;
     margin-left: 0;
 }
 
@@ -195,14 +215,6 @@ h2.sticky-header {
 
 .upgrades {
     margin-top: 20px;
-}
-
-.bird-highlight-orange {
-    color: #d4b365;
-}
-
-.bird-highlight-green {
-    color: #6bc343;
 }
 
 

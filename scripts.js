@@ -82,11 +82,11 @@ NAVIGATION UTILITIES
 */
 
 function navigateToIndex() {
-    window.location.href = "/index.html";
+    window.location.href = "/zombiesGuides/index.html";
 }
 
 function navigateToSettings() {
-    window.open("/settings/settings.html", "_blank");
+    window.open("/zombiesGuides/settings/settings.html", "_blank");
 }
 
 /*
@@ -203,7 +203,7 @@ HISTORY MANAGEMENT FOR ANCHOR LINKS
 */
 
 document.addEventListener('click', function(event) {
-    var target = event.target;
+    let target = event.target;
     if (target.tagName.toLowerCase() === 'a' && target.hash) {
         window.history.pushState({hash: target.hash}, '', target.hash);
     }
@@ -222,7 +222,7 @@ SUBSTEP FUNCTIONALITIES
 =======================================
  */
 function substeps(check) {
-    let displayStyle = 'block';
+    let displayStyle;
     if (check) {
         displayStyle = 'block';
     } else {
@@ -244,6 +244,26 @@ document.addEventListener('DOMContentLoaded', function () {
     substeps((localStorage.getItem('substeps') === 'true'));
 });
 
+/*
+=======================================
+INCOMPLETE PATH FOR A TAGS
+=======================================
+ */
+document.addEventListener("DOMContentLoaded", function() {
+    var allATags = document.querySelectorAll('a');
 
+    allATags.forEach(function(tag) {
+        var hrefValue = tag.getAttribute('href');
 
+        // Skip if hrefValue starts with # (anchor link) or http/https (absolute URL).
+        if (hrefValue.startsWith('#') || hrefValue.startsWith('http://') || hrefValue.startsWith('https://')) {
+            return;
+        }
 
+        // Check if the hrefValue doesn't have a file extension.
+        if (!/\.(webp|jpg|jpeg|png|html|pdf|gif)$/i.test(hrefValue)) {
+            console.log(tag);
+            tag.classList.add('incomplete-path');
+        }
+    });
+});
