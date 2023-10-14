@@ -85,4 +85,6 @@ fabric.properties
 !/commit_checklist.txt
 /Easter Egg Help/*
 /games - Copy/*
-/image_converter.py
+/*.py
+*.py
+image_converter_2.py
