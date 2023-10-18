@@ -298,11 +298,10 @@ h1.centered {
 }
 
 
-/* Default table styles */
+/* General table styles */
 table {
     margin: 20px 30px 20px 10px;
     border-collapse: collapse;
-    width: auto; /* Default width limit for all tables */
 }
 
 th, td {
@@ -311,18 +310,11 @@ th, td {
     border: 1px solid #ddd;
 }
 
+
 .light-mode th, .light-mode td {
     padding: 10px;
     text-align: left;
     border: 1px solid #000;
 }
-
-/* Gauntlet class to remove width limit */
-.gauntlet table {
-    width: auto; /* Removing the width limit */
-}
-
-
-
 
 
