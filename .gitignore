@@ -87,7 +87,8 @@ fabric.properties
 /games - Copy/*
 /*.py
 *.py
-Python Utilities/image_converter_2.py
+Python Utilities/image_converter_to_png.py
 *.png
 /Python Utilities/
 /venv/
+/games/*/*_backup/
