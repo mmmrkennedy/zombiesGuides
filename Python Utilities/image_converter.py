@@ -1,3 +1,4 @@
+import distutils
 import os
 import subprocess
 from PIL import Image
@@ -12,7 +13,7 @@ def png_to_webp(root_dir, image_quality):
     if num_images == 0:
         print("No images found!")
     else:
-        duplicate_directory(image_dir, image_dir + "_backup")
+        incremental_backup(image_dir, image_dir + "_backup")
         for dirpath, dirnames, filenames in os.walk(root_dir):
             for filename in filenames:
                 # Check if the file has any of the common image extensions
@@ -28,7 +29,8 @@ def png_to_webp(root_dir, image_quality):
 
                     # Try executing the cwebp command
                     try:
-                        result = subprocess.run(['cwebp', '-q', str(image_quality), input_path, '-o', output_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+                        result = subprocess.run(['cwebp', '-q', str(image_quality), input_path, '-o', output_path],
+                                                stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
 
                         # If conversion was successful and output file exists, delete the original image
                         if result.returncode == 0 and os.path.exists(output_path):
@@ -52,7 +54,7 @@ def webp_to_png(root_dir):
     if num_images == 0:
         print("No images found!")
     else:
-        duplicate_directory(image_dir, image_dir + "_backup")
+        incremental_backup(image_dir, image_dir + "_backup")
         for dirpath, dirnames, filenames in os.walk(root_dir):
             for filename in filenames:
                 # Check if the file has a .webp extension
@@ -64,12 +66,13 @@ def webp_to_png(root_dir):
 
                     # Try executing the dwebp command
                     try:
-                        result = subprocess.run(['dwebp', input_path, '-o', output_path], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
+                        result = subprocess.run(['dwebp', input_path, '-o', output_path], stdout=subprocess.DEVNULL,
+                                                stderr=subprocess.DEVNULL, check=True)
 
                         # If conversion was successful and output file exists, delete the original webp image
                         if result.returncode == 0 and os.path.exists(output_path):
                             os.remove(input_path)
-                            #print(f"Converted and deleted {input_path}")
+                            # print(f"Converted and deleted {input_path}")
                             images_converted += 1
                             print(f"Converted {images_converted} of {num_images} images")
                         else:
@@ -94,6 +97,17 @@ def duplicate_directory(src_dir, dest_dir):
     # Copy directory
     shutil.copytree(src_dir, dest_dir)
 
+
+def incremental_backup(src_dir, dest_dir):
+    # Ensure source directory exists
+    if not os.path.exists(src_dir):
+        raise ValueError(f"Source directory {src_dir} does not exist!")
+
+    print(f"Backing up {src_dir} to {dest_dir}")
+
+    # Copy directory (only new files)
+    distutils.dir_util.copy_tree(src_dir, dest_dir)
+
 def count_image_files(directory_path, image_extensions):
     image_count = 0
 
@@ -104,6 +118,7 @@ def count_image_files(directory_path, image_extensions):
                     image_count += 1
 
     return image_count
+
 
 def valid_dir(image_dir):
     if image_dir == "":
@@ -121,7 +136,8 @@ if __name__ == "__main__":
     while 1:
         image_dir = ""
 
-        convert_option = input("Convert to webp (1), convert to png (2), Only Backup Directory (3), Change Directory (4) or Quit (5)? ")
+        convert_option = input(
+            "Convert to webp (1), convert to png (2), Backup Directory in Full (Don't) (3), Change Directory (4) or Quit (5)? ")
 
         if convert_option == "1":
             image_dir = valid_dir(image_dir)
@@ -140,7 +156,7 @@ if __name__ == "__main__":
         elif convert_option == "3":
             image_dir = valid_dir(image_dir)
 
-            duplicate_directory(image_dir, image_dir + "_backup")
+            incremental_backup(image_dir, image_dir + "_backup")
             print("Backup Completed!")
 
         elif convert_option == "4":
