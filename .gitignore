@@ -81,11 +81,8 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 # Custom
-/*/*.txt
+**/*.txt
 !/commit_checklist.txt
-/Easter Egg Help/*
-/games - Copy/*
-*.png
+**/*.png
 /venv/
-/games/*/*_backup*/
-/*_backup*/
+*_backup*
