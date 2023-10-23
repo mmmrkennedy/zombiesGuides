@@ -249,10 +249,10 @@ document.addEventListener('DOMContentLoaded', function () {
 INCOMPLETE PATH FOR A TAGS
 =======================================
  */
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     var allATags = document.querySelectorAll('a');
 
-    allATags.forEach(function(tag) {
+    allATags.forEach(function (tag) {
         var hrefValue = tag.getAttribute('href');
 
         // Skip if hrefValue starts with # (anchor link) or http/https (absolute URL).
@@ -262,8 +262,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Check if the hrefValue doesn't have a file extension.
         if (!/\.(webp|jpg|jpeg|png|html|pdf|gif)$/i.test(hrefValue)) {
-            console.log(tag);
             tag.classList.add('incomplete-path');
+        }
+
+        if (/^.*\.(jpg|jpeg|png|webp|gif)$/i.test(hrefValue)) {
+            var img = new Image();
+            img.onerror = function () {
+                tag.classList.add('file-dne');
+            };
+            img.src = hrefValue;
         }
     });
 });

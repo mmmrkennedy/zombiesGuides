@@ -56,7 +56,11 @@ a {
 }
 
 .incomplete-path {
-    color: red;  /* or any other style you want to apply */
+    color: red;
+}
+
+.file-dne {
+    color: orange;
 }
 
 

@@ -5,8 +5,8 @@ from PIL import Image
 import shutil
 
 
-def png_to_webp(root_dir, image_quality):
-    image_extensions = ['.png', '.jpg', '.jpeg', '.bmp', '.webp']
+def png_to_webp(root_dir, image_quality, image_extensions):
+
     num_images = count_image_files(root_dir, image_extensions)
     images_converted = 0
 
@@ -44,7 +44,7 @@ def png_to_webp(root_dir, image_quality):
                     except subprocess.CalledProcessError:
                         print(f"Error processing {input_path}")
 
-        print(f"Conversion to WebP: {image_quality} Completed!")
+        print(f"Conversion to WebP @ {image_quality} Quality Completed!")
 
 
 def webp_to_png(root_dir):
@@ -146,7 +146,13 @@ if __name__ == "__main__":
             if image_quality == "":
                 image_quality = "87"
 
-            png_to_webp(image_dir, image_quality)
+            include_webp = input("Include webp files? (y/n), No is default: ")
+            if include_webp == "":
+                image_extensions = ['.png', '.jpg', '.jpeg', '.bmp']
+            else:
+                image_extensions = ['.png', '.jpg', '.jpeg', '.bmp', '.webp']
+
+            png_to_webp(image_dir, image_quality, image_extensions)
 
         elif convert_option == "2":
             image_dir = valid_dir(image_dir)
