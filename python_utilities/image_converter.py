@@ -1,4 +1,3 @@
-import distutils
 import os
 import subprocess
 from PIL import Image
@@ -84,20 +83,18 @@ def webp_to_png(root_dir):
         print("Conversion to PNG Completed!")
 
 
-def duplicate_directory(src_dir, dest_dir):
-    # Ensure source directory exists
-    if not os.path.exists(src_dir):
-        raise ValueError(f"Source directory {src_dir} does not exist!")
+def remove_empty_dirs(dir_path):
+    for dirpath, dirnames, filenames in os.walk(dir_path, topdown=False):
+        try:
+            if not os.listdir(dirpath):  # Check if the directory is empty
+                print(f"Removing empty directory: {dirpath}")
+                os.rmdir(dirpath)
+                parent_dir = os.path.dirname(dirpath)
+                if parent_dir != dir_path:  # Prevent trying to remove the root backup directory
+                    remove_empty_dirs(parent_dir)  # Recursively check and remove empty parent directories
 
-    # If destination directory exists, delete it
-    if os.path.exists(dest_dir):
-        shutil.rmtree(dest_dir)
-
-    print(f"Backing up {src_dir} to {dest_dir}")
-
-    # Copy directory
-    shutil.copytree(src_dir, dest_dir)
-
+        except FileNotFoundError:
+            continue
 
 def incremental_backup(src_dir, dest_dir):
     # Ensure source directory exists
@@ -106,8 +103,37 @@ def incremental_backup(src_dir, dest_dir):
 
     print(f"Backing up {src_dir} to {dest_dir}")
 
-    # Copy directory (only new files)
-    distutils.dir_util.copy_tree(src_dir, dest_dir)
+    # Define allowed image extensions
+    image_extensions = {".jpg", ".jpeg", ".webp", ".png"}
+
+    # Walk through the source directory
+    for dirpath, dirnames, filenames in os.walk(src_dir):
+        # Construct the destination directory path
+        rel_path = os.path.relpath(dirpath, src_dir)
+        dest_path = os.path.join(dest_dir, rel_path)
+
+        # Make sure the destination directory exists
+        if not os.path.exists(dest_path):
+            os.makedirs(dest_path)
+
+        # Loop through all files in the current directory
+        for filename in filenames:
+            # Check if the file is an image
+            if os.path.splitext(filename)[1].lower() in image_extensions:
+                # Construct full file paths
+                src_file = os.path.join(dirpath, filename)
+                dest_file = os.path.join(dest_path, filename)
+
+                # Copy the file if it doesn't exist in the destination
+                # or if it's newer than the destination file
+                if (not os.path.exists(dest_file)) or (os.path.getmtime(src_file) > os.path.getmtime(dest_file)):
+                    shutil.copy2(src_file, dest_file)
+                    print(f"Copied {src_file} to {dest_file}")
+                else:
+                    print(f"Skipped {src_file}, already up to date.")
+
+    # Remove any empty directories in the destination
+    remove_empty_dirs(dest_dir)
 
 
 def count_image_files(directory_path, image_extensions):

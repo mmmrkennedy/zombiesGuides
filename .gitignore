@@ -82,7 +82,7 @@ fabric.properties
 
 # Custom
 /*/*.txt
-!/commit_checklist.txt
+!/guide_making_utils/commit_checklist.txt
 /Easter Egg Help/*
 /games - Copy/*
 *.png
