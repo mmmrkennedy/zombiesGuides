@@ -6,14 +6,15 @@ import shutil
 
 
 def png_to_webp(root_dir, image_quality, image_extensions):
-
     num_images = count_image_files(root_dir, image_extensions)
     images_converted = 0
 
     if num_images == 0:
         print("No images found!")
     else:
-        incremental_backup(image_dir, image_dir + "_backup")
+        if input("Backup directory? (y/n), No is default: ") == "y":
+            incremental_backup(image_dir, image_dir + "_backup")
+
         for dirpath, dirnames, filenames in os.walk(root_dir):
             for filename in filenames:
                 # Check if the file has any of the common image extensions
@@ -108,6 +109,7 @@ def incremental_backup(src_dir, dest_dir):
     # Copy directory (only new files)
     distutils.dir_util.copy_tree(src_dir, dest_dir)
 
+
 def count_image_files(directory_path, image_extensions):
     image_count = 0
 
@@ -122,7 +124,11 @@ def count_image_files(directory_path, image_extensions):
 
 def valid_dir(image_dir):
     if image_dir == "":
-        return input("Enter the path to the image directory: ").strip('\'"')
+        new_input = input("Enter the path to the image directory: ").strip('\'"')
+        if new_input == "":
+            default_dir = "E:\zombiesGuides\games"
+            print(f"Using default directory: {default_dir}")
+            return default_dir
     else:
         use_previous_dir = input("Use previous directory? (y/n): ")
         if use_previous_dir == "n":
