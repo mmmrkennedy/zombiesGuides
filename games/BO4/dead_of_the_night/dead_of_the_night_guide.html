@@ -6,7 +6,7 @@
     <!-- Browser Tab Title -->
     <title>Dead of the Night</title>
     <link rel="stylesheet" href="/zombiesGuides/styles.css">
-  <link rel="icon" type="image/x-icon" href="/zombiesGuides/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/zombiesGuides/favicon.ico">
     <base target="_blank">
 </head>
 
@@ -35,6 +35,7 @@
         <label for="fontSelector">Select a Font:</label>
         <select id="fontSelector">
             <option value="Arial">Arial (Default)</option>
+            <option value="Verdana">Verdana</option>
             <option value="OpenDyslexic">OpenDyslexic</option>
         </select>
 
@@ -62,6 +63,23 @@
             <li><a href="#fire_traps">Fire Traps</a></li>
         </ul>
 
+        <!--
+        Looking at Telescope Stone = Leo
+        Shooting Lightning Rod = Virgo
+        Melted off head = Libra
+        Meleeing the telescope with the shield = Scorpio
+
+        Looking at Effigy Stone = Sagittarius
+        All branches collected = Capricorn
+        Entering Ghost Mode = Aquarius
+        Interacting with the stone to remove ghost mode = Pisces
+
+        Looking at Armour Stone = Aries
+        All three gems collected from fireplaces = Taurus
+        Gems brought to forest = Gemini
+        Stone picked up = Cancer
+        -->
+
         <h2>Easter Eggs</h2>
         <ul>
             <li><a href="#main_ee">'Trial by Ordeal' Main Quest</a></li>
@@ -69,15 +87,33 @@
                 <ol>
                     <li><a href="#main_ee">Prerequisites</a></li>
                     <li><a href="#main_ee_step1">Telescope Quest Line</a></li>
+                    <ol>
+                        <li><a href="#main_ee_step1">Leo - Activating the Telescope Quest</a></li>
+                        <li><a href="#main_ee_step1">Virgo - Shooting the Lightning Rod</a></li>
+                        <li><a href="#main_ee_step1_libra">Libra - Melting Atlas's Head Off</a></li>
+                        <li><a href="#main_ee_step1_scorpio">Scorpio - Activating the Telescope</a></li>
+                    </ol>
                     <li><a href="#main_ee_step2">Effigy Quest Line</a></li>
+                    <ol>
+                        <li><a href="#main_ee_step2">Sagittarius - Activating the Effigy Quest</a></li>
+                        <li><a href="#main_ee_step2_cap">Capricorn - Collecting Branches</a></li>
+                        <li><a href="#main_ee_step2_aqua">Aquarius - Entering Ghost Mode</a></li>
+                        <li><a href="#main_ee_step2_pisces">Pisces - Activating the Lockdown</a></li>
+                    </ol>
                     <li><a href="#main_ee_step3">Knight Quest Line</a></li>
+                    <ol>
+                        <li><a href="#main_ee_step3">Aries - Activating the Armour Quest</a></li>
+                        <li><a href="#main_ee_step3_taurus">Taurus - Collecting the Gems</a></li>
+                        <li><a href="#main_ee_step3_gemini">Gemini - Bring the Gems to the Forest</a></li>
+                        <li><a href="#main_ee_step3_cancer">Cancer - Activating the Lockdown</a></li>
+                    </ol>
                     <li><a href="#main_ee_step4">Boss Fight</a></li>
                 </ol>
             </div>
             <li><a href="#song_ee">'Mystery' Song</a></li>
             <li><a href="#hidden_rooms">Hidden Rooms (Various Free Items)</a></li>
             <li><a href="#jump_scare">Jump Scare</a></li>
-            <li><a href="#infinite_ammo">Infinite Ammo</a></li>
+            <li><a href="#infinite_ammo">Infinite Ammo (Images Incomplete)</a></li>
         </ul>
 
         <h2>Gauntlet Challenges</h2>
@@ -90,7 +126,10 @@
     <div class="content-container" id="perk_statues">
         <h2>Perk Statues</h2>
         <ul>
-            <li>There are four Perk Statues, three of which change locations each game. One perk will always be on the 'Mausoleum', another in the 'Gardens' and the last will either be in the 'Wine Cellar' or 'Forest Terrace'. There is a way to easily tell which Statue is at the 'Mausoleum' and 'Gardens' by checking the <b>symbols above the doorways</b> to the <a href="pictures/perk_statues/symbol_abovedoorway_library.webp">Library</a> and <a href="pictures/perk_statues/symbol_abovedoorway_diningroom.webp">Dining Room</a>. The Library door corresponds to the <a href="pictures/perk_statues/mausoleum_perk.webp">Mausoleum</a> and Dining Room door to the <a href="pictures/perk_statues/gardens_perk.webp">Gardens</a>. Doorway Symbols: </li>
+            <li>There are four Perk Statues, three of which change locations each game.</li>
+            <li>One perk will always be on the 'Mausoleum', another in the 'Gardens' and the last will either be in the 'Wine Cellar' or 'Forest Terrace'.</li>
+            <li>There is a way to easily tell which Statue is at the 'Mausoleum' and 'Gardens' by checking the <b>symbols above the doorways</b> to the <a href="pictures/perk_statues/symbol_abovedoorway_library.webp">Library</a> and <a href="pictures/perk_statues/symbol_abovedoorway_diningroom.webp">Dining Room</a>. The Library door corresponds to the <a href="pictures/perk_statues/mausoleum_perk.webp">Mausoleum</a> and Dining Room door to the <a href="pictures/perk_statues/gardens_perk.webp">Gardens</a>.</li>
+            <li>Doorway Symbols: </li>
             <ul>
                 <li>Danu: Always in the <a href="pictures/perk_statues/danu_statue.webp">Entrance Hall</a></li>
                 <li>Ra: <a href="pictures/perk_statues/ra_symbol.webp">Doorway Symbol</a></li>
@@ -191,19 +230,19 @@
                         <td><a href="pictures/pap/noose.webp">On a chair in the 'Wine Cellar'</a></td>
                     </tr>
                     <tr>
-                        <td>Scared Woman Painting</td>
+                        <td><a href="pictures/pap/scared_woman.webp">Scared Woman Painting</a></td>
                         <td><a href="pictures/pap/painting_east_gallery.webp">East Gallery</a></td>
                     </tr>
                     <tr>
-                        <td>Woman and Elderly Man Painting</td>
+                        <td><a href="pictures/pap/woman_and_old_man.webp">Woman and Elderly Man Painting</a></td>
                         <td><a href="pictures/pap/painting_smoking_room.webp">Smoking Room </a></td>
                     </tr>
                     <tr>
-                        <td>Woman with Scratches on Hands</td>
+                        <td><a href="pictures/pap/scratches_on_hands.webp">Woman with Scratches on Hands</a></td>
                         <td><a href="pictures/pap/painting_music_room.webp">Music Room</a></td>
                     </tr>
                     <tr>
-                        <td>Sad Woman Painting</td>
+                        <td><a href="pictures/pap/sad_woman.webp">Sad Woman Painting</a></td>
                         <td><a href="pictures/pap/painting_tea_room.webp">Tea Room</a></td>
                     </tr>
                     </tbody>
@@ -214,42 +253,41 @@
         </ol>
     </div>
 
-
     <!-- Wonder Weapons -->
     <div class="content-container" id="alistairs_folly">
         <h2>Alistair's Folly</h2>
         <p class="weapon-desc">Alistair's Folly is a pistol that fires an exploding round, which does not damage the player. It cannot be Pack-a-Punch'd, but there are two upgrades, the <a href="#chaos_theory" class="link-to-page">Chaos Theory</a> and <a href="#alistairs_annihilator" class="link-to-page">Alistair's Annihilator</a>.</p>
         <p class="weapon-desc">The Alistair's Folly is available through the mystery box and via the following quest: </p>
         <ol>
-            <li>Locate four symbols, each a different colour. Each symbol can be a "X", "A", "D" or "Z", so when you find a symbol note down the colour and letter (exp. "Yellow Z"). Symbol Locations: </li>
+            <li>Locate four symbols, each a different colour. The possible symbols are stylized versions of "X", "A", "D" or "Z", so when you find a symbol note down the colour and letter (exp. "Yellow Z"). Symbol Locations: </li>
             <ul>
                 <li>Red Symbol: </li>
                 <ul>
-                    <li>Master Bedroom - <a href="pictures/alistairs_folly/red_symbol_master_bedroom.webp">Right of fireplace</a></li>
-                    <li>East Gallery - <a href="pictures/alistairs_folly/red_symbol_east_gallery.webp">At the top of the stairs to the 'Main Hall'</a></li>
-                    <li>Wine Cellar - <a href="pictures/alistairs_folly/red_symbol_wine_cellar.webp">On a wooden barrel outside barrier, right of the MX9 wallbuy</a></li>
-                    <li>Dining Room - <a href="pictures/alistairs_folly/red_symbol_dining_room.webp">Above painting behind bar</a></li>
+                    <li><a href="pictures/alistairs_folly/red_symbol_master_bedroom.webp">Master Bedroom - Right of fireplace</a></li>
+                    <li><a href="pictures/alistairs_folly/red_symbol_east_gallery.webp">East Gallery - At the top of the stairs to the 'Main Hall'</a></li>
+                    <li><a href="pictures/alistairs_folly/red_symbol_wine_cellar.webp">Wine Cellar - On a wooden barrel outside barrier, right of the MX9 wallbuy</a></li>
+                    <li><a href="pictures/alistairs_folly/red_symbol_dining_room.webp">Dining Room - Above painting behind bar</a></li>
                 </ul>
                 <li>Yellow Symbol: </li>
                 <ul>
-                    <li>Forest Terrace - <a href="pictures/alistairs_folly/yellow_symbol_forest_terrance1.webp">On a Wall, left of Bowie Knife wallbuy</a></li>
-                    <li>Forest Terrace - <a href="pictures/alistairs_folly/yellow_symbol_forest_terrance2.webp">Behind the gate left of the GKS wallbuy</a></li>
-                    <li>Forest Terrace - <a href="pictures/alistairs_folly/yellow_symbol_forest_terrance3.webp">Behind and to the right of the GKS wallbuy</a></li>
-                    <li>Forest Terrace - <a href="pictures/alistairs_folly/yellow_symbol_forest_terrance4.webp">Behind a gate, right of the Bowie Knife wallbuy</a></li>
+                    <li><a href="pictures/alistairs_folly/yellow_symbol_forest_terrance1.webp">Forest Terrace - On a Wall, left of Bowie Knife wallbuy</a></li>
+                    <li><a href="pictures/alistairs_folly/yellow_symbol_forest_terrance2.webp">Forest Terrace - Behind a gate, left of the GKS wallbuy</a></li>
+                    <li><a href="pictures/alistairs_folly/yellow_symbol_forest_terrance3.webp">Forest Terrace - Behind the GKS wallbuy</a></li>
+                    <li><a href="pictures/alistairs_folly/yellow_symbol_forest_terrance4.webp">Forest Terrace - Behind a gate, right of the Bowie Knife wallbuy</a></li>
                 </ul>
                 <li>Green Symbol: </li>
                 <ul>
-                    <li>Greenhouse Terrace - <a href="pictures/alistairs_folly/green_symbol_greenhouse.webp">Outside gate left of the 'Greenhouse Laboratory'</a></li>
-                    <li>Gardens - <a href="pictures/alistairs_folly/green_symbol_gardens1.webp">Inside a gazebo</a></li>
-                    <li>Gardens - <a href="pictures/alistairs_folly/green_symbol_gardens2.webp">Outside the gate right of Perk Statue</a></li>
-                    <li>Gardens - <a href="pictures/alistairs_folly/green_symbol_gardens3.webp">Outside the gate left of Perk Statue</a></li>
+                    <li><a href="pictures/alistairs_folly/green_symbol_greenhouse.webp">Greenhouse Terrace - Outside a gate, left of the entrance to the 'Greenhouse Laboratory'</a></li>
+                    <li><a href="pictures/alistairs_folly/green_symbol_gardens1.webp">Gardens - Inside the gazebo, left of Vapr-XKG wallbuy</a></li>
+                    <li><a href="pictures/alistairs_folly/green_symbol_gardens2.webp">Gardens - Outside a gate, right of Perk Statue</a></li>
+                    <li><a href="pictures/alistairs_folly/green_symbol_gardens3.webp">Gardens - Outside a gate, left of Perk Statue</a></li>
                 </ul>
                 <li>Blue Symbol: </li>
                 <ul>
-                    <li>Cemetery - <a href="pictures/alistairs_folly/blue_symbol_cemetery1.webp">On the gravestone behind a tree near the Stake Buildable Table</a></li>
-                    <li>Cemetery - <a href="pictures/alistairs_folly/blue_symbol_cemetery2.webp">On the gravestone right of staircase to the 'Mausoleum'</a></li>
-                    <li>Mausoleum - <a href="pictures/alistairs_folly/blue_symbol_mausoleum1.webp">Top of the crypt, right of the 'Mausoleum'</a></li>
-                    <li>Mausoleum - <a href="pictures/alistairs_folly/blue_symbol_mausoleum2.webp">Base of lion statue, left of the 'Mausoleum'</a></li>
+                    <li><a href="pictures/alistairs_folly/blue_symbol_cemetery1.webp">Cemetery - On a gravestone, behind a tree, near the Stake Buildable Table</a></li>
+                    <li><a href="pictures/alistairs_folly/blue_symbol_cemetery2.webp">Cemetery - On the gravestone, right of the right-side staircase to the 'Mausoleum'</a></li>
+                    <li><a href="pictures/alistairs_folly/blue_symbol_mausoleum1.webp">Mausoleum - Top of a crypt, right of the 'Mausoleum'</a></li>
+                    <li><a href="pictures/alistairs_folly/blue_symbol_mausoleum2.webp">Mausoleum - Base of lion statue, left of the 'Mausoleum'</a></li>
                 </ul>
             </ul>
             <li>Enter the symbols into the <a href="pictures/alistairs_folly/lock_box.webp">Lock Box</a> at the back of the Library.</li>
@@ -284,6 +322,9 @@
             <p class="step-group-title">Bat Chaos Materia</p>
             <li>In the 'Mausoleum', shoot the <a href="pictures/alistairs_folly/alistairs_annihilator/orange_lamp.webp">orange lamp</a> with the Chaos Theory to switch it off and make another orange. After the first lamp is shot, quickly shoot the next three lamps, or they'll all go out, requiring you to retry next round.</li>
             <li>Once all four lamps are shot, a bat will spawn from the lamp and fly around the 'Cemetery' and 'Mausoleum'.</li>
+            <ul>
+                <li>Tip: As soon as you shoot the last lamp, aim just above the lamp to where the bat is spawning and start shooting the Chaos Theory. If done correctly, you should kill the bat before it can fly into the sky.</li>
+            </ul>
             <li>Shoot it with the Chaos Theory to obtain the <a href="pictures/alistairs_folly/alistairs_annihilator/vamp_bat_material.webp">Bat Chaos Materia</a>.</li>
 
             <p class="step-group-title">Gun Part</p>
@@ -303,21 +344,21 @@
             <ul>
                 <li>Part 1: </li>
                 <ul>
-                    <li>Grand Staircase - <a href="pictures/ballistic_shield/base_grand_staircase.webp">Right of the Sentinel Artifact</a></li>
-                    <li>East Balcony - <a href="pictures/ballistic_shield/base_east_balcony.webp">Left of Saug 9mm wallbuy</a></li>
-                    <li>West Balcony - <a href="pictures/ballistic_shield/base_west_balcony.webp">Below the stained-glass window</a></li>
+                    <li><a href="pictures/ballistic_shield/base_grand_staircase.webp">Grand Staircase - Right of the Sentinel Artifact</a></li>
+                    <li><a href="pictures/ballistic_shield/base_east_balcony.webp">East Balcony - Left of Saug 9mm wallbuy</a></li>
+                    <li><a href="pictures/ballistic_shield/base_west_balcony.webp">West Balcony - Below the stained-glass window</a></li>
                 </ul>
                 <li>Part 2: </li>
                 <ul>
-                    <li>Library - <a href="pictures/ballistic_shield/window_library1.webp">On the couch, right of the M1897 Trebuchet wallbuy</a></li>
-                    <li>Library - <a href="pictures/ballistic_shield/window_library2.webp">On the ground in front of the shelf, left of the M1897 Trebuchet wallbuy</a></li>
-                    <li>Study - <a href="pictures/ballistic_shield/window_study.webp">On the table at the top of the stairs</a></li>
+                    <li><a href="pictures/ballistic_shield/window_library1.webp">Library - On the couch, right of the M1897 Trebuchet wallbuy</a></li>
+                    <li><a href="pictures/ballistic_shield/window_library2.webp">Library - On the ground in front of the shelf, left of the M1897 Trebuchet wallbuy</a></li>
+                    <li><a href="pictures/ballistic_shield/window_study.webp">Study - On the table at the top of the stairs</a></li>
                 </ul>
                 <li>Part 3: </li>
                 <ul>
-                    <li>East Hallway - <a href="pictures/ballistic_shield/gun_east_hallway.webp">On the chair, near the doorway to the 'Dining Room'</a></li>
-                    <li>Dining Room - <a href="pictures/ballistic_shield/gun_dining_room1.webp">On the ground, right of the Swordfish wallbuy</a></li>
-                    <li>Dining Room - <a href="pictures/ballistic_shield/gun_dining_room2.webp">On the ledge near the stairs to the 'Master Bedroom'</a></li>
+                    <li><a href="pictures/ballistic_shield/gun_east_hallway.webp">East Hallway - On the chair, near the doorway to the 'Dining Room'</a></li>
+                    <li><a href="pictures/ballistic_shield/gun_dining_room1.webp">Dining Room - On the ground, right of the Swordfish wallbuy</a></li>
+                    <li><a href="pictures/ballistic_shield/gun_dining_room2.webp">Dining Room - On the ledge near the stairs to the 'Master Bedroom'</a></li>
                 </ul>
             </ul>
             <li>Navigate to the 'Smoking Room' and build the Ballistic Shield at the <a href="pictures/ballistic_shield/shield_workbench.webp">Workbench</a>.</li>
@@ -330,7 +371,7 @@
         <p class="weapon-desc">The Savage Impaler it a crossbow that does heavy damage to vampires, often one-hit killing the regular ones. It cannot be Pack-a-Punch'd, and there is no upgrade for it.</p>
         <p class="weapon-desc">The Savage Impaler can be obtained from the following quest and from the mystery box after quest completion: </p>
         <ol>
-            <li>Around the Mansion, there are six <a href="pictures/savage_impaler/burning_candle.webp">burning candles</a> that need to be melee'd to be put out (the Strife's knife attachment <b>doesn't work</b>). When meleeing the candle, aim for base of the flame as the hitbox is small. Each time a candle is put out, a sound will play. Locations: </li>
+            <li>Around the Mansion, there are six <a href="pictures/savage_impaler/burning_candle.webp">burning candles</a> that need to be melee'd to be put out (the Strife's knife attachment <b>does work</b>). When meleeing the candle, aim for base of the flame as the hitbox is small. Each time a candle is put out, a sound will play. Locations: </li>
             <ul>
                 <li><a href="pictures/savage_impaler/candle_master_bedroom.webp">Master Bedroom</a></li>
                 <li><a href="pictures/savage_impaler/candle_east_gallery.webp">East Gallery</a></li>
@@ -374,21 +415,21 @@
             <ul>
                 <li>Candlestick: </li>
                 <ul>
-                    <li><a href="pictures/silver_bullets/candlestick_entrance_hall.webp">'Entrance Hall' - On a table near the doorway</a></li>
-                    <li><a href="pictures/silver_bullets/candlestick_billiard_room.webp">'Billiards Room' - Right of the fireplace, below a chair</a></li>
-                    <li><a href="pictures/silver_bullets/candlestick_main_hall.webp">'Main Hall' - Right of the fireplace, near the Mozu wallbuy</a></li>
+                    <li><a href="pictures/silver_bullets/candlestick_entrance_hall.webp">Entrance Hall - On a table near the doorway</a></li>
+                    <li><a href="pictures/silver_bullets/candlestick_billiard_room.webp">Billiards Room - Right of the fireplace, below a chair</a></li>
+                    <li><a href="pictures/silver_bullets/candlestick_main_hall.webp">Main Hall - Right of the fireplace, near the Mozu wallbuy</a></li>
                 </ul>
                 <li>Vase: </li>
                 <ul>
-                    <li><a href="pictures/silver_bullets/vase_west_hallway.webp">'West Hallway' - Right of the couch, below the table</a></li>
-                    <li><a href="pictures/silver_bullets/vase_dining_room1.webp">'Dining Room' - On the table opposite the clock</a></li>
-                    <li><a href="pictures/silver_bullets/vase_dining_room2.webp">'Dining Room' - On the corner of the big table</a></li>
+                    <li><a href="pictures/silver_bullets/vase_west_hallway.webp">West Hallway - Right of the couch, below the table</a></li>
+                    <li><a href="pictures/silver_bullets/vase_dining_room1.webp">Dining Room - On the table opposite the clock</a></li>
+                    <li><a href="pictures/silver_bullets/vase_dining_room2.webp">Dining Room - On the corner of the big table</a></li>
                 </ul>
                 <li>Plate: </li>
                 <ul>
-                    <li><a href="pictures/silver_bullets/plate_wine_cellar1.webp">'Wine Cellar' - On the wall near the MX9 wallbuy</a></li>
-                    <li><a href="pictures/silver_bullets/plate_wine_cellar2.webp">'Wine Cellar' - Opposite the workbench on a shelf</a></li>
-                    <li><a href="pictures/silver_bullets/plate_wine_cellar3.webp">'Wine Cellar' - On the large wooden table, right of the noose</a></li>
+                    <li><a href="pictures/silver_bullets/plate_wine_cellar1.webp">Wine Cellar'- On the wall near the MX9 wallbuy</a></li>
+                    <li><a href="pictures/silver_bullets/plate_wine_cellar2.webp">Wine Cellar - Opposite the workbench on a shelf</a></li>
+                    <li><a href="pictures/silver_bullets/plate_wine_cellar3.webp">Wine Cellar - On the large wooden table, right of the noose</a></li>
                 </ul>
             </ul>
             <li>Craft the Molten Silver at the <a href="pictures/silver_bullets/molten_silver_bench.webp">workbench</a> in the 'Wine Cellar'.</li>
@@ -396,21 +437,21 @@
             <ul>
                 <li>Guano: </li>
                 <ul>
-                    <li><a href="pictures/silver_bullets/guano_mausoleum.webp">'Mausoleum' - At the base of a tree to the right of the Mausoleum</a></li>
-                    <li><a href="pictures/silver_bullets/guano_cemetery1.webp">'Cemetery' - Bottom of the left staircase leading up to the 'Mausoleum'</a></li>
-                    <li><a href="pictures/silver_bullets/guano_cemetery2.webp">'Cemetery' - The part of the 'Cemetery' farthest from the 'Mausoleum', between the two entrances to the 'Cemetery'</a> --- <a href="pictures/silver_bullets/view_from_guano.webp">Better view from the location</a></li>
+                    <li><a href="pictures/silver_bullets/guano_mausoleum.webp">Mausoleum - At the base of a tree to the right of the Mausoleum</a></li>
+                    <li><a href="pictures/silver_bullets/guano_cemetery1.webp">Cemetery - Bottom of the left staircase leading up to the 'Mausoleum'</a></li>
+                    <li><a href="pictures/silver_bullets/guano_cemetery2.webp">Cemetery - The part of the 'Cemetery' farthest from the 'Mausoleum', between the two entrances to the 'Cemetery'</a> --- <a href="pictures/silver_bullets/view_from_guano.webp">Better view from the location</a></li>
                 </ul>
                 <li>Charcoal: </li>
                 <ul>
-                    <li><a href="pictures/silver_bullets/charcoal_master_bedroom.webp">'Master Bedroom' - In the fireplace</a></li>
-                    <li><a href="pictures/silver_bullets/charcoal_billiard_room.webp">'Billiards Room' - In the fireplace</a></li>
-                    <li><a href="pictures/silver_bullets/charcoal_main_hall.webp">'Main Hall' - In the fireplace left of the clock</a></li>
+                    <li><a href="pictures/silver_bullets/charcoal_master_bedroom.webp">Master Bedroom - In the fireplace</a></li>
+                    <li><a href="pictures/silver_bullets/charcoal_billiard_room.webp">Billiards Room - In the fireplace</a></li>
+                    <li><a href="pictures/silver_bullets/charcoal_main_hall.webp">Main Hall - In the fireplace left of the clock</a></li>
                 </ul>
                 <li>Sulfur: </li>
                 <ul>
-                    <li><a href="pictures/silver_bullets/sulfer_greenhouse1.webp">'Greenhouse Laboratory' - Left of the 'Greenhouse Laboratory' main entrance</a></li>
-                    <li><a href="pictures/silver_bullets/sulfer_greenhouse2.webp">'Greenhouse Laboratory' - Right of the 'Greenhouse Laboratory' main entrance</a></li>
-                    <li><a href="pictures/silver_bullets/sulfer_greenhouse3.webp">'Greenhouse Laboratory' - At the back of the greenhouse, near the ICR-7 wallbuy and Alistair's Annihilator workbench</a></li>
+                    <li><a href="pictures/silver_bullets/sulfer_greenhouse1.webp">Greenhouse Laboratory - Left of the 'Greenhouse Laboratory' main entrance</a></li>
+                    <li><a href="pictures/silver_bullets/sulfer_greenhouse2.webp">Greenhouse Laboratory - Right of the 'Greenhouse Laboratory' main entrance</a></li>
+                    <li><a href="pictures/silver_bullets/sulfer_greenhouse3.webp">Greenhouse Laboratory - At the back of the greenhouse, near the ICR-7 wallbuy and Alistair's Annihilator workbench</a></li>
                 </ul>
             </ul>
             <li>Once all parts have been collected and the Molten Silver has been crafted, the Silver Bullets can be crafted at the <a href="pictures/silver_bullets/silver_bullets_bench.webp">workbench</a> in the 'Library'.</li>
@@ -426,20 +467,25 @@
             <li>Open <a href="#pap" class="link-to-page">Pack-a-Punch</a></li>
             <li>In the 'Forest', there's a <a href="pictures/stake_knife/lantern_tree.webp">tree with a lantern</a> on it near the Koshka wallbuy.</li>
             <li>Above the lantern there is a symbol carved into the tree. There are also symbols on three trees nearby. Stand near the tree, so you are <a href="pictures/stake_knife/facing_lantern_tree.webp">facing the lantern</a>.</li>
-            <li>When standing in the correct spot, the four symbols will line up allowing you to see them all at once (<a href="pictures/stake_knife/trees_edited.webp">Brightened Example</a>). Note down the symbols in order from left to right. Note: the symbols will be in a random order every game.</li>
-            <p class="warning">Warning: If you fail the next step, you must restart your game to retry, there is no way to respawn the stones</p>
-            <li>In the 'Gardens', there are four stones, each with one of the symbols from the trees on it. You must shoot the stones in the order the symbols were on the trees (left to right). Each stone's symbol changes each game. Stone locations: </li>
+            <li>When standing in the correct spot, the four symbols will line up allowing you to see them all at once (<a href="pictures/stake_knife/trees_edited.webp">Brightened Example</a>). Remember the symbols in order from left to right. Note: the symbols will be in a random order every game.</li>
+            <li>In the 'Gardens', there are four stones, each with one of the symbols from the trees on it. You must shoot the stones in the order the symbols were on the trees (left to right).</li>
             <ul>
-                <li><a href="pictures/stake_knife/stone_gazebo.webp">On the wall of the Gazebo</a></li>
-                <li><a href="pictures/stake_knife/stone_vapr.webp">Behind the Vapr-XKG wallbuy</a></li>
-                <li><a href="pictures/stake_knife/stone_perk.webp">Right of the Perk Statue, behind a fountain</a></li>
-                <li><a href="pictures/stake_knife/stone_railing.webp">On the railing, right of the zombies spawn</a></li>
+                <li>Each stone's symbol randomizes every new game.</li>
+                <li><b>Warning: If you shoot the stones in the wrong order, you must restart your game to retry. There is no way to respawn the stones.</b></li>
+                <li>Stone locations:</li>
+                <ul>
+                    <li><a href="pictures/stake_knife/stone_gazebo.webp">On the wall of the Gazebo</a></li>
+                    <li><a href="pictures/stake_knife/stone_vapr.webp">Behind the Vapr-XKG wallbuy</a></li>
+                    <li><a href="pictures/stake_knife/stone_perk.webp">Right of the Perk Statue, behind a fountain</a></li>
+                    <li><a href="pictures/stake_knife/stone_railing.webp">On the railing, right of the zombies spawn</a></li>
+                </ul>
             </ul>
             <li>If done correctly, your character will mention something about doing it in the right order.</li>
             <li>Buy the Bowie Knife from the <a href="pictures/stake_knife/bowie_knife_wallbuy.webp">Forest Terrace</a> wallbuy.</li>
             <li>On a <a href="pictures/stake_knife/second_tree.webp">tree</a>, left of the one with the lantern, there are the same four symbols etched around the circumference of the tree. Using the Bowie Knife, melee the symbols in the same order that they appeared on the trees. When a symbol is successfully melee'd, a scratch will appear through it.</li>
             <li>Once all four symbols are melee'd, melee each of the symbols on the tree (in any order this time) with the <a href="#ballistic_shield" class="link-to-page">Ballistic Shield</a> until a <a href="pictures/stake_knife/branch.webp">branch</a> falls from it.</li>
-            <li>Place the branch on the <a href="pictures/stake_knife/stone.webp">stone</a> in the 'Mausoleum'. Kill ~15 vampires near the branch to charge it.</li>
+            <li>Place the branch on the <a href="pictures/stake_knife/stone.webp">stone</a> in the 'Mausoleum'.</li>
+            <li>Kill ~15 Vampires near the branch to charge it.</li>
             <li>Once the branch is charged enough, it will no longer take vampire souls, the <a href="pictures/stake_knife/glowing_branch.webp">end will be smoking orange</a>, and it can be picked up.</li>
             <li>Craft the Stake Knife at the <a href="pictures/stake_knife/workbench.webp">workbench</a> on the 'Cemetery Path'.</li>
         </ol>
@@ -478,7 +524,6 @@
     </div>
 
     <!-- Main Easter Egg -->
-
     <!--
     Looking at Telescope Stone = Leo
     Shooting Lightning Rod = Virgo
@@ -496,11 +541,9 @@
     Stone picked up = Cancer
     -->
 
-
-
     <div class="content-container" id="main_ee">
         <h2>'Trial by Ordeal' Main Quest</h2>
-        <p class="stats">Stats (Solo): Difficulty - 6/10, Est Completion Time - 1:10 Hrs to 1:40 Hrs, RNG Rating - 0/5</p>
+        <p class="stats">Stats (Solo): Difficulty - 6/10, Est Completion Time - 1:10 Hr to 1:40 Hr, RNG Rating - 0/5</p>
         <ol class="step-content">
             <p class="step-group-title">Prerequisites</p>
             <li>Activate the <a href="pictures/sentinel_artifact.webp">Sentinel Artifact</a></li>
@@ -511,21 +554,30 @@
                 <li>Gazing into a crystal will activate the corresponding Quest Line in the Main Quest.</li>
                 <li>These Quest Lines can be completed in any order, and even at the same time (this is not recommended, specifically with the Effigy Quest Line, as it may cause some bugs).</li>
             </ul>
-            <li>Note: Unlike other Easter Eggs in Black Ops 4, there is no text in the HUD to indicate the current step. Instead, on the <a href="pictures/main_ee/sentinel_artifact_hud.webp">Sentinel Artifact</a> in the HUD, there are 12 Zodiac symbols that light up when some steps are completed.</li>
+            <li>Note: Unlike other Easter Eggs in Black Ops 4, there is no text in the HUD to indicate the current step. Instead, on the <a href="pictures/main_ee/sentinel_artifact_hud.webp">Sentinel Artifact</a> in the HUD, there are 12 Zodiac symbols that light up when some steps are completed. These will be listed throughout the steps; the steps after the name will indicate how to make it light up in the hud.</li>
 
-            <p class="step-group-title" id="main_ee_step1">Telescope Quest line</p>
+
+            <!-- Green Stone - Library: Telescope-->
+            <p class="step-group-title" id="main_ee_step1">Telescope Quest line - Leo</p>
+            <li>Interact with each stone until you see the <a href="pictures/main_ee/telescope/telescope.webp">Telescope</a> to activate the Telescope Quest Line.</li>
+
+            <p class="step-group-title" id="main_ee_step1_virgo">Virgo</p>
             <li>Obtain <a href="#silver_bullets" class="link-to-page">Silver Bullets</a></li>
             <li>All players must shoot the <a href="pictures/main_ee/telescope/lightning_rod.webp">Lightning Rod</a> above the Mausoleum at the same time with Silver Bullets.</li>
             <li>If done correctly, it will sink into the Mausoleum and a telescope will take its place. The telescope should shoot a beam of light toward the Atlas Statue in the Mansion.</li>
+
+            <p class="step-group-title" id="main_ee_step1_libra">Libra</p>
             <li>On the 'North Atrium Bridge', there will be three <a href="pictures/main_ee/telescope/boxes.webp">boxes</a> on the railing facing the Atlas Statue that will open when a player gets close to them. Open all the boxes to reveal the wheels inside.</li>
             <li>The goal is to block the three coloured beams coming from the crystal in the middle using the circular part of the rings. The wheels can be spun left by interacting with the left side or to the right by interacting with the right. When the wheels are spun, the rings Atlas is holding will spin. The easiest way to block all beams is:</li>
             <ol>
-                <li>Spin the <b>Middle Wheel</b> to the <b>Left</b> until the <span style="color:green">Green light</span> is covered</li>
+                <li>Spin the <b>Middle Wheel</b> to the <b>Left</b> until the <span class="bird-highlight-green">Green light</span> is covered</li>
                 <li>Spin the <b>Left Wheel</b> to the <b>Left</b> until the <span style="color:cornflowerblue">Blue light</span> is covered (this will uncover the green light)</li>
                 <li>Spin the <b>Right wheel</b> to the <b>Left</b> until the <span style="color:red">Red light</span> is covered</li>
                 <li><i>Repeat Steps 1–3 until all lights are covered</i></li>
             </ol>
             <li>Once all lights are covered, the beams will melt the statue's head off.</li>
+
+            <p class="step-group-title" id="main_ee_step1_scorpio">Scorpio</p>
             <li>Around the map, <a href="pictures/main_ee/zodiac_symbols.webp">Zodiac Symbols</a> will spawn in three of the following seven locations (Note: Capricorn on this image looks nothing like the one in-game). Each symbol has three sets of scratch marks associated with it. The scratch marks need to be added up to get the number for the Zodiac symbol (e.g. Aries - 3 Scratches, 5 Scratches and 2 Scratches would be Aries - 10).</li>
             <ul>
                 <li>What a symbol means is irrelevant, you only have to remember what the symbol looks like, and it's associated number of scratches.</li>
@@ -597,40 +649,67 @@
             <li>Activate the <a href="pictures/main_ee/telescope/electric_trap.webp">Electric Trap</a> below the telescope. All players must run through it while holding the shield to electrify it.</li>
             <li>All players must then melee the <a href="pictures/main_ee/telescope/eyepiece.webp">Eyepiece of the Telescope</a> with the electrified shield at the same time. If done correctly, the screen with flash white and a beam will shoot out of the end of the Telescope into the sky.</li>
             <li>To the left of the Electric Trap, a part of the wall will open to reveal a <a href="pictures/main_ee/telescope/stone.webp">Stone</a>. All players must hold interact on the stone until it flies out to activate a lockdown.</li>
-            <li>During the lockdown, Zombies, Vampires and Werewolves will spawn which must be killed to end the lockdown. Once all enemies are killed, the screen will flash white, and you will be able to pick up the Stone. When you pick up the Stone, a Max Ammo will spawn.</li>
+            <li>During the lockdown, Zombies and Vampires will endlessly spawn. After a couple of minutes, a few Werewolves will spawn. Once all the Werewolves are killed, the screen will flash white, and you will be able to pick up the Stone. When you pick up the Stone, a Max Ammo will spawn.</li>
 
-            <p class="step-group-title" id="main_ee_step2">Effigy Quest line</p>
+            <!--
+            Blue Stone - Wine Cellar: Effigy
+            Sagittarius - Activating the Effigy Quest
+            Capricorn - Collecting Branches
+            Aquarius - Entering Ghost Mode
+            Pisces - Activating the Lockdown
+            -->
+            <p class="step-group-title" id="main_ee_step2">Effigy Quest line - Sagittarius</p>
+            <li>Interact with each stone until you see the <a href="pictures/main_ee/effigy/effigy.webp">Effigy</a> to activate the Effigy Quest Line.</li>
+
+            <p class="step-group-title" id="main_ee_step2_cap">Capricorn</p>
             <li>Obtain the <a href="#alistairs_annihilator" class="link-to-page">Alistair's Annihilator</a></li>
             <p class="warning">If you are having trouble with the branches or finding/activating the tombstone, make sure you are not in the middle of another quest line as this can halt the progress of this quest line. If you are, complete the other quest line then comeback to this one.</p>
-            <li>In the 'Cemetery' area, there are five birch trees that will drop leaves when a player gets close. Shoot the trunks of these trees with the Alistair's Annihilator to make them drop a <a href="pictures/main_ee/effigy/branch.webp">Branch</a>. Interact with this branch to make it fly toward the center of the 'Cemetery'. Tree Locations:</li>
+            <li>In the 'Cemetery' area, there are five birch trees that will drop leaves when a player gets close. Shoot the trunks of these trees with the Alistair's Annihilator to make them drop a <a href="pictures/main_ee/effigy/branch.webp">Branch</a>. Interact with this branch to make it fly toward the center of the 'Cemetery'.</li>
             <ul>
-                <li>Cemetery Path - <a href="pictures/main_ee/effigy/tree_locations/cemetery_path.webp">On the left when coming from the Mansion</a></li>
-                <li>Cemetery - <a href="pictures/main_ee/effigy/tree_locations/cemetery_crimson.webp">Right of the Crimson Nosferatu's Coffin</a></li>
-                <li>Cemetery - <a href="pictures/main_ee/effigy/tree_locations/cemetery_near_knight.webp">Near the top of the right staircase, coming from the 'Cemetery Path'</a></li>
-                <li>Mausoleum - <a href="pictures/main_ee/effigy/tree_locations/mausoleum_front.webp">Front right of the Mausoleum area, near the stairs</a></li>
-                <li>Mausoleum - <a href="pictures/main_ee/effigy/tree_locations/mausoleum_fast_travel.webp">Back left of the Mausoleum area, left of the fast travel</a></li>
+                <li>The branches are a bit finicky and sometimes don't fall when shot or fly to the middle when picked up. You can check how many were collected by looking <a href="pictures/main_ee/effigy/where_branches_go.webp">in front of the Mystery Box location</a> in the 'Cemetery'.</li>
+                <li>Also, sometimes, despite flying away when picked up, they aren't counted as being picked up. If this happens, go around to each location and hold interact on where the branch would be on the ground.</li>
+                <li>Tree Locations:</li>
+                <ul>
+                    <li><a href="pictures/main_ee/effigy/tree_locations/cemetery_path.webp">Cemetery Path - On the left when coming from the Mansion</a></li>
+                    <li><a href="pictures/main_ee/effigy/tree_locations/cemetery_crimson.webp">Cemetery - Right of the Crimson Nosferatu's Coffin</a></li>
+                    <li><a href="pictures/main_ee/effigy/tree_locations/cemetery_near_knight.webp">Cemetery - Near the top of the right staircase, coming from the 'Cemetery Path'</a></li>
+                    <li><a href="pictures/main_ee/effigy/tree_locations/mausoleum_front.webp">Mausoleum - Front right of the Mausoleum area, near the stairs</a></li>
+                    <li><a href="pictures/main_ee/effigy/tree_locations/mausoleum_fast_travel.webp">Mausoleum - Back left of the Mausoleum area, left of the fast travel</a></li>
+                </ul>
             </ul>
-            <li>The branches are a bit finicky and sometimes don't fall when shot or fly to the middle when picked up. You can check how many were collected by looking <a href="pictures/main_ee/effigy/where_branches_go.webp">in front of the Mystery Box location</a> in the 'Cemetery'.</li>
-            <li>Around the 'Cemetery', there will be a tombstone with one of the characters and the year "1912" on it. If solo, interact with the tombstone to activate "Green Vision". If co-op, only the player playing as the character shown on the tombstone can enter "Green Vision", if that character is not in the game, anyone can enter.</li>
-            <li>While in the Green Vision, the five branches will form into an effigy. You must shoot a <a href="pictures/main_ee/effigy/charged_fireball.webp">Charged Fireball Shot</a> from the Alistair's Annihilator at the base of the effigy and then hold interact on the effigy.</li>
-            <li>A short cutscene will start where your character will attach themselves to the effigy and be sucked down into "Hell". After the cutscene, you will be returned to the map as a "ghost" as indicated by the blue effect on the screen.</li>
-            <ul>
-                <li>If you go down, you will exit Ghost Mode and will need to reactivate it by re-entering Green Vision and interacting with the Effigy.</li>
-            </ul>
-            <li>While in Ghost Mode, you must find and escort the ghost lady from the Pack-a-Punch quest to the 'Cemetery'. She can spawn in random locations around the map, but some of the more common locations are below: </li>
-            <ul>
-                <li>Entrance Hall - <a href="pictures/main_ee/effigy/ghost_danu.webp">Near/Inside the Danu Perk Statue</a></li>
-                <li>Wine Cellar - <a href="pictures/main_ee/effigy/ghost_wine_cellar.webp">Inside the right-most Zombie spawn</a></li>
-                <li>Master Bedroom - <a href="pictures/main_ee/effigy/ghost_master_bedroom.webp">Inside the Zombie spawn</a></li>
-                <li>Dining Room - <a href="pictures/main_ee/effigy/ghost_dining_room.webp">Behind the table at the end of the room</a></li>
-            </ul>
-            <li>Once you find the ghost, escort her back to the Mystery Box locations in the 'Cemetery'. Once she gets there, she will erupt into flames and drop a <a href="pictures/main_ee/effigy/stone.webp">Stone</a>.</li>
-            <li>Interact with the Stone to exit Ghost Mode. All players must then hold interact on the stone until it floats up to activate a lockdown.</li>
-            <li>During the lockdown, Zombies, Vampires and Werewolves will spawn which must be killed to end the lockdown. Once all enemies are killed, the screen will flash white, and you will be able to pick up the Stone. When you pick up the Stone, a Max Ammo will spawn.</li>
 
-            <p class="step-group-title" id="main_ee_step3">Knight Quest line</p>
-            <li>Obtain the <a href="#alistairs_annihilator" class="link-to-page">Alistair's Annihilator</a></li>
-            <li>Obtain the <a href="#ballistic_shield" class="link-to-page">Ballistic Shield</a></li>
+            <p class="step-group-title" id="main_ee_step2_aqua">Aquarius</p>
+            <li>Around the 'Cemetery', there will be a tombstone with one of the characters and the year "1912" on it. If solo, interact with the tombstone to activate "Green Vision". If co-op, only the player playing as the character shown on the tombstone can activate "Green Vision", if that character is not in the game, anyone can activate it.</li>
+            <li>While in the Green Vision, the five branches will form into an effigy. You must shoot a <a href="pictures/main_ee/effigy/charged_fireball.webp">Charged Fireball Shot</a> from the Alistair's Annihilator at the base of the effigy and hold interact on the effigy.</li>
+            <li>A short cutscene will start where your character will attach themselves to the effigy and be sucked down into "Hell". After the cutscene, you will be returned to the map as a "ghost", as indicated by the blue effect on the screen.</li>
+            <ul>
+                <li>If you go down while in Ghost Mode, you will need to reactivate it by re-entering Green Vision, shooting the Charged Fireball Shot and interacting with the Effigy.</li>
+            </ul>
+            <li>While in Ghost Mode, you must find and escort a ghost lady to the 'Cemetery'. She can spawn in random locations around the map, but some of the more common locations are below: </li>
+            <ul>
+                <li><a href="pictures/main_ee/effigy/ghost_danu.webp">Entrance Hall - Near/Inside the Danu Perk Statue</a></li>
+                <li><a href="pictures/main_ee/effigy/ghost_wine_cellar.webp">Wine Cellar - Inside the right-most Zombie spawn</a></li>
+                <li><a href="pictures/main_ee/effigy/ghost_master_bedroom.webp">Master Bedroom - Inside the Zombie spawn</a></li>
+                <li><a href="pictures/main_ee/effigy/ghost_dining_room.webp">Dining Room - Behind the table at the end of the room</a></li>
+            </ul>
+            <li>Once you find the ghost, escort her back to the Mystery Box location in the 'Cemetery'. Once she gets there, she will erupt into flames and drop a <a href="pictures/main_ee/effigy/stone.webp">Stone</a>.</li>
+
+            <p class="step-group-title" id="main_ee_step2_pisces">Pisces</p>
+            <li>Interact with the Stone to exit Ghost Mode. All players must then hold interact on the stone until it floats up to activate a lockdown.</li>
+            <li>During the lockdown, Zombies and Vampires will endlessly spawn. After a couple of minutes, a few Werewolves will spawn. Once all the Werewolves are killed, the screen will flash white, and you will be able to pick up the Stone. When you pick up the Stone, a Max Ammo will spawn.</li>
+
+            <!--
+            Purple Stone - Master Bedroom: Knight
+            Looking at Armour Stone = Aries
+            All three gems collected from fireplaces = Taurus
+            Gems brought to forest = Gemini
+            Stone picked up = Cancer
+            -->
+            <p class="step-group-title" id="main_ee_step3">Knight Quest line - Aries</p>
+            <li>Interact with each stone until you see the <a href="pictures/main_ee/knight/knight.webp">Knight</a> to activate the Knight Quest Line.</li>
+
+            <p class="step-group-title" id="main_ee_step3_taurus">Taurus</p>
+            <li>Obtain the <a href="#alistairs_annihilator" class="link-to-page">Alistair's Annihilator</a> and <a href="#ballistic_shield" class="link-to-page">Ballistic Shield</a></li>
             <li>Activate the <a href="#fire_traps" class="link-to-page">Fire Trap</a> in the 'Library' (and the one in the 'Master Bedroom' to do the third set if you'd like).</li>
             <li>Turn on a trap and shoot the flames from the trap with a Charged shot from the Alistair's Annihilator to turn them blue.</li>
             <li>While the flames are blue, run through them while holding the shield to light it on fire.</li>
@@ -645,26 +724,30 @@
                     <li>Third set: <a href="pictures/main_ee/knight/fireplaces/fireplace_trophy_room.webp">Trophy Room</a>, <a href="pictures/main_ee/knight/fireplaces/fireplace_master_bedroom.webp">Master Bedroom</a>, <a href="pictures/main_ee/knight/fireplaces/fireplace_music_room.webp">Music Room</a>, <a href="pictures/main_ee/knight/fireplaces/fireplace_dining_room.webp">Dining Room</a></li>
                 </ul>
             </ul>
-            <li>Once you have all three gems, you must place them in three suits of armour around the map.</li>
+
+            <p class="step-group-title" id="main_ee_step3_gemini">Gemini</p>
+            <li>Once you have all three gems, you must place them in three suits of armour around the map. When a gem is placed on a suit, the suit will fall apart and the gem will begin following you around.</li>
             <ul>
-                <li>When a gem is placed on a suit, the suit will fall apart and the gem will begin following you around.</li>
                 <li>If you get too far from a gem while it is following you, it will stop following you and wait there until you return to it.</li>
                 <li>Tip: When bringing the gems from the 'Cemetery' or 'Gardens', bring them to the 'Main Hall' then sprint away from them leaving them in the 'Main Hall', so you don't have to slowly walk from one side of the map to the other.</li>
                 <li>Knight's Armour Locations: </li>
                 <ul>
-                    <li>Cemetery - <a href="pictures/main_ee/knight/knight_cemetery.webp">Near the top of the right staircase, coming from the 'Cemetery Path'</a></li>
-                    <li>Main Hall - <a href="pictures/main_ee/knight/knight_main_hall.webp">Just in front of the doorway leading to the 'East Hallway'/'Dining Room'</a></li>
-                    <li>Gardens - <a href="pictures/main_ee/knight/knight_gardens.webp">Right of the Vapr-XKG wallbuy</a></li>
+                    <li><a href="pictures/main_ee/knight/knight_cemetery.webp">Cemetery - Near the top of the right staircase, coming from the 'Cemetery Path'</a></li>
+                    <li><a href="pictures/main_ee/knight/knight_main_hall.webp">Main Hall - Just in front of the doorway leading to the 'East Hallway/Dining Room'</a></li>
+                    <li><a href="pictures/main_ee/knight/knight_gardens.webp">Gardens - Right of the Vapr-XKG wallbuy</a></li>
                 </ul>
             </ul>
             <li>Once all three gems are following you, three coloured circles will spawn on the ground in the 'Forest' on each of the three paths toward Pack-a-Punch. Bring the gems to the corresponding circles.</li>
             <li>Once all the gems are in place, they will turn into ghost versions of the suits of armour. Kill zombies near the suits to make them move toward the Pack-a-Punch. Each suit will need to be moved twice.</li>
             <li>After each suit has been moved to the Pack-a-Punch, they will create an electric triangle. Kill a Werewolf inside the triangle to make a <a href="pictures/main_ee/knight/stone.webp">Stone appear on the floor</a>.</li>
-            <li>All players must then hold interact on the stone until it floats up to activate a lockdown.</li>
-            <li>During the lockdown, Zombies, Vampires and Werewolves will spawn which must be killed to end the lockdown. Once all enemies are killed, the screen will flash white, and you will be able to pick up the Stone. When you pick up the Stone, a Max Ammo will spawn.</li>
 
-            <p class="warning" id="main_ee_step4">Warning: Point of No Return. Once the Door is opened, the Boss Fight will start.</p>
-            <p><b>Recommended Weapons</b>: Hades, Spitfire (with Wildfire Operator Mod), Hellion Salvo, Alistair's Annihilator. All weapons should be equipped with Silver Bullets. Homunculus is helpful but not required.</p>
+            <p class="step-group-title" id="main_ee_step3_cancer">Cancer</p>
+            <li>All players must then hold interact on the stone until it floats up to activate a lockdown.</li>
+            <li>During the lockdown, Zombies and Vampires will endlessly spawn. Unlike the other lockdowns, the gems will fly around the arena, killing any enemies they contact. After a couple of minutes, a few Werewolves will spawn. Once all the Werewolves are killed, the screen will flash white, and you will be able to pick up the Stone. When you pick up the Stone, a Max Ammo will spawn.</li>
+
+            <p class="step-group-title" id="main_ee_step4">Entering the Boss Fight</p>
+            <p class="warning">Warning: Point of No Return. Once the Door is opened, the Boss Fight will start.</p>
+            <p class="warning">Recommended Weapons: Hades, Spitfire, Hellion Salvo, Alistair's Annihilator. All weapons should be equipped with Silver Bullets. The Homunculus and <a href="#stake_knife" class="link-to-page">Stake Knife</a> are helpful but not required.</p>
             <li>On the right side of the 'Forest', hold interact on the <a href="pictures/main_ee/boss_fight/door.webp">door</a> to open it and start the boss fight.</li>
         </ol>
         <ol>
@@ -681,10 +764,10 @@
         <ul>
             <li>Shoot four coins found in the following locations: </li>
             <ul>
-                <li>Main Hall - <a href="pictures/song_ee/coin_main_hall.webp">Underside of table near the Mozu wallbuy</a></li>
-                <li>East Hallway - <a href="pictures/song_ee/coin_east_hallway.webp">Behind door to 'Dining Hall'</a></li>
-                <li>Wine Cellar - <a href="pictures/song_ee/coin_wine_cellar.webp">Inside broken wooden barrel near stairs</a></li>
-                <li>Library - <a href="pictures/song_ee/coin_study.webp">Top of Ra statue looking down from the 'Study'</a></li>
+                <li><a href="pictures/song_ee/coin_main_hall.webp">Main Hall - Underside of table near the Mozu wallbuy</a></li>
+                <li><a href="pictures/song_ee/coin_east_hallway.webp">East Hallway - Behind door to 'Dining Hall'</a></li>
+                <li><a href="pictures/song_ee/coin_wine_cellar.webp">Wine Cellar - Inside broken wooden barrel near stairs</a></li>
+                <li><a href="pictures/song_ee/coin_study.webp">Library - Top of the Ra statue looking down from the 'Study'</a></li>
             </ul>
         </ul>
     </div>
@@ -739,9 +822,9 @@
 
     <!-- Infinite Ammo -->
     <div class="content-container" id="infinite_ammo">
-        <h2>Infinite Ammo</h2>
-        <p class="weapon-desc">The rewards for this easter egg are infinite ammo on one weapon for the rest of the game, all base perk given for free as well as two random perks and free Homunculus equipment.</p>
-        <p class="weapon-desc">This easter egg is very complicated and requires your full attention from the beginning of the game, it can't be started "mid-game".</p>
+        <h2>Infinite Ammo (Images Incomplete)</h2>
+        <p class="weapon-desc">The rewards for this easter egg are infinite ammo on one weapon for the rest of the game, all loadout perks as well as two random perks for free and free Homunculus equipment.</p>
+        <p class="weapon-desc">This easter egg is very complicated and requires your full attention from the beginning of the game. It is not recommended to try and start it "mid-game".</p>
         <p class="warning">Also, Wraith Fire Equipment is required to complete this easter egg</p>
         <ol>
             <li>Activate the <a href="pictures/sentinel_artifact.webp">Sentinel Artifact</a></li>
@@ -763,39 +846,51 @@
                 <li><a href="pictures/infinite_ammo/gramo_library.webp">Library</a></li>
                 <li><a href="pictures/infinite_ammo/gramo_west_balcony.webp">Behind the bookshelf from the <a href="#hidden_rooms" class="link-to-page">East/West Balcony Hidden Room</a></a></li>
             </ol>
-            <li>Open <a href="#pap" class="link-to-page">Pack-a-Punch</a> and Pack-a-Punch the M1897 Trebuchet. It can be purchased from the <a href="pictures/infinite_ammo/">wallbuy in the 'Library'</a>.</li>
-            <p class="warning">If you break the vases in the wrong order, you have to start a new game to retry.</p>
-            <li>There are six vases around the mansion (each linked to one of the doors from step 1) that need to be broken. To break a vase, you need to perfectly land a shot from the upgraded M1897 Trebuchet into the hole on top of the vase. Vase Locations: </li>
-            <ol>
-                <li>'Main Hall' to 'Wine Cellar' Door - <a href="pictures/infinite_ammo/">Off the left side of the 'Grand Staircase', in the water</a> --- Shoot From: <a href="pictures/infinite_ammo/">Grand Staircase, through the railing</a></li>
-                <li>'Main Hall' to 'Dining Room' Door - <a href="pictures/infinite_ammo/">Above the 'East Balcony' (The lower of the two)</a> --- Line up location: <a href="pictures/infinite_ammo/">Stand Here</a> --- <a href="pictures/infinite_ammo/">Aim Here</a></li>
-                <li>'Dining Room' to 'Greenhouse' Door - <a href="pictures/infinite_ammo/">Above the 'East Balcony' (The higher of the two)</a> --- Shoot From: <a href="pictures/infinite_ammo/">West Balcony</a></li>
-                <li>'Main Hall' to 'Library' Door - <a href="pictures/infinite_ammo/">Above the 'West Balcony'</a> --- Shoot From: <a href="pictures/infinite_ammo/">Bottom of the 'Grand Staircase', in the 'Main Hall'</a></li>
-                <li>'Library' to 'Cemetery' Door - <a href="pictures/infinite_ammo/">Above the 'West Gallery'</a> --- Shoot From: <a href="pictures/infinite_ammo/">East Balcony</a></li>
-                <li>'Main Hall' to 'Forest' Door - <a href="pictures/infinite_ammo/">Above 'North Atrium Bridge' (Spawn)</a> --- Line up location: <a href="pictures/infinite_ammo/">Stand Here</a> --- <a href="pictures/infinite_ammo/">Aim Here</a></li>
-            </ol>
+            <li>Obtain a <a href="#pap" class="link-to-page">Pack-a-Punch'd</a> M1897 Trebuchet. It can be purchased from the <a href="pictures/infinite_ammo/">wallbuy in the 'Library'</a>.</li>
+            <li>There are six vases around the mansion (each linked to one of the doors from step 1) that need to be broken.</li>
+            <ul>
+                <li>To break a vase, you need to perfectly land a shot from the upgraded M1897 Trebuchet into the hole on top of the vase.</li>
+                <li><b>If you break the vases in the wrong order, you have to start a new game to retry.</b></li>
+                <li>Vase Locations: </li>
+                <ol>
+                    <li>'Main Hall' to 'Wine Cellar' Door - <a href="pictures/infinite_ammo/">Off the left side of the 'Grand Staircase', in the water</a> --- Shoot From: <a href="pictures/infinite_ammo/">Grand Staircase, through the railing</a></li>
+                    <li>'Main Hall' to 'Dining Room' Door - <a href="pictures/infinite_ammo/">Above the 'East Balcony' (The lower of the two)</a> --- Line up location: <a href="pictures/infinite_ammo/">Stand Here</a> --- <a href="pictures/infinite_ammo/">Aim Here</a></li>
+                    <li>'Dining Room' to 'Greenhouse' Door - <a href="pictures/infinite_ammo/">Above the 'East Balcony' (The higher of the two)</a> --- Shoot From: <a href="pictures/infinite_ammo/">West Balcony</a></li>
+                    <li>'Main Hall' to 'Library' Door - <a href="pictures/infinite_ammo/">Above the 'West Balcony'</a> --- Shoot From: <a href="pictures/infinite_ammo/">Bottom of the 'Grand Staircase', in the 'Main Hall'</a></li>
+                    <li>'Library' to 'Cemetery' Door - <a href="pictures/infinite_ammo/">Above the 'West Gallery'</a> --- Shoot From: <a href="pictures/infinite_ammo/">East Balcony</a></li>
+                    <li>'Main Hall' to 'Forest' Door - <a href="pictures/infinite_ammo/">Above 'North Atrium Bridge' (Spawn)</a> --- Line up location: <a href="pictures/infinite_ammo/">Stand Here</a> --- <a href="pictures/infinite_ammo/">Aim Here</a></li>
+                </ol>
+            </ul>
             <li>If all vases were destroyed correctly, this <a href="pictures/infinite_ammo/">candle</a> in the 'Forest Terrace' should no longer be lit.</li>
-            <p class="warning">If you light the candles in the wrong order, you have to start a new game to retry.</p>
-            <li>There are six candles around the map (each linked to one of the doors from step 1) that need to be ignited with the Wraith Fire equipment. These candles need to be ignited in the <b>reverse order</b> of how the doors were opened. Candle Locations: </li>
-            <ol>
-                <li>'Main Hall' to 'Forest' Door - <a href="pictures/infinite_ammo/">Forest Terrace</a></li>
-                <li>'Library' to 'Cemetery' Door - <a href="pictures/infinite_ammo/">Study</a></li>
-                <li>'Main Hall' to 'Library' Door - <a href="pictures/infinite_ammo/">West Hallway</a></li>
-                <li>'Dining Room' to 'Greenhouse' Door - <a href="pictures/infinite_ammo/">Greenhouse Terrace</a>
-                <li>'Main Hall' to 'Dining Room' Door - <a href="pictures/infinite_ammo/">East Hallway</a>
-                <li>'Main Hall' to 'Wine Cellar' Door - <a href="pictures/infinite_ammo/">Wine Cellar</a>
-            </ol>
+            <li>There are six candles around the map (each linked to one of the doors from step 1) that need to be ignited with the Wraith Fire equipment.</li>
+            <ul>
+                <li> These candles need to be ignited in the <b>reverse order</b> of how the doors were opened.</li>
+                <li><b>If you light the candles in the wrong order, you have to start a new game to retry.</b></li>
+                <li>Candle Locations: </li>
+                <ol>
+                    <li><a href="pictures/infinite_ammo/">Forest Terrace - 'Main Hall' to 'Forest' Door</a></li>
+                    <li><a href="pictures/infinite_ammo/">Study - 'Library' to 'Cemetery' Door</a></li>
+                    <li><a href="pictures/infinite_ammo/">West Hallway - 'Main Hall' to 'Library' Door</a></li>
+                    <li><a href="pictures/infinite_ammo/">Greenhouse Terrace - 'Dining Room' to 'Greenhouse' Door</a></li>
+                    <li><a href="pictures/infinite_ammo/">East Hallway - 'Main Hall' to 'Dining Room' Door</a></li>
+                    <li><a href="pictures/infinite_ammo/">Wine Cellar - 'Main Hall' to 'Wine Cellar' Door</a></li>
+                </ol>
+            </ul>
             <li>In the 'East Stairway', pick up the <a href="pictures/infinite_ammo/">Vinyl Record</a> leaning against a cabinet.</li>
-            <p class="warning">If you play the record at the gramophones in the wrong order, you have to start a new game to retry.</p>
-            <li>You must play the record at the gramophones from step 2 in the <b>reverse order</b> of how you looked at them. When placed, the record will play part of the map's secret song <a href="#song_ee" class="link-to-page">Mystery</a>. Candle Locations: </li>
-            <ol>
-                <li><a href="pictures/infinite_ammo/">Behind the bookshelf from the <a href="#hidden_rooms" class="link-to-page">East/West Balcony Hidden Room</a></a></li>
-                <li><a href="pictures/infinite_ammo/">Library</a></li>
-                <li><a href="pictures/infinite_ammo/">Dining Room</a></li>
-                <li><a href="pictures/infinite_ammo/">Master Bedroom</a></li>
-                <li><a href="pictures/infinite_ammo/">West Gallery</a></li>
-                <li><a href="pictures/infinite_ammo/">Music Room</a></li>
-            </ol>
+            <li>You must play the record at the gramophones from step 2 in the <b>reverse order</b> of how you looked at them.</li>
+             <ul>
+                 <li>When placed, the record will play part of the map's secret song <a href="#song_ee" class="link-to-page">Mystery</a>.</li>
+                 <li><b>If you play the record at the gramophones in the wrong order, you have to start a new game to retry.</b></li>
+                 <li>Gramophone Locations: </li>
+                 <ol>
+                     <li><a href="pictures/infinite_ammo/gramo_west_gallery.webp">Behind the bookshelf from the <a href="#hidden_rooms" class="link-to-page">East/West Balcony Hidden Room</a></a></li>
+                     <li><a href="pictures/infinite_ammo/gramo_library.webp">Library</a></li>
+                     <li><a href="pictures/infinite_ammo/gramo_dining_room.webp">Dining Room</a></li>
+                     <li><a href="pictures/infinite_ammo/gramo_master_bedroom.webp">Master Bedroom</a></li>
+                     <li><a href="pictures/infinite_ammo/gramo_west_gallery.webp">West Gallery</a></li>
+                     <li><a href="pictures/infinite_ammo/gramo_music_room.webp">Music Room</a></li>
+                 </ol>
+             </ul>
             <li>Once all the gramophones have been played, look at <a href="pictures/infinite_ammo/">this window</a> in the 'North Atrium' to spawn an invisible ghost which can't be seen but can be heard.</li>
             <li>The ghost needs to be escorted around the map, the player has to listen to where for the sounds the ghost makes to know where it is.</li>
             <li>Eventually you will make your way to the 'Wine Cellar' (make sure to hold out the weapon you'd like infinite ammo for). Once you reach the bottom of the stairs, you must go prone and crawl over to <a href="pictures/infinite_ammo/">this broken barrel</a> following <a href="pictures/infinite_ammo/">this path</a>.</li>

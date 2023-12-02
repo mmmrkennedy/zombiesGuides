@@ -172,19 +172,22 @@ if __name__ == "__main__":
             "Convert to webp (1), convert to png (2), Backup Directory in Full (Don't) (3), Change Directory (4) or Quit (5)? ")
 
         if convert_option == "1":
-            image_dir = valid_dir(image_dir)
+            if (input("Default Config? (y/n): ") == "n"):
+                image_dir = valid_dir(image_dir)
 
-            image_quality = input("Enter the image quality (1-100), 87 is Default: ")
-            if image_quality == "":
-                image_quality = "87"
+                image_quality = input("Enter the image quality (1-100), 87 is Default: ")
+                if image_quality == "":
+                    image_quality = "87"
 
-            include_webp = input("Include webp files? (y/n), No is default: ")
-            if include_webp == "":
-                image_extensions = ['.png', '.jpg', '.jpeg', '.bmp']
+                include_webp = input("Include webp files? (y/n), No is default: ")
+                if include_webp == "":
+                    image_extensions = ['.png', '.jpg', '.jpeg', '.bmp']
+                else:
+                    image_extensions = ['.png', '.jpg', '.jpeg', '.bmp', '.webp']
+
+                png_to_webp(image_dir, image_quality, image_extensions)
             else:
-                image_extensions = ['.png', '.jpg', '.jpeg', '.bmp', '.webp']
-
-            png_to_webp(image_dir, image_quality, image_extensions)
+                png_to_webp("E:\zombiesGuides\games", "87", ['.png', '.jpg', '.jpeg', '.bmp'])
 
         elif convert_option == "2":
             image_dir = valid_dir(image_dir)
@@ -202,3 +205,4 @@ if __name__ == "__main__":
 
         elif convert_option == "5":
             break
+

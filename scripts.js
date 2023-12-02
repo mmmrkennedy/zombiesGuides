@@ -143,9 +143,14 @@ if(page !== "index.html") {
     fontSelector.addEventListener('change', () => {
         const selectedFont = fontSelector.value;
         if (selectedFont === 'OpenDyslexic') {
+            smoothScroll.classList.remove('verdana');
             smoothScroll.classList.add('open-dyslexic');
-        } else {
+        } else if (selectedFont === 'Verdana') {
             smoothScroll.classList.remove('open-dyslexic');
+            smoothScroll.classList.add('verdana');
+        } else if (selectedFont === 'Arial') {
+            smoothScroll.classList.remove('open-dyslexic');
+            smoothScroll.classList.remove('verdana');
         }
     });
 }

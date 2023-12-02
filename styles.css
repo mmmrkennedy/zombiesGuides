@@ -28,19 +28,19 @@ a.link-to-page {
     font-style: italic;
 }
 
-a.bird-highlight-orange {
+.bird-highlight-orange {
     color: #d4b365;
 }
 
-a.bird-highlight-green {
+.bird-highlight-green {
     color: #6bc343;
 }
 
-.light-mode a.bird-highlight-orange {
+.light-mode .bird-highlight-orange {
     color: #a97b00;
 }
 
-.light-mode a.bird-highlight-green {
+.light-mode .bird-highlight-green {
     color: #34a400;
 }
 
@@ -289,6 +289,13 @@ h1.centered {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Verdana';
+    src: url('font/verdana.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .smooth-scroll, .smooth-scroll.open-dyslexic {
     font-family: Arial, sans-serif;
     padding-right: 20px;
@@ -298,12 +305,13 @@ h1.centered {
     font-family: 'OpenDyslexic', sans-serif;
 }
 
-#popup-image {
-    position: absolute;
-    display: none;
-    padding: 5px;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.2);
-    z-index: 9999;
+.smooth-scroll, .smooth-scroll.verdana {
+    font-family: Arial, sans-serif;
+    padding-right: 20px;
+}
+
+.smooth-scroll.verdana {
+    font-family: 'Verdana', sans-serif;
 }
 
 
